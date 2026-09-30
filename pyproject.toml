@@ -1,0 +1,26 @@
+[project]
+name = "flychess"
+version = "0.1.0"
+description = "A real fruit fly connectome (MaleCNS v1.0) learning chess in TensorFlow"
+requires-python = ">=3.10,<3.13"
+license = { text = "MIT" }
+dependencies = [
+  "tensorflow[and-cuda]>=2.16; sys_platform == 'linux'",
+  "tensorflow>=2.16; sys_platform != 'linux'",
+  "python-chess>=1.10",
+  "numpy",
+  "pandas",
+  "pyarrow",
+  "zstandard",
+  "requests",
+  "tqdm",
+  "fastapi",
+  "uvicorn",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["flychess"]

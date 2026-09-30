@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>fly-chess</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>fly-chess</h1>
+    <nav>
+      <button data-tab="play" class="on">Play</button>
+      <button data-tab="train">Training</button>
+    </nav>
+  </header>
+
+  <main id="play" class="tab on">
+    <section class="board-col">
+      <div id="board"></div>
+      <div class="controls">
+        <label>Fly
+          <select id="fly">
+            <option value="dl">Deep learning (backprop)</option>
+            <option value="bio">Biological (dopamine)</option>
+          </select>
+        </label>
+        <label>You play
+          <select id="side"><option value="w">White</option><option value="b">Black</option></select>
+        </label>
+        <button id="new">New game</button>
+      </div>
+      <p id="status">Your move.</p>
+    </section>
+
+    <section class="brain-col">
+      <h2>Inside the fly</h2>
+      <p class="hint">Mean firing rate of each brain region, step by step, while the fly decides. Drag the slider to replay.</p>
+      <canvas id="brain" width="560" height="420"></canvas>
+      <input type="range" id="step" min="0" max="11" value="11">
+      <div id="step-label">step 12 of 12</div>
+      <h3>Moves it considered</h3>
+      <ol id="top"></ol>
+      <p id="value"></p>
+    </section>
+  </main>
+
+  <main id="train" class="tab">
+    <p class="hint">Reads runs/*/metrics.jsonl and refreshes every 10 seconds.</p>
+    <div id="charts"></div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
