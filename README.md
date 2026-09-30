@@ -4,6 +4,10 @@
 
 In 2026 Janelia, Cambridge and Google Research published the MaleCNS connectome: every neuron in a male fruit fly's brain and nerve cord, and every synapse between them, traced from electron microscope images. About 166,000 neurons. Tens of millions of synapses. It is a complete wiring diagram of an animal that can fly, court, fight and remember which smell got it punished yesterday.
 
+![From board to move](docs/img/pipeline.png)
+
+*The whole idea on one line. Everything in orange is the fly's measured wiring. Only the green readout at the end is new.*
+
 This project takes that wiring diagram as it is and asks it to play chess. The board is shown to the fly's eye. The signal spreads through the real connections for a few steps. The neurons that would normally tell the legs to walk are read out as a move.
 
 There are two versions, and comparing them is the point:
@@ -105,6 +109,10 @@ The parts that matter here, in the order a signal passes through them:
 
 So the path this project uses is: eye, optic lobe, central brain (including the mushroom body), descending neurons. It is the same path a fly uses to see something and walk towards it.
 
+![Neurons per region](docs/img/regions.png)
+
+*Real counts from the MaleCNS tables, as sorted by this project. The optic lobe alone is over half the animal.*
+
 ---
 
 ## The connectome
@@ -131,6 +139,10 @@ A connectome is the full wiring diagram: every neuron, every synapse. The MaleCN
 | histamine | inhibit | photoreceptors release it and it hyperpolarises the next cell |
 | dopamine, serotonin, octopamine | excite, weakly | these are slow modulators, treating them as excitation is a simplification |
 
+![Transmitters](docs/img/transmitters.png)
+
+*Real predictions from the MaleCNS neurotransmitter table. About two thirds of the neurons excite, the rest mostly inhibit.*
+
 **Which region.** Every neuron is tagged with one of 14 regions (photoreceptors, optic lobe, Kenyon cells, MBON, the two dopamine groups, descending, and so on). That drives the brain viewer and makes lesion experiments one line.
 
 ---
@@ -141,11 +153,19 @@ A connectome is the full wiring diagram: every neuron, every synapse. The MaleCN
 
 In the tables, photoreceptors do not say which eye column they sit in, but the cells right behind them (lamina and medulla cells like L1, L2, Mi1) do. So each photoreceptor inherits the column of the cell it talks to most. That gives several thousand photoreceptors with a position on the eye.
 
-The eye is then cut into an 8 by 8 grid, one patch per chess square. The grid is made from ranks of the column coordinates, so every square gets about the same number of columns even though an eye is not square. Inside each square's patch ([flychess/io_maps.py](flychess/io_maps.py)):
+The eye is then cut into an 8 by 8 grid, one patch per chess square. The grid is made from ranks of the column coordinates, so every square gets about the same number of columns even though an eye is not square.
+
+![Eye columns as a chessboard](docs/img/eye-board.png)
+
+*Real data: every dot is one column of the fly's right eye (placed using its L1 lamina cell), coloured by the chess square it is assigned to. The board is squashed into the shape of the eye.* Inside each square's patch ([flychess/io_maps.py](flychess/io_maps.py)):
 
 - R1 to R6 cells are shared out between the six piece types. One cell in the patch reports "pawn here", another "knight here", and so on.
 - R7 cells light up for the fly's own pieces.
 - R8 cells light up for the opponent's pieces.
+
+![Photoreceptors in one square](docs/img/square-cells.png)
+
+*What the fly is told about a single square.*
 
 A black knight on f6 (from the fly's side) lights up the "knight" R1-R6 cells in the f6 patch of the eye and the R8 cells in that patch. Nothing else in the brain is told anything. Everything past the eye has to work it out from the wiring.
 
@@ -168,6 +188,10 @@ rate  = 0.5 * rate + 0.5 * relu(tanh(drive))
 `relu(tanh(...))` means negative input gives 0 (a neuron cannot fire less than nothing) and big input tops out at 1. The halfway step (the "leak") keeps things smooth, so activity flows through the brain instead of flickering.
 
 Step 1: only photoreceptors are active. Step 2: the lamina behind them. By step 4 or 5 the optic lobes are busy. By step 8 or so the signal reaches the central brain and mushroom body. By step 12 the descending neurons carry something. The brain viewer shows exactly this, step by step.
+
+![Activity over steps](docs/img/activity-steps.png)
+
+*A sketch of the expected wave. Your trained fly's real version is in the interface.*
 
 ### Descending neurons make the move
 
@@ -258,6 +282,10 @@ Show the fly a position. It produces 64 "from" scores. Softmax turns scores into
 
 The loss is `-log(probability of the right answer)`. At 0.02 that is 3.9. If the fly were sure (1.0) it would be 0. The same is done for the "to" square and promotion, and the value readout is scored by squared error against Stockfish's evaluation. Add them up: one number that says how wrong the fly was on this position.
 
+![Cross-entropy loss](docs/img/loss.png)
+
+*The loss for one guess. It punishes being confidently wrong far more than being unsure.*
+
 ### 3. Ask every weight: which way should you move?
 
 For every trainable number, the gradient answers: "if I nudge this up a tiny bit, does the loss go up or down, and how much?" Computing that for millions of numbers one by one would take forever. Backprop gets all of them in one backward pass, using the chain rule:
@@ -268,6 +296,10 @@ For every trainable number, the gradient answers: "if I nudge this up a tiny bit
 - ...and so on, back through all 12 steps, down to the eye.
 
 Each link in that chain has a simple local slope. Multiply them along the path, and you get how much any connection anywhere in the brain contributed to the mistake. Because the same weights are used at all 12 steps, the gradient collects contributions from every step. That is called **backprop through time**. `tf.GradientTape` records the forward pass and does all of this automatically.
+
+![Backprop through time](docs/img/backprop.png)
+
+*Forward to make a guess, backward to share out the blame.*
 
 ### 4. Nudge
 
@@ -323,6 +355,10 @@ The classic experiment: a fly smells odour A and gets a small electric shock, th
 5. Next time, odour A drives approach less, so avoid wins.
 
 Reward works the same way through a different dopamine group (PAM), which mostly reaches avoid MBONs. Weaken "avoid" for this odour, and approach wins.
+
+![Mushroom body learning](docs/img/mushroom-body.png)
+
+*The whole learning machine of the biological version. Only the orange arrows change.*
 
 Three factors must line up for a synapse to change: the Kenyon cell was active, dopamine arrived, and this synapse is in that dopamine neuron's compartment. Everything the synapse needs is available right there, locally. That is the difference from backprop.
 
@@ -430,6 +466,8 @@ fly-chess/
   scripts/
     download_connectome.py   the three MaleCNS tables
     download_lichess.py      stream Lichess evals, keep N positions
+    make_figures.py          the pictures in this README, from the real tables
+  docs/img/                  those pictures
   flychess/
     connectome.py            tables -> neurons, signed connections, regions, eye positions
     io_maps.py               board -> photoreceptors, descending neurons -> moves
