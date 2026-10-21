@@ -1,9 +1,12 @@
 """Download the MaleCNS v1.0 flat connectome (public, no account needed).
 
-Three Feather tables, about 1.2 GB in total, land in data/connectome/:
-  body-annotations   one row per body: type, class, superclass, side
+Three Feather tables, about 570 MB in total, land in data/connectome/:
+  body-annotations         one row per body: type, class, superclass, side, soma position
   body-neurotransmitters   predicted transmitter per body
-  connectome-weights   one row per connected pair: body_pre, body_post, weight (synapse count)
+  connectome-weights       one row per connected pair: body_pre, body_post, weight (synapse count)
+
+The weights are the "traced-only" version: connections between fully traced
+neurons only, which is all this project uses, at less than half the download.
 
 Usage: python scripts/download_connectome.py
 """
@@ -16,7 +19,7 @@ BASE = "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-
 FILES = [
     "body-annotations-male-cns-v1.0-minconf-0.5.feather",
     "body-neurotransmitters-male-cns-v1.0.feather",
-    "connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+    "connectome-weights-male-cns-v1.0-minconf-0.5-traced-only.feather",
 ]
 OUT = Path("data/connectome")
 

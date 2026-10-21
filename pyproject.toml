@@ -1,8 +1,8 @@
 [project]
 name = "flychess"
-version = "0.1.0"
+version = "0.2.0"
 description = "A real fruit fly connectome (MaleCNS v1.0) learning chess in TensorFlow"
-requires-python = ">=3.10,<3.13"
+requires-python = ">=3.10,<3.14"
 license = { text = "MIT" }
 dependencies = [
   "tensorflow[and-cuda]>=2.16; sys_platform == 'linux'",
@@ -12,6 +12,7 @@ dependencies = [
   "pandas",
   "pyarrow",
   "zstandard",
+  "msgpack",
   "requests",
   "tqdm",
   "fastapi",
