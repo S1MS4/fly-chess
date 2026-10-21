@@ -118,6 +118,11 @@ After 25 minutes of training on my laptop, the backprop fly picks Stockfish's fa
 ![Top-1 and good moves on one position](docs/img/top1.png)
 *Held-out position 22, from the side to move. The fly puts 48% on dxe5, and Stockfish gives dxe5 and Bc2 exactly the same chance, 26.0%, but lists Bc2 first. So for top-1 the fly got it wrong, as a good move it got it right. That's why I log both.*
 
+**Which piece it moves.** A move has thousands of possible "classes", every from and to square, too many for a confusion matrix. So here the classes are the piece that moves. On the 4,096 held-out positions, the day-long fly moves the same piece as Stockfish's best move 49.2% of the time, and makes exactly Stockfish's move 23.6% of the time ([tools/confusion.py](tools/confusion.py), the numbers in [results/confusion.json](results/confusion.json)).
+
+![Which piece the fly moves against which piece Stockfish moves](docs/img/confusion.png)
+*A row is the piece Stockfish's best move moves, a column the piece the fly's favourite move moves; each row adds up to 100%, and the small number is positions. Pawn moves are the hardest to match (43%), king moves the easiest (57%), and the mistakes spread over all the other pieces fairly evenly: there's no one confusion it keeps making.*
+
 ![Top-1 and good moves while training](docs/img/training.png)
 
 The trend matters more than the last number. Top-1 went from 17.6% to 20.3% on the checks during the run, and the loss on held-out positions fell at every single check. It only flattened at the end because the learning rate is scheduled to reach zero exactly when the time is up. 526,976 positions in 25 minutes, 351 a second, so a longer run should keep going, which is what the [Kaggle notebook](#8-train-in-the-cloud-with-the-laptop-closed) is for.
@@ -863,9 +868,20 @@ I trained the day-long fly for about 40 hours, from 02:30 on a Tuesday to 19:00 
 
 ### Where it stalled
 
-**The machine, three times.** On the first night the readout fit tried to put all 4 GB of brain activity on the GPU at once: one crash at 04:46, and a second at 04:54 that took the whole WSL machine down with it. Streaming it in 344 MB blocks fixed that ([cheat 9](#9-a-day-on-a-laptop-measured-first)). At 11:11 a download broke halfway and ended the extra files 14 hours early, and at 11:18 the Elo games crashed on a heat-guard pause and then couldn't exit, so the laptop sat idle for 9 hours until I looked. And on the Wednesday at 15:02 the Windows helper that reports the CPU's temperature died over a file it was replacing while WSL was reading it. By then a watcher was checking the run every 30 minutes and on every warning, and it caught that one within 4 minutes.
+**The first day mostly stalled.** On the first night the readout fit tried to put all 4 GB of brain activity on the GPU at once: one crash at 04:46, and a second at 04:54 that took the whole WSL machine down with it. Streaming it in 344 MB blocks fixed that ([cheat 9](#9-a-day-on-a-laptop-measured-first)). At 11:11 a download broke halfway and my code stopped adding data 14 hours early, and at 11:18 the Elo games crashed on a heat-guard pause and then couldn't exit, so the laptop sat idle for 9 hours until I looked. Of the 18 hours the first day was meant to spend adding data, it got 4. Later, on the Wednesday at 15:02, the Windows helper that reports the CPU's temperature died over a file it was replacing while WSL was reading it. By then a watcher was checking the run every 30 minutes and on every warning, and it caught that one within 4 minutes.
 
 **The learning, once.** Cycle 1 went from 6.6 to 17.4 million positions, two and a half times the data, and top-1 went from 23.1% to 22.9%. I first blamed the readout, one layer over 1,314 neurons can only learn so much, and almost stopped there. The log said otherwise. The fit's first pass over the new files helped (VAL loss 2.8584), and the next four only bounced around it (2.8648, 2.8650, 2.8605, 2.8594) until the early stop gave up. The step size suits a readout starting from scratch and is too big for one that's nearly fitted. So now a pass that doesn't help goes back to the best readout and halves the step, and the readout it started from has to be beaten before anything gets saved. Cycle 2 went on to 26.2 million positions with that fit. It took 16 passes and halved the step 7 times, and got from the stalled 22.9% to **23.5%** top-1 (+0.6 points), from 33.3% to **34.3%** good moves (+1.0), from 2.853 to **2.840**, and from 752 to **792** Elo.
+
+### Overheating, and the safeguards I built
+
+A laptop isn't built to run flat out for two days. Eight Stockfish workers next to the GPU job took the CPU to **98.9°C**, a degree from the Ryzen's limit, so before and during the run I built safeguards, all in the repo:
+
+- **A heat guard** ([tools/heat_guard.py](tools/heat_guard.py)). At first it paused everything at 93°C and let it go at 84. That was stop-and-go every two minutes and cost a third of the time. Then it became a **throttle**: the training runs a share of every second, and the share moves every 20 seconds to hold the CPU near 85°C and the GPU near 75°C. 318 positions a second instead of 265, and nothing pauses. The full pause stays as an emergency brake.
+- **A Windows helper** ([tools/windows_helper.py](tools/windows_helper.py)). WSL can't read the laptop's temperature sensors or stop Windows from sleeping, so a small program on the Windows side does both. It died once over a file race; now it retries and logs.
+- **A memory guard**, which stops the biggest job before WSL runs out of memory (running out took the whole WSL machine down once), and **timeouts and retries** that survive the heat guard's pauses.
+- **A watcher** on the logs and the temperatures, every 30 minutes and on every warning, which restarts what died.
+
+Not all of the heat was mine: an NVIDIA App process had been spinning a whole CPU core for a day. With it stopped, the CPU went from about 90°C to the low 80s at the same load. Every temperature reading of the run is in [results/heat](results/heat).
 
 ### What worked
 
@@ -885,7 +901,9 @@ I trained the day-long fly for about 40 hours, from 02:30 on a Tuesday to 19:00 
 - **Stop-and-go cooling.** Pausing everything at 93°C cost about a third of the time.
 - **The dopamine fly's pilots.** Five changes to its learning rule, none beyond the noise of 512 test pairs.
 
-### Why I did it this way
+### Why I didn't use the most efficient methods
+
+The most efficient way to make a chess player is well known: a search and a deep network. I left both out on purpose, because they'd be the ones playing chess, not the fly, and the whole point is the fly's own wiring. Every choice below costs strength, knowingly.
 
 - **No search, ever.** The question is whether a fly brain can learn chess, not whether a search can. So the fly sees the board once and its neurons answer.
 - **A readout with no hidden layers.** A deeper readout would learn chess by itself and leave the brain as a fancy input layer. With one layer, whatever the fly knows has to come out of its own neurons.
@@ -946,7 +964,7 @@ fly-chess/
     train_cached.py            the same with the brain frozen, the fast way: the brain once per position
     bio.py                     mushroom body, dopamine, the three-factor rule
     train_bio.py               tutor lessons or games
-    play.py                    all seven flies plus random, greedy and Stockfish opponents
+    play.py                    every fly, one-move imagination, plus random, greedy and Stockfish opponents
     evaluate.py                matches against fixed opponents, controls
     rating.py                  the Elo ladder anchored at Stockfish 1320
   app/
@@ -963,6 +981,9 @@ fly-chess/
     descent.py                 gradient descent you can see: one position learning, the loss landscape
     bench.py                   where a training step's time goes
     readout_lab.py             readouts on cached brain activity: how much data, which steps
+    steps_lab.py               steps 9 to 12 side by side against their mean, on millions of positions (not finished)
+    imagine_lab.py             tunes how much imagination trusts the value readout
+    confusion.py               which piece the fly moves against which piece Stockfish moves
     heat_guard.py              throttles everything heavy to hold a steady temperature, pauses it if that's not enough
     watch.py                   the long run live in the console, as bars
     windows_helper.py          keeps Windows awake and tells WSL the temperature
@@ -973,10 +994,13 @@ fly-chess/
     test_training_flag.py      training reaches the brain, calm homeostasis and reading several steps
     test_mirrored.py           two GPUs (MirroredStrategy) give the same gradient as one
     test_repetition.py         the fly won't walk into a repetition
-    test_server.py             draws only once they happen, openings named by move order
+    test_server.py             draws only once they happen, openings named by move order, the Imagination switch
+    test_imagination.py        mate in one, no stalemate while winning, no going back, draws counted right
+    test_download_retry.py     a broken download gets tried again
+  results/                     the long run's history: metrics, Elo per cycle, logs, temperatures (results/README.md)
 ```
 
-Data, runs and checkpoints stay out of git (`data/`, `runs/`, `checkpoints/`).
+Data, runs and checkpoints stay out of git (`data/`, `runs/`, `checkpoints/`); the small files from `runs/` are copied into `results/`, and the trained day-long fly is on the [releases page](https://github.com/S1MS4/fly-chess/releases).
 
 ## Credits and references
 

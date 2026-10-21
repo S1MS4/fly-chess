@@ -1,0 +1,35 @@
+{"step": 0, "positions": 0, "minutes": 0.0, "top1": 0.167, "good_moves": 0.2598, "held_out_loss": 3.0243, "finish_top1": 0.075, "finish_good_moves": 0.1161, "finish_held_out_loss": 3.6529, "blind_top1": 0.1169, "blind_good_moves": 0.1946}
+{"step": 50, "positions": 6400, "minutes": 0.48, "policy_loss": 3.0407, "value_loss": 0.2574, "positions_per_s": 223.0, "grad_readout": 1.97582, "grad_neurons": 0.22713}
+{"step": 100, "positions": 12800, "minutes": 0.93, "policy_loss": 3.0534, "value_loss": 0.2784, "positions_per_s": 237.4, "grad_readout": 2.18608, "grad_neurons": 0.21184}
+{"step": 150, "positions": 19200, "minutes": 1.38, "policy_loss": 3.0677, "value_loss": 0.2787, "positions_per_s": 236.8, "grad_readout": 1.8107, "grad_neurons": 0.1789}
+{"step": 200, "positions": 25600, "minutes": 1.83, "policy_loss": 3.0596, "value_loss": 0.2915, "positions_per_s": 237.5, "grad_readout": 2.40975, "grad_neurons": 0.22622}
+{"step": 250, "positions": 32000, "minutes": 2.28, "policy_loss": 3.0926, "value_loss": 0.2693, "positions_per_s": 237.5, "grad_readout": 1.97781, "grad_neurons": 0.1906, "top1": 0.126, "good_moves": 0.207, "held_out_loss": 3.0751, "finish_top1": 0.0561, "finish_good_moves": 0.1023, "finish_held_out_loss": 3.6951}
+{"step": 300, "positions": 38400, "minutes": 2.73, "policy_loss": 3.0613, "value_loss": 0.2799, "positions_per_s": 237.1, "grad_readout": 1.91578, "grad_neurons": 0.19048}
+{"step": 350, "positions": 44800, "minutes": 3.18, "policy_loss": 3.0789, "value_loss": 0.2865, "positions_per_s": 237.5, "grad_readout": 2.40901, "grad_neurons": 0.2347}
+{"step": 400, "positions": 51200, "minutes": 3.62, "policy_loss": 3.062, "value_loss": 0.2773, "positions_per_s": 237.6, "grad_readout": 1.80929, "grad_neurons": 0.18713}
+{"step": 450, "positions": 57600, "minutes": 4.07, "policy_loss": 3.0846, "value_loss": 0.2817, "positions_per_s": 237.5, "grad_readout": 1.98998, "grad_neurons": 0.2069}
+{"step": 500, "positions": 64000, "minutes": 4.52, "policy_loss": 3.0614, "value_loss": 0.2751, "positions_per_s": 236.9, "grad_readout": 1.60443, "grad_neurons": 0.17493, "top1": 0.1382, "good_moves": 0.2158, "held_out_loss": 3.0698, "finish_top1": 0.0669, "finish_good_moves": 0.1117, "finish_held_out_loss": 3.6634}
+{"step": 550, "positions": 70400, "minutes": 4.97, "policy_loss": 3.0611, "value_loss": 0.2804, "positions_per_s": 237.3, "grad_readout": 2.13207, "grad_neurons": 0.22919}
+{"step": 600, "positions": 76800, "minutes": 5.42, "policy_loss": 3.072, "value_loss": 0.2717, "positions_per_s": 237.0, "grad_readout": 1.74322, "grad_neurons": 0.19409}
+{"step": 650, "positions": 83200, "minutes": 5.87, "policy_loss": 3.055, "value_loss": 0.2775, "positions_per_s": 237.1, "grad_readout": 1.89715, "grad_neurons": 0.21112}
+{"step": 700, "positions": 89600, "minutes": 6.32, "policy_loss": 3.0587, "value_loss": 0.2734, "positions_per_s": 237.2, "grad_readout": 1.71114, "grad_neurons": 0.19552}
+{"step": 750, "positions": 96000, "minutes": 6.77, "policy_loss": 3.0492, "value_loss": 0.266, "positions_per_s": 236.5, "grad_readout": 1.58621, "grad_neurons": 0.18709, "top1": 0.1396, "good_moves": 0.2197, "held_out_loss": 3.0697, "finish_top1": 0.0699, "finish_good_moves": 0.1087, "finish_held_out_loss": 3.6464}
+{"step": 800, "positions": 102400, "minutes": 7.22, "policy_loss": 3.0616, "value_loss": 0.2689, "positions_per_s": 237.8, "grad_readout": 1.76433, "grad_neurons": 0.20829}
+{"step": 850, "positions": 108800, "minutes": 7.67, "policy_loss": 3.0364, "value_loss": 0.2772, "positions_per_s": 237.2, "grad_readout": 2.27394, "grad_neurons": 0.26038}
+{"step": 900, "positions": 115200, "minutes": 8.12, "policy_loss": 3.0451, "value_loss": 0.2718, "positions_per_s": 237.2, "grad_readout": 1.57775, "grad_neurons": 0.19171}
+{"step": 950, "positions": 121600, "minutes": 8.57, "policy_loss": 3.0404, "value_loss": 0.2652, "positions_per_s": 237.1, "grad_readout": 1.5722, "grad_neurons": 0.19729}
+{"step": 1000, "positions": 128000, "minutes": 9.03, "policy_loss": 3.0608, "value_loss": 0.2678, "positions_per_s": 235.0, "grad_readout": 1.77036, "grad_neurons": 0.216, "top1": 0.1426, "good_moves": 0.231, "held_out_loss": 3.0525, "finish_top1": 0.0693, "finish_good_moves": 0.1138, "finish_held_out_loss": 3.6521}
+{"step": 1050, "positions": 134400, "minutes": 9.47, "policy_loss": 3.0374, "value_loss": 0.2721, "positions_per_s": 237.9, "grad_readout": 1.47724, "grad_neurons": 0.18819}
+{"step": 1100, "positions": 140800, "minutes": 9.92, "policy_loss": 3.0357, "value_loss": 0.2661, "positions_per_s": 237.2, "grad_readout": 1.31613, "grad_neurons": 0.16868}
+{"step": 1150, "positions": 147200, "minutes": 10.37, "policy_loss": 3.0318, "value_loss": 0.2685, "positions_per_s": 237.1, "grad_readout": 1.4287, "grad_neurons": 0.18086}
+{"step": 1200, "positions": 153600, "minutes": 10.82, "policy_loss": 3.032, "value_loss": 0.2688, "positions_per_s": 237.7, "grad_readout": 1.6392, "grad_neurons": 0.2058}
+{"step": 1250, "positions": 160000, "minutes": 11.27, "policy_loss": 3.0427, "value_loss": 0.2688, "positions_per_s": 237.8, "grad_readout": 1.65343, "grad_neurons": 0.20776, "top1": 0.1475, "good_moves": 0.231, "held_out_loss": 3.0518, "finish_top1": 0.0707, "finish_good_moves": 0.112, "finish_held_out_loss": 3.6296}
+{"step": 1300, "positions": 166400, "minutes": 11.72, "policy_loss": 3.0322, "value_loss": 0.2626, "positions_per_s": 237.3, "grad_readout": 1.35702, "grad_neurons": 0.17863}
+{"step": 1350, "positions": 172800, "minutes": 12.17, "policy_loss": 3.0477, "value_loss": 0.2639, "positions_per_s": 237.4, "grad_readout": 1.45211, "grad_neurons": 0.1868}
+{"step": 1400, "positions": 179200, "minutes": 12.62, "policy_loss": 3.0488, "value_loss": 0.2675, "positions_per_s": 237.2, "grad_readout": 1.51313, "grad_neurons": 0.19434}
+{"step": 1450, "positions": 185600, "minutes": 13.07, "policy_loss": 3.0253, "value_loss": 0.2641, "positions_per_s": 237.7, "grad_readout": 1.35976, "grad_neurons": 0.17526}
+{"step": 1500, "positions": 192000, "minutes": 13.52, "policy_loss": 3.0242, "value_loss": 0.2649, "positions_per_s": 237.7, "grad_readout": 1.47482, "grad_neurons": 0.19363, "top1": 0.1484, "good_moves": 0.2344, "held_out_loss": 3.0442, "finish_top1": 0.0715, "finish_good_moves": 0.113, "finish_held_out_loss": 3.6282}
+{"step": 1550, "positions": 198400, "minutes": 13.97, "policy_loss": 3.0241, "value_loss": 0.2702, "positions_per_s": 237.4, "grad_readout": 1.34551, "grad_neurons": 0.17453}
+{"step": 1600, "positions": 204800, "minutes": 14.42, "policy_loss": 3.038, "value_loss": 0.2703, "positions_per_s": 237.5, "grad_readout": 1.33063, "grad_neurons": 0.17441}
+{"step": 1650, "positions": 211200, "minutes": 14.86, "policy_loss": 3.0307, "value_loss": 0.2582, "positions_per_s": 237.9, "grad_readout": 1.29887, "grad_neurons": 0.17123}
+{"step": 1666, "positions": 213248, "minutes": 15.01, "top1": 0.1582, "good_moves": 0.2495, "held_out_loss": 3.0377, "finish_top1": 0.0726, "finish_good_moves": 0.1127, "finish_held_out_loss": 3.6288, "best_val_loss": 3.0442}

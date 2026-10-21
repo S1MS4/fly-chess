@@ -1,0 +1,823 @@
+2026-10-20 20:34:09 more ChessBench files for up to 27 hours
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792517650.101375  109443 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792517651.266978  109443 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+the brain went over everything downloaded in 0.00 hours
+E0000 00:00:1792517665.298543  109443 util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792517667.375676  109609 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792517668.592642  109609 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:10<00:00, 10.12s/file]100%|██████████| 1/1 [00:10<00:00, 10.12s/file]
+done, now run: python -m flychess.train_dl --prepare
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792517693.486036  109714 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_013.npy: 32 of 516,460 positions, 45 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792517694.675213  109714 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:10<00:00, 10.48s/file]100%|██████████| 1/1 [00:10<00:00, 10.49s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_013.npy: 64,032 of 516,460 positions, 387 a second
+more_013.npy: 128,032 of 516,460 positions, 312 a second
+more_013.npy: 192,032 of 516,460 positions, 277 a second
+more_013.npy: 256,032 of 516,460 positions, 256 a second
+more_013.npy: 320,032 of 516,460 positions, 258 a second
+more_013.npy: 384,032 of 516,460 positions, 255 a second
+more_013.npy: 448,032 of 516,460 positions, 253 a second
+more_013.npy: 512,032 of 516,460 positions, 265 a second
+more_013.npy: 516,460 of 516,460 positions, 265 a second
+8 more files, 78 GB free, 26.5 hours left
+more_014.npy: 32 of 515,680 positions, 147 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792519642.088434  113504 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792519643.299491  113504 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:10<00:00, 10.23s/file]100%|██████████| 1/1 [00:10<00:00, 10.23s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_014.npy: 64,032 of 515,680 positions, 387 a second
+more_014.npy: 128,032 of 515,680 positions, 375 a second
+more_014.npy: 192,032 of 515,680 positions, 284 a second
+more_014.npy: 256,032 of 515,680 positions, 260 a second
+more_014.npy: 320,032 of 515,680 positions, 258 a second
+more_014.npy: 384,032 of 515,680 positions, 247 a second
+more_014.npy: 448,032 of 515,680 positions, 246 a second
+more_014.npy: 512,032 of 515,680 positions, 243 a second
+more_014.npy: 515,680 of 515,680 positions, 243 a second
+9 more files, 77 GB free, 25.9 hours left
+more_015.npy: 32 of 514,318 positions, 46 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792521767.527539  117769 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792521769.667219  117769 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:17<00:00, 17.50s/file]100%|██████████| 1/1 [00:17<00:00, 17.50s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_015.npy: 64,032 of 514,318 positions, 244 a second
+more_015.npy: 128,032 of 514,318 positions, 249 a second
+2026-10-20 21:52:00 cycle 1: new ChessBench files for 8 hours, then a fit on everything
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792522321.554461  119420 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792522323.605012  119420 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+the brain went over everything downloaded in 0.00 hours
+E0000 00:00:1792522346.883723  119420 util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792522350.547694  119572 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792522352.590553  119572 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792522355.389933  119599 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792522357.414898  119599 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_015.npy: 192,032 of 514,318 positions, 277 a second
+more_015.npy: 256,032 of 514,318 positions, 306 a second
+more_015.npy: 320,032 of 514,318 positions, 310 a second
+more_015.npy: 384,032 of 514,318 positions, 316 a second
+more_015.npy: 448,032 of 514,318 positions, 328 a second
+more_015.npy: 512,032 of 514,318 positions, 337 a second
+more_015.npy: 514,318 of 514,318 positions, 337 a second
+10 more files, 76 GB free, 7.7 hours left
+2026-10-20 22:12:39 cycle 1: new ChessBench files for 8 hours, then a fit on everything
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792523559.834924  122451 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792523561.236293  122451 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+the brain went over everything downloaded in 0.00 hours
+E0000 00:00:1792523576.464265  122451 util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792523578.541747  122585 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792523579.795943  122585 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792523581.381248  122612 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_016.npy: 32 of 515,758 positions, 88 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792523582.574607  122612 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:10<00:00, 10.29s/file]100%|██████████| 1/1 [00:10<00:00, 10.29s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_016.npy: 64,032 of 515,758 positions, 389 a second
+more_016.npy: 128,032 of 515,758 positions, 381 a second
+more_016.npy: 192,032 of 515,758 positions, 370 a second
+more_016.npy: 256,032 of 515,758 positions, 364 a second
+more_016.npy: 320,032 of 515,758 positions, 358 a second
+more_016.npy: 384,032 of 515,758 positions, 354 a second
+more_016.npy: 448,032 of 515,758 positions, 352 a second
+more_016.npy: 512,032 of 515,758 positions, 349 a second
+more_016.npy: 515,758 of 515,758 positions, 349 a second
+11 more files, cache 13 GB, 282 GB free, 7.6 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792525060.725066  125519 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_017.npy: 32 of 515,838 positions, 74 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792525062.384087  125519 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:12<00:00, 12.07s/file]100%|██████████| 1/1 [00:12<00:00, 12.07s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_017.npy: 64,032 of 515,838 positions, 304 a second
+more_017.npy: 128,032 of 515,838 positions, 312 a second
+more_017.npy: 192,032 of 515,838 positions, 322 a second
+more_017.npy: 256,032 of 515,838 positions, 322 a second
+more_017.npy: 320,032 of 515,838 positions, 321 a second
+more_017.npy: 384,032 of 515,838 positions, 321 a second
+more_017.npy: 448,032 of 515,838 positions, 321 a second
+more_017.npy: 512,032 of 515,838 positions, 321 a second
+more_017.npy: 515,838 of 515,838 positions, 321 a second
+12 more files, cache 14 GB, 281 GB free, 7.1 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792526670.970044  128625 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_018.npy: 32 of 517,101 positions, 79 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792526672.700853  128625 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:12<00:00, 12.20s/file]100%|██████████| 1/1 [00:12<00:00, 12.21s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_018.npy: 64,032 of 517,101 positions, 301 a second
+more_018.npy: 128,032 of 517,101 positions, 310 a second
+more_018.npy: 192,032 of 517,101 positions, 314 a second
+more_018.npy: 256,032 of 517,101 positions, 319 a second
+more_018.npy: 320,032 of 517,101 positions, 326 a second
+more_018.npy: 384,032 of 517,101 positions, 330 a second
+more_018.npy: 448,032 of 517,101 positions, 323 a second
+more_018.npy: 512,032 of 517,101 positions, 318 a second
+more_018.npy: 517,101 of 517,101 positions, 318 a second
+13 more files, cache 15 GB, 281 GB free, 6.7 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792528299.576921  131790 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_019.npy: 32 of 515,832 positions, 73 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792528301.356639  131790 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:13<00:00, 13.98s/file]100%|██████████| 1/1 [00:13<00:00, 13.98s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_019.npy: 64,032 of 515,832 positions, 280 a second
+more_019.npy: 128,032 of 515,832 positions, 296 a second
+more_019.npy: 192,032 of 515,832 positions, 303 a second
+more_019.npy: 256,032 of 515,832 positions, 307 a second
+more_019.npy: 320,032 of 515,832 positions, 309 a second
+more_019.npy: 384,032 of 515,832 positions, 311 a second
+more_019.npy: 448,032 of 515,832 positions, 310 a second
+more_019.npy: 512,032 of 515,832 positions, 310 a second
+more_019.npy: 515,832 of 515,832 positions, 310 a second
+14 more files, cache 15 GB, 280 GB free, 6.2 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792529967.059087  135000 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_020.npy: 32 of 514,787 positions, 81 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792529968.845990  135000 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:12<00:00, 12.75s/file]100%|██████████| 1/1 [00:12<00:00, 12.75s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_020.npy: 64,032 of 514,787 positions, 290 a second
+more_020.npy: 128,032 of 514,787 positions, 301 a second
+more_020.npy: 192,032 of 514,787 positions, 306 a second
+more_020.npy: 256,032 of 514,787 positions, 309 a second
+more_020.npy: 320,032 of 514,787 positions, 311 a second
+more_020.npy: 384,032 of 514,787 positions, 313 a second
+more_020.npy: 448,032 of 514,787 positions, 315 a second
+more_020.npy: 512,032 of 514,787 positions, 322 a second
+more_020.npy: 514,787 of 514,787 positions, 323 a second
+15 more files, cache 16 GB, 279 GB free, 5.8 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792531564.687431  138073 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_021.npy: 32 of 515,648 positions, 81 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792531566.026455  138073 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:10<00:00, 10.41s/file]100%|██████████| 1/1 [00:10<00:00, 10.41s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_021.npy: 64,032 of 515,648 positions, 382 a second
+2026-10-21 00:29:11 cycle 1 is already under way: waiting for it
+more_021.npy: 128,032 of 515,648 positions, 385 a second
+more_021.npy: 192,032 of 515,648 positions, 387 a second
+more_021.npy: 256,032 of 515,648 positions, 370 a second
+more_021.npy: 320,032 of 515,648 positions, 361 a second
+more_021.npy: 384,032 of 515,648 positions, 359 a second
+more_021.npy: 448,032 of 515,648 positions, 358 a second
+more_021.npy: 512,032 of 515,648 positions, 357 a second
+more_021.npy: 515,648 of 515,648 positions, 357 a second
+16 more files, cache 17 GB, 278 GB free, 5.4 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792533011.339510  141268 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_022.npy: 32 of 515,150 positions, 84 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792533012.717390  141268 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:11<00:00, 11.92s/file]100%|██████████| 1/1 [00:11<00:00, 11.92s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_022.npy: 64,032 of 515,150 positions, 323 a second
+more_022.npy: 128,032 of 515,150 positions, 331 a second
+more_022.npy: 192,032 of 515,150 positions, 337 a second
+more_022.npy: 256,032 of 515,150 positions, 339 a second
+more_022.npy: 320,032 of 515,150 positions, 340 a second
+more_022.npy: 384,032 of 515,150 positions, 338 a second
+more_022.npy: 448,032 of 515,150 positions, 335 a second
+more_022.npy: 512,032 of 515,150 positions, 336 a second
+more_022.npy: 515,150 of 515,150 positions, 336 a second
+17 more files, cache 18 GB, 277 GB free, 5.0 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792534546.270574  144282 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_023.npy: 32 of 515,510 positions, 75 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792534547.685267  144282 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:11<00:00, 11.90s/file]100%|██████████| 1/1 [00:11<00:00, 11.90s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_023.npy: 64,032 of 515,510 positions, 298 a second
+more_023.npy: 128,032 of 515,510 positions, 308 a second
+more_023.npy: 192,032 of 515,510 positions, 312 a second
+more_023.npy: 256,032 of 515,510 positions, 314 a second
+more_023.npy: 320,032 of 515,510 positions, 315 a second
+more_023.npy: 384,032 of 515,510 positions, 316 a second
+more_023.npy: 448,032 of 515,510 positions, 316 a second
+more_023.npy: 512,032 of 515,510 positions, 317 a second
+more_023.npy: 515,510 of 515,510 positions, 317 a second
+18 more files, cache 19 GB, 277 GB free, 4.5 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792536177.203494  147505 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_024.npy: 32 of 515,150 positions, 85 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792536178.882237  147505 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:12<00:00, 12.26s/file]100%|██████████| 1/1 [00:12<00:00, 12.26s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_024.npy: 64,032 of 515,150 positions, 291 a second
+more_024.npy: 128,032 of 515,150 positions, 300 a second
+more_024.npy: 192,032 of 515,150 positions, 306 a second
+more_024.npy: 256,032 of 515,150 positions, 309 a second
+more_024.npy: 320,032 of 515,150 positions, 311 a second
+more_024.npy: 384,032 of 515,150 positions, 312 a second
+more_024.npy: 448,032 of 515,150 positions, 313 a second
+more_024.npy: 512,032 of 515,150 positions, 314 a second
+more_024.npy: 515,150 of 515,150 positions, 314 a second
+19 more files, cache 19 GB, 276 GB free, 4.0 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792537821.318071  150757 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_025.npy: 32 of 516,097 positions, 52 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792537822.713176  150757 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:12<00:00, 12.78s/file]100%|██████████| 1/1 [00:12<00:00, 12.78s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_025.npy: 64,032 of 516,097 positions, 298 a second
+more_025.npy: 128,032 of 516,097 positions, 308 a second
+more_025.npy: 192,032 of 516,097 positions, 311 a second
+more_025.npy: 256,032 of 516,097 positions, 313 a second
+more_025.npy: 320,032 of 516,097 positions, 314 a second
+more_025.npy: 384,032 of 516,097 positions, 315 a second
+more_025.npy: 448,032 of 516,097 positions, 315 a second
+more_025.npy: 512,032 of 516,097 positions, 316 a second
+more_025.npy: 516,097 of 516,097 positions, 316 a second
+20 more files, cache 20 GB, 275 GB free, 3.6 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792539457.483870  153996 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_026.npy: 32 of 515,406 positions, 69 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792539459.270475  153996 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:13<00:00, 13.00s/file]100%|██████████| 1/1 [00:13<00:00, 13.00s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_026.npy: 64,032 of 515,406 positions, 265 a second
+more_026.npy: 128,032 of 515,406 positions, 289 a second
+more_026.npy: 192,032 of 515,406 positions, 298 a second
+more_026.npy: 256,032 of 515,406 positions, 303 a second
+more_026.npy: 320,032 of 515,406 positions, 306 a second
+more_026.npy: 384,032 of 515,406 positions, 308 a second
+more_026.npy: 448,032 of 515,406 positions, 306 a second
+more_026.npy: 512,032 of 515,406 positions, 307 a second
+more_026.npy: 515,406 of 515,406 positions, 307 a second
+21 more files, cache 21 GB, 274 GB free, 3.1 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792541140.664082  157313 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_027.npy: 32 of 515,730 positions, 50 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792541142.152449  157313 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:13<00:00, 13.96s/file]100%|██████████| 1/1 [00:13<00:00, 13.96s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_027.npy: 64,032 of 515,730 positions, 255 a second
+more_027.npy: 128,032 of 515,730 positions, 277 a second
+more_027.npy: 192,032 of 515,730 positions, 290 a second
+more_027.npy: 256,032 of 515,730 positions, 296 a second
+more_027.npy: 320,032 of 515,730 positions, 301 a second
+more_027.npy: 384,032 of 515,730 positions, 302 a second
+more_027.npy: 448,032 of 515,730 positions, 303 a second
+more_027.npy: 512,032 of 515,730 positions, 303 a second
+more_027.npy: 515,730 of 515,730 positions, 303 a second
+22 more files, cache 22 GB, 273 GB free, 2.6 hours left
+more_028.npy: 32 of 515,003 positions, 79 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792542846.673665  160679 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792542848.178097  160679 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:13<00:00, 13.11s/file]100%|██████████| 1/1 [00:13<00:00, 13.11s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_028.npy: 64,032 of 515,003 positions, 273 a second
+more_028.npy: 128,032 of 515,003 positions, 294 a second
+more_028.npy: 192,032 of 515,003 positions, 300 a second
+more_028.npy: 256,032 of 515,003 positions, 301 a second
+more_028.npy: 320,032 of 515,003 positions, 305 a second
+more_028.npy: 384,032 of 515,003 positions, 307 a second
+more_028.npy: 448,032 of 515,003 positions, 309 a second
+more_028.npy: 512,032 of 515,003 positions, 310 a second
+more_028.npy: 515,003 of 515,003 positions, 310 a second
+23 more files, cache 23 GB, 273 GB free, 2.2 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792544510.517936  163970 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_029.npy: 32 of 513,160 positions, 52 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792544512.032766  163970 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:13<00:00, 13.31s/file]100%|██████████| 1/1 [00:13<00:00, 13.31s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_029.npy: 64,032 of 513,160 positions, 277 a second
+more_029.npy: 128,032 of 513,160 positions, 294 a second
+more_029.npy: 192,032 of 513,160 positions, 302 a second
+more_029.npy: 256,032 of 513,160 positions, 306 a second
+more_029.npy: 320,032 of 513,160 positions, 309 a second
+more_029.npy: 384,032 of 513,160 positions, 310 a second
+more_029.npy: 448,032 of 513,160 positions, 313 a second
+more_029.npy: 512,032 of 513,160 positions, 314 a second
+more_029.npy: 513,160 of 513,160 positions, 314 a second
+24 more files, cache 23 GB, 272 GB free, 1.7 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792546146.860938  167200 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_030.npy: 32 of 513,937 positions, 84 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792546148.302043  167200 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:12<00:00, 12.87s/file]100%|██████████| 1/1 [00:12<00:00, 12.88s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_030.npy: 64,032 of 513,937 positions, 295 a second
+more_030.npy: 128,032 of 513,937 positions, 307 a second
+more_030.npy: 192,032 of 513,937 positions, 311 a second
+more_030.npy: 256,032 of 513,937 positions, 313 a second
+more_030.npy: 320,032 of 513,937 positions, 314 a second
+more_030.npy: 384,032 of 513,937 positions, 315 a second
+more_030.npy: 448,032 of 513,937 positions, 315 a second
+more_030.npy: 512,032 of 513,937 positions, 316 a second
+more_030.npy: 513,937 of 513,937 positions, 316 a second
+25 more files, cache 24 GB, 271 GB free, 1.3 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792547777.512833  170425 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_031.npy: 32 of 515,655 positions, 89 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792547778.875036  170425 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:12<00:00, 12.72s/file]100%|██████████| 1/1 [00:12<00:00, 12.72s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_031.npy: 64,032 of 515,655 positions, 320 a second
+more_031.npy: 128,032 of 515,655 positions, 320 a second
+more_031.npy: 192,032 of 515,655 positions, 320 a second
+more_031.npy: 256,032 of 515,655 positions, 320 a second
+more_031.npy: 320,032 of 515,655 positions, 320 a second
+more_031.npy: 384,032 of 515,655 positions, 320 a second
+more_031.npy: 448,032 of 515,655 positions, 320 a second
+more_031.npy: 512,032 of 515,655 positions, 320 a second
+more_031.npy: 515,655 of 515,655 positions, 320 a second
+26 more files, cache 25 GB, 270 GB free, 0.8 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792549392.364731  173587 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_032.npy: 32 of 515,590 positions, 87 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792549393.776873  173587 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:12<00:00, 12.55s/file]100%|██████████| 1/1 [00:12<00:00, 12.55s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_032.npy: 64,032 of 515,590 positions, 293 a second
+more_032.npy: 128,032 of 515,590 positions, 311 a second
+more_032.npy: 192,032 of 515,590 positions, 317 a second
+more_032.npy: 256,032 of 515,590 positions, 318 a second
+more_032.npy: 320,032 of 515,590 positions, 318 a second
+more_032.npy: 384,032 of 515,590 positions, 318 a second
+more_032.npy: 448,032 of 515,590 positions, 318 a second
+more_032.npy: 512,032 of 515,590 positions, 319 a second
+more_032.npy: 515,590 of 515,590 positions, 319 a second
+27 more files, cache 26 GB, 269 GB free, 0.4 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792551012.975759  176789 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_033.npy: 32 of 515,019 positions, 52 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792551014.394779  176789 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:12<00:00, 12.79s/file]100%|██████████| 1/1 [00:12<00:00, 12.79s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_033.npy: 64,032 of 515,019 positions, 265 a second
+more_033.npy: 128,032 of 515,019 positions, 288 a second
+more_033.npy: 192,032 of 515,019 positions, 297 a second
+more_033.npy: 256,032 of 515,019 positions, 299 a second
+more_033.npy: 320,032 of 515,019 positions, 302 a second
+more_033.npy: 384,032 of 515,019 positions, 305 a second
+more_033.npy: 448,032 of 515,019 positions, 306 a second
+more_033.npy: 512,032 of 515,019 positions, 306 a second
+more_033.npy: 515,019 of 515,019 positions, 306 a second
+28 more files, cache 27 GB, 269 GB free, -0.1 hours left
+{'epoch': 1, 'fit': '28 more files, the last fit', 'positions': 17403960, 'minutes': 7.3, 'top1': 0.2266, 'good_moves': 0.3218, 'held_out_loss': 2.8584, 'finish_top1': 0.1424, 'finish_good_moves': 0.2049, 'finish_held_out_loss': 3.2511}
+{'epoch': 2, 'fit': '28 more files, the last fit', 'positions': 17403960, 'minutes': 13.6, 'top1': 0.2266, 'good_moves': 0.3301, 'held_out_loss': 2.8648, 'finish_top1': 0.1389, 'finish_good_moves': 0.1986, 'finish_held_out_loss': 3.2503}
+{'epoch': 3, 'fit': '28 more files, the last fit', 'positions': 17403960, 'minutes': 19.63, 'top1': 0.2246, 'good_moves': 0.3232, 'held_out_loss': 2.865, 'finish_top1': 0.1365, 'finish_good_moves': 0.1985, 'finish_held_out_loss': 3.265}
+{'epoch': 4, 'fit': '28 more files, the last fit', 'positions': 17403960, 'minutes': 26.03, 'top1': 0.2266, 'good_moves': 0.3281, 'held_out_loss': 2.8605, 'finish_top1': 0.1416, 'finish_good_moves': 0.2032, 'finish_held_out_loss': 3.2529}
+{'epoch': 5, 'fit': '28 more files, the last fit', 'positions': 17403960, 'minutes': 32.09, 'top1': 0.2271, 'good_moves': 0.3247, 'held_out_loss': 2.8594, 'finish_top1': 0.1431, 'finish_good_moves': 0.2035, 'finish_held_out_loss': 3.2423}
+{'epoch': 'final', 'best_val_loss': 2.8584, 'positions': 17403960, 'top1': 0.2292, 'good_moves': 0.3328, 'held_out_loss': 2.8526, 'finish_top1': 0.1419, 'finish_good_moves': 0.2043, 'finish_held_out_loss': 3.2512}
+saved checkpoints/dl-day
+2026-10-21 06:51:13 imagination: how much to trust the value readout
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792554675.196620  184058 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792554677.587400  184058 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+weight     0: top-1 23.2%, good moves 33.5%, win% lost 6.74
+weight  0.25: top-1 23.3%, good moves 33.6%, win% lost 6.74
+weight   0.5: top-1 23.2%, good moves 33.4%, win% lost 6.73
+weight     1: top-1 23.7%, good moves 34.0%, win% lost 6.67
+weight     2: top-1 23.2%, good moves 32.9%, win% lost 6.85
+weight     4: top-1 22.2%, good moves 31.1%, win% lost 7.00
+weight     8: top-1 19.3%, good moves 27.5%, win% lost 7.74
+weight    16: top-1 16.1%, good moves 23.7%, win% lost 8.44
+weight   inf: top-1 11.7%, good moves 18.0%, win% lost 9.83
+best weight 1 (119,563 boards imagined, 6.2 min)
+saved checkpoints/dl-day/best/imagine.json
+2026-10-21 06:57:33 its Elo, without and with imagination
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792555054.297867  185010 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792555055.376544  185010 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+day vs random: 62% in 25s | day 665
+day vs greedy: 52% in 33s | day 683
+day vs stockfish-1320-75: 70% in 42s | day 731
+day vs stockfish-1320-50: 52% in 53s | day 747
+day vs stockfish-1320-25: 38% in 78s | day 780
+day vs stockfish-1320: 2% in 64s | day 783
+day-imagine vs random: 98% in 67s | day-imagine 1123
+day-imagine vs greedy: 65% in 94s | day-imagine 895
+day-imagine vs stockfish-1320-75: 90% in 105s | day-imagine 941
+day-imagine vs stockfish-1320-50: 82% in 113s | day-imagine 968
+day-imagine vs stockfish-1320-25: 55% in 141s | day-imagine 977
+day-imagine vs stockfish-1320: 2% in 126s | day-imagine 934
+stockfish-1320          1320  (1320 to 1320)
+day-imagine              934  (859 to 1001)
+stockfish-1320-25        928  (858 to 988)
+day                      752  (677 to 821)
+stockfish-1320-50        746  (678 to 808)
+shuffled                 702  (632 to 762)
+greedy                   681  (615 to 734)
+dl                       673  (602 to 727)
+no-central-brain         670  (607 to 725)
+stockfish-1320-75        661  (596 to 716)
+quick                    652  (586 to 709)
+no-optic-lobe            610  (544 to 665)
+random                   568  (506 to 627)
+bio                      515  (455 to 575)
+newborn                  446  (372 to 510)
+{'time': '2026-10-21 07:13', 'positions': 17403960, 'top1': 0.2292, 'held_out_loss': 2.8526, 'elo': 752, 'low': 677, 'high': 821, 'elo_imagine': 934, 'imagine_low': 859, 'imagine_high': 1001, 'imagine_weight': 1}
+2026-10-21 07:13:30 cycle 2: new ChessBench files for 8 hours, then a fit on everything
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792556011.411842  186952 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792556012.609823  186952 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+the brain went over everything downloaded in 0.00 hours
+E0000 00:00:1792556026.253797  186952 util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792556028.238286  187086 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792556029.458443  187086 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792556031.070848  187113 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_034.npy: 32 of 515,013 positions, 90 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792556032.385288  187113 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:10<00:00, 10.84s/file]100%|██████████| 1/1 [00:10<00:00, 10.84s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_034.npy: 64,032 of 515,013 positions, 388 a second
+more_034.npy: 128,032 of 515,013 positions, 355 a second
+more_034.npy: 192,032 of 515,013 positions, 332 a second
+more_034.npy: 256,032 of 515,013 positions, 328 a second
+more_034.npy: 320,032 of 515,013 positions, 320 a second
+more_034.npy: 384,032 of 515,013 positions, 314 a second
+more_034.npy: 448,032 of 515,013 positions, 310 a second
+more_034.npy: 512,032 of 515,013 positions, 308 a second
+more_034.npy: 515,013 of 515,013 positions, 308 a second
+29 more files, cache 27 GB, 268 GB free, 7.5 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792557707.115555  190470 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_035.npy: 32 of 516,460 positions, 64 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792557708.822030  190470 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:12<00:00, 12.42s/file]100%|██████████| 1/1 [00:12<00:00, 12.42s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_035.npy: 64,032 of 516,460 positions, 281 a second
+more_035.npy: 128,032 of 516,460 positions, 284 a second
+more_035.npy: 192,032 of 516,460 positions, 292 a second
+more_035.npy: 256,032 of 516,460 positions, 297 a second
+more_035.npy: 320,032 of 516,460 positions, 300 a second
+more_035.npy: 384,032 of 516,460 positions, 303 a second
+more_035.npy: 448,032 of 516,460 positions, 305 a second
+more_035.npy: 512,032 of 516,460 positions, 305 a second
+more_035.npy: 516,460 of 516,460 positions, 305 a second
+30 more files, cache 28 GB, 267 GB free, 7.1 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792559406.110978  193771 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_036.npy: 32 of 515,454 positions, 44 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792559407.625394  193771 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:14<00:00, 14.45s/file]100%|██████████| 1/1 [00:14<00:00, 14.45s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_036.npy: 64,032 of 515,454 positions, 271 a second
+more_036.npy: 128,032 of 515,454 positions, 292 a second
+more_036.npy: 192,032 of 515,454 positions, 301 a second
+more_036.npy: 256,032 of 515,454 positions, 305 a second
+more_036.npy: 320,032 of 515,454 positions, 307 a second
+more_036.npy: 384,032 of 515,454 positions, 309 a second
+more_036.npy: 448,032 of 515,454 positions, 308 a second
+more_036.npy: 512,032 of 515,454 positions, 305 a second
+more_036.npy: 515,454 of 515,454 positions, 305 a second
+31 more files, cache 29 GB, 266 GB free, 6.6 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792561100.449094  197052 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_037.npy: 32 of 514,980 positions, 63 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792561101.983841  197052 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:13<00:00, 13.64s/file]100%|██████████| 1/1 [00:13<00:00, 13.64s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_037.npy: 64,032 of 514,980 positions, 285 a second
+more_037.npy: 128,032 of 514,980 positions, 287 a second
+more_037.npy: 192,032 of 514,980 positions, 287 a second
+more_037.npy: 256,032 of 514,980 positions, 292 a second
+more_037.npy: 320,032 of 514,980 positions, 293 a second
+more_037.npy: 384,032 of 514,980 positions, 294 a second
+more_037.npy: 448,032 of 514,980 positions, 297 a second
+more_037.npy: 512,032 of 514,980 positions, 302 a second
+more_037.npy: 514,980 of 514,980 positions, 302 a second
+32 more files, cache 30 GB, 266 GB free, 6.1 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792562808.706656  200368 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_038.npy: 32 of 515,138 positions, 65 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792562810.275798  200368 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:11<00:00, 11.98s/file]100%|██████████| 1/1 [00:11<00:00, 11.98s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_038.npy: 64,032 of 515,138 positions, 384 a second
+more_038.npy: 128,032 of 515,138 positions, 379 a second
+more_038.npy: 192,032 of 515,138 positions, 317 a second
+more_038.npy: 256,032 of 515,138 positions, 305 a second
+more_038.npy: 320,032 of 515,138 positions, 301 a second
+more_038.npy: 384,032 of 515,138 positions, 295 a second
+more_038.npy: 448,032 of 515,138 positions, 289 a second
+more_038.npy: 512,032 of 515,138 positions, 288 a second
+more_038.npy: 515,138 of 515,138 positions, 287 a second
+33 more files, cache 30 GB, 265 GB free, 5.6 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792564605.733513  203765 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_039.npy: 32 of 516,049 positions, 69 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792564607.729455  203765 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:14<00:00, 14.97s/file]100%|██████████| 1/1 [00:14<00:00, 14.97s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_039.npy: 64,032 of 516,049 positions, 279 a second
+more_039.npy: 128,032 of 516,049 positions, 281 a second
+more_039.npy: 192,032 of 516,049 positions, 281 a second
+more_039.npy: 256,032 of 516,049 positions, 281 a second
+more_039.npy: 320,032 of 516,049 positions, 282 a second
+more_039.npy: 384,032 of 516,049 positions, 283 a second
+more_039.npy: 448,032 of 516,049 positions, 284 a second
+more_039.npy: 512,032 of 516,049 positions, 284 a second
+more_039.npy: 516,049 of 516,049 positions, 284 a second
+34 more files, cache 31 GB, 264 GB free, 5.1 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792566424.017094  207279 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_040.npy: 32 of 515,916 positions, 46 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792566426.024414  207279 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:13<00:00, 13.96s/file]100%|██████████| 1/1 [00:13<00:00, 13.97s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_040.npy: 64,032 of 515,916 positions, 268 a second
+more_040.npy: 128,032 of 515,916 positions, 274 a second
+more_040.npy: 192,032 of 515,916 positions, 276 a second
+more_040.npy: 256,032 of 515,916 positions, 279 a second
+more_040.npy: 320,032 of 515,916 positions, 280 a second
+more_040.npy: 384,032 of 515,916 positions, 281 a second
+more_040.npy: 448,032 of 515,916 positions, 282 a second
+more_040.npy: 512,032 of 515,916 positions, 283 a second
+more_040.npy: 515,916 of 515,916 positions, 283 a second
+35 more files, cache 32 GB, 263 GB free, 4.6 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792568250.310157  210818 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_041.npy: 32 of 515,947 positions, 46 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792568252.188698  210818 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:13<00:00, 13.25s/file]100%|██████████| 1/1 [00:13<00:00, 13.25s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_041.npy: 64,032 of 515,947 positions, 286 a second
+more_041.npy: 128,032 of 515,947 positions, 286 a second
+more_041.npy: 192,032 of 515,947 positions, 281 a second
+more_041.npy: 256,032 of 515,947 positions, 277 a second
+more_041.npy: 320,032 of 515,947 positions, 276 a second
+more_041.npy: 384,032 of 515,947 positions, 278 a second
+more_041.npy: 448,032 of 515,947 positions, 279 a second
+more_041.npy: 512,032 of 515,947 positions, 280 a second
+more_041.npy: 515,947 of 515,947 positions, 281 a second
+36 more files, cache 33 GB, 262 GB free, 4.1 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792570092.671054  214376 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_042.npy: 32 of 516,396 positions, 74 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792570094.548669  214376 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:14<00:00, 14.15s/file]100%|██████████| 1/1 [00:14<00:00, 14.15s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_042.npy: 64,032 of 516,396 positions, 261 a second
+more_042.npy: 128,032 of 516,396 positions, 270 a second
+more_042.npy: 192,032 of 516,396 positions, 275 a second
+more_042.npy: 256,032 of 516,396 positions, 278 a second
+more_042.npy: 320,032 of 516,396 positions, 280 a second
+more_042.npy: 384,032 of 516,396 positions, 281 a second
+more_042.npy: 448,032 of 516,396 positions, 282 a second
+more_042.npy: 512,032 of 516,396 positions, 282 a second
+more_042.npy: 516,396 of 516,396 positions, 282 a second
+37 more files, cache 34 GB, 262 GB free, 3.6 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792571928.225455  217927 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_043.npy: 32 of 515,543 positions, 41 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792571930.106699  217927 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:15<00:00, 15.83s/file]100%|██████████| 1/1 [00:15<00:00, 15.83s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_043.npy: 64,032 of 515,543 positions, 252 a second
+more_043.npy: 128,032 of 515,543 positions, 265 a second
+more_043.npy: 192,032 of 515,543 positions, 271 a second
+more_043.npy: 256,032 of 515,543 positions, 275 a second
+more_043.npy: 320,032 of 515,543 positions, 280 a second
+more_043.npy: 384,032 of 515,543 positions, 280 a second
+more_043.npy: 448,032 of 515,543 positions, 273 a second
+more_043.npy: 512,032 of 515,543 positions, 275 a second
+more_043.npy: 515,543 of 515,543 positions, 275 a second
+38 more files, cache 34 GB, 261 GB free, 3.1 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792573804.975126  221554 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_044.npy: 32 of 514,591 positions, 57 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792573806.835429  221554 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:14<00:00, 14.85s/file]100%|██████████| 1/1 [00:14<00:00, 14.85s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_044.npy: 64,032 of 514,591 positions, 281 a second
+more_044.npy: 128,032 of 514,591 positions, 284 a second
+more_044.npy: 192,032 of 514,591 positions, 286 a second
+more_044.npy: 256,032 of 514,591 positions, 286 a second
+more_044.npy: 320,032 of 514,591 positions, 286 a second
+more_044.npy: 384,032 of 514,591 positions, 288 a second
+more_044.npy: 448,032 of 514,591 positions, 288 a second
+more_044.npy: 512,032 of 514,591 positions, 287 a second
+more_044.npy: 514,591 of 514,591 positions, 287 a second
+39 more files, cache 35 GB, 260 GB free, 2.6 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792575601.462498  225018 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_045.npy: 32 of 515,136 positions, 78 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792575603.360639  225018 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:14<00:00, 14.21s/file]100%|██████████| 1/1 [00:14<00:00, 14.21s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_045.npy: 64,032 of 515,136 positions, 288 a second
+more_045.npy: 128,032 of 515,136 positions, 287 a second
+more_045.npy: 192,032 of 515,136 positions, 287 a second
+more_045.npy: 256,032 of 515,136 positions, 284 a second
+more_045.npy: 320,032 of 515,136 positions, 279 a second
+more_045.npy: 384,032 of 515,136 positions, 280 a second
+more_045.npy: 448,032 of 515,136 positions, 280 a second
+more_045.npy: 512,032 of 515,136 positions, 281 a second
+more_045.npy: 515,136 of 515,136 positions, 281 a second
+40 more files, cache 36 GB, 259 GB free, 2.1 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792577437.320827  228570 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_046.npy: 32 of 515,087 positions, 73 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792577439.175192  228570 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:14<00:00, 14.24s/file]100%|██████████| 1/1 [00:14<00:00, 14.24s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_046.npy: 64,032 of 515,087 positions, 265 a second
+more_046.npy: 128,032 of 515,087 positions, 274 a second
+more_046.npy: 192,032 of 515,087 positions, 279 a second
+more_046.npy: 256,032 of 515,087 positions, 281 a second
+more_046.npy: 320,032 of 515,087 positions, 278 a second
+more_046.npy: 384,032 of 515,087 positions, 279 a second
+more_046.npy: 448,032 of 515,087 positions, 278 a second
+more_046.npy: 512,032 of 515,087 positions, 278 a second
+more_046.npy: 515,087 of 515,087 positions, 278 a second
+41 more files, cache 37 GB, 258 GB free, 1.5 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792579293.378427  232148 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_047.npy: 32 of 516,277 positions, 81 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792579295.561532  232148 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:14<00:00, 14.43s/file]100%|██████████| 1/1 [00:14<00:00, 14.43s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_047.npy: 64,032 of 516,277 positions, 261 a second
+more_047.npy: 128,032 of 516,277 positions, 273 a second
+more_047.npy: 192,032 of 516,277 positions, 278 a second
+more_047.npy: 256,032 of 516,277 positions, 280 a second
+more_047.npy: 320,032 of 516,277 positions, 281 a second
+more_047.npy: 384,032 of 516,277 positions, 282 a second
+more_047.npy: 448,032 of 516,277 positions, 283 a second
+more_047.npy: 512,032 of 516,277 positions, 284 a second
+more_047.npy: 516,277 of 516,277 positions, 284 a second
+42 more files, cache 38 GB, 258 GB free, 1.0 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792581117.461221  235671 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_048.npy: 32 of 516,534 positions, 55 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792581119.440347  235671 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:13<00:00, 13.32s/file]100%|██████████| 1/1 [00:13<00:00, 13.32s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_048.npy: 64,032 of 516,534 positions, 287 a second
+more_048.npy: 128,032 of 516,534 positions, 287 a second
+more_048.npy: 192,032 of 516,534 positions, 288 a second
+more_048.npy: 256,032 of 516,534 positions, 288 a second
+more_048.npy: 320,032 of 516,534 positions, 288 a second
+more_048.npy: 384,032 of 516,534 positions, 288 a second
+more_048.npy: 448,032 of 516,534 positions, 287 a second
+more_048.npy: 512,032 of 516,534 positions, 286 a second
+more_048.npy: 516,534 of 516,534 positions, 286 a second
+43 more files, cache 38 GB, 257 GB free, 0.5 hours left
+more_049.npy: 32 of 515,834 positions, 52 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792582924.826635  239153 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792582926.930380  239153 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:17<00:00, 17.01s/file]100%|██████████| 1/1 [00:17<00:00, 17.01s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_049.npy: 64,032 of 515,834 positions, 256 a second
+more_049.npy: 128,032 of 515,834 positions, 270 a second
+more_049.npy: 192,032 of 515,834 positions, 276 a second
+more_049.npy: 256,032 of 515,834 positions, 278 a second
+more_049.npy: 320,032 of 515,834 positions, 280 a second
+more_049.npy: 384,032 of 515,834 positions, 282 a second
+more_049.npy: 448,032 of 515,834 positions, 290 a second
+more_049.npy: 512,032 of 515,834 positions, 294 a second
+more_049.npy: 515,834 of 515,834 positions, 294 a second
+44 more files, cache 39 GB, 256 GB free, 0.0 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792584679.506793  242608 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_050.npy: 32 of 515,216 positions, 77 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792584681.354568  242608 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:13<00:00, 13.08s/file]100%|██████████| 1/1 [00:13<00:00, 13.08s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_050.npy: 64,032 of 515,216 positions, 249 a second
+more_050.npy: 128,032 of 515,216 positions, 266 a second
+more_050.npy: 192,032 of 515,216 positions, 266 a second
+more_050.npy: 256,032 of 515,216 positions, 271 a second
+more_050.npy: 320,032 of 515,216 positions, 274 a second
+more_050.npy: 384,032 of 515,216 positions, 276 a second
+more_050.npy: 448,032 of 515,216 positions, 278 a second
+more_050.npy: 512,032 of 515,216 positions, 279 a second
+more_050.npy: 515,216 of 515,216 positions, 279 a second
+45 more files, cache 40 GB, 255 GB free, -0.5 hours left
+{'epoch': 1, 'fit': '45 more files, the last fit', 'positions': 26169531, 'minutes': 11.19, 'lr': 0.0020000000949949026, 'top1': 0.231, 'good_moves': 0.3306, 'held_out_loss': 2.8656, 'finish_top1': 0.1392, 'finish_good_moves': 0.2035, 'finish_held_out_loss': 3.2496}
+{'epoch': 2, 'fit': '45 more files, the last fit', 'positions': 26169531, 'minutes': 21.11, 'lr': 0.0020000000949949026, 'top1': 0.231, 'good_moves': 0.3281, 'held_out_loss': 2.8624, 'finish_top1': 0.1343, 'finish_good_moves': 0.1978, 'finish_held_out_loss': 3.2547}
+{'epoch': 3, 'fit': '45 more files, the last fit', 'positions': 26169531, 'minutes': 31.04, 'lr': 0.0020000000949949026, 'top1': 0.2339, 'good_moves': 0.3281, 'held_out_loss': 2.8653, 'finish_top1': 0.1391, 'finish_good_moves': 0.1978, 'finish_held_out_loss': 3.2457}
+{'epoch': 4, 'fit': '45 more files, the last fit', 'positions': 26169531, 'minutes': 40.41, 'lr': 0.0010000000474974513, 'top1': 0.2261, 'good_moves': 0.3242, 'held_out_loss': 2.8573, 'finish_top1': 0.1457, 'finish_good_moves': 0.2101, 'finish_held_out_loss': 3.234}
+{'epoch': 5, 'fit': '45 more files, the last fit', 'positions': 26169531, 'minutes': 49.96, 'lr': 0.0010000000474974513, 'top1': 0.228, 'good_moves': 0.3281, 'held_out_loss': 2.8567, 'finish_top1': 0.1433, 'finish_good_moves': 0.2055, 'finish_held_out_loss': 3.2389}
+{'epoch': 6, 'fit': '45 more files, the last fit', 'positions': 26169531, 'minutes': 60.56, 'lr': 0.0010000000474974513, 'top1': 0.2305, 'good_moves': 0.3267, 'held_out_loss': 2.8535, 'finish_top1': 0.1479, 'finish_good_moves': 0.2088, 'finish_held_out_loss': 3.2364}
+{'epoch': 7, 'fit': '45 more files, the last fit', 'positions': 26169531, 'minutes': 70.9, 'lr': 0.0010000000474974513, 'top1': 0.2334, 'good_moves': 0.3306, 'held_out_loss': 2.8518, 'finish_top1': 0.1394, 'finish_good_moves': 0.2013, 'finish_held_out_loss': 3.2482}
+{'epoch': 8, 'fit': '45 more files, the last fit', 'positions': 26169531, 'minutes': 80.68, 'lr': 0.0010000000474974513, 'top1': 0.2358, 'good_moves': 0.3257, 'held_out_loss': 2.8562, 'finish_top1': 0.1394, 'finish_good_moves': 0.2003, 'finish_held_out_loss': 3.2383}
+{'epoch': 9, 'fit': '45 more files, the last fit', 'positions': 26169531, 'minutes': 90.79, 'lr': 0.0005000000237487257, 'top1': 0.2334, 'good_moves': 0.3325, 'held_out_loss': 2.8517, 'finish_top1': 0.1469, 'finish_good_moves': 0.208, 'finish_held_out_loss': 3.2374}
+{'epoch': 10, 'fit': '45 more files, the last fit', 'positions': 26169531, 'minutes': 101.06, 'lr': 0.0002500000118743628, 'top1': 0.2314, 'good_moves': 0.3252, 'held_out_loss': 2.8492, 'finish_top1': 0.1442, 'finish_good_moves': 0.2091, 'finish_held_out_loss': 3.2343}
+{'epoch': 11, 'fit': '45 more files, the last fit', 'positions': 26169531, 'minutes': 111.72, 'lr': 0.0002500000118743628, 'top1': 0.2354, 'good_moves': 0.333, 'held_out_loss': 2.8508, 'finish_top1': 0.1477, 'finish_good_moves': 0.211, 'finish_held_out_loss': 3.2263}
+{'epoch': 12, 'fit': '45 more files, the last fit', 'positions': 26169531, 'minutes': 122.45, 'lr': 0.0001250000059371814, 'top1': 0.2319, 'good_moves': 0.3286, 'held_out_loss': 2.8468, 'finish_top1': 0.1427, 'finish_good_moves': 0.2084, 'finish_held_out_loss': 3.2297}
+{'epoch': 13, 'fit': '45 more files, the last fit', 'positions': 26169531, 'minutes': 133.36, 'lr': 0.0001250000059371814, 'top1': 0.2349, 'good_moves': 0.3306, 'held_out_loss': 2.8492, 'finish_top1': 0.1471, 'finish_good_moves': 0.2106, 'finish_held_out_loss': 3.2286}
+{'epoch': 14, 'fit': '45 more files, the last fit', 'positions': 26169531, 'minutes': 144.63, 'lr': 6.25000029685907e-05, 'top1': 0.2344, 'good_moves': 0.3281, 'held_out_loss': 2.8485, 'finish_top1': 0.1453, 'finish_good_moves': 0.2101, 'finish_held_out_loss': 3.2279}
+{'epoch': 15, 'fit': '45 more files, the last fit', 'positions': 26169531, 'minutes': 156.27, 'lr': 3.125000148429535e-05, 'top1': 0.2324, 'good_moves': 0.3271, 'held_out_loss': 2.8475, 'finish_top1': 0.1453, 'finish_good_moves': 0.2107, 'finish_held_out_loss': 3.2283}
+{'epoch': 16, 'fit': '45 more files, the last fit', 'positions': 26169531, 'minutes': 166.74, 'lr': 1.5625000742147677e-05, 'top1': 0.2378, 'good_moves': 0.332, 'held_out_loss': 2.8478, 'finish_top1': 0.1458, 'finish_good_moves': 0.2113, 'finish_held_out_loss': 3.227}
+{'epoch': 'final', 'best_val_loss': 2.8468, 'positions': 26169531, 'top1': 0.2354, 'good_moves': 0.3428, 'held_out_loss': 2.8401, 'finish_top1': 0.1435, 'finish_good_moves': 0.2095, 'finish_held_out_loss': 3.2298}
+saved checkpoints/dl-day
+2026-10-21 18:29:45 imagination: how much to trust the value readout
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792596589.886801  265281 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792596596.064911  265281 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+weight     0: top-1 23.8%, good moves 34.5%, win% lost 6.61
+weight  0.25: top-1 23.9%, good moves 34.5%, win% lost 6.60
+weight   0.5: top-1 23.8%, good moves 34.4%, win% lost 6.66
+weight     1: top-1 23.6%, good moves 34.2%, win% lost 6.56
+weight     2: top-1 23.2%, good moves 33.1%, win% lost 6.75
+weight     4: top-1 21.9%, good moves 31.1%, win% lost 7.07
+weight     8: top-1 19.2%, good moves 27.5%, win% lost 7.72
+weight    16: top-1 16.5%, good moves 24.0%, win% lost 8.38
+weight   inf: top-1 11.6%, good moves 17.9%, win% lost 9.85
+best weight 0.25 (119,563 boards imagined, 6.3 min)
+saved checkpoints/dl-day/best/imagine.json
+2026-10-21 18:36:16 its Elo, without and with imagination
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792596976.826175  266121 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792596978.314928  266121 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+day vs random: 72% in 36s | day 740
+day vs greedy: 57% in 39s | day 736
+day vs stockfish-1320-75: 70% in 40s | day 767
+day vs stockfish-1320-50: 70% in 55s | day 806
+day vs stockfish-1320-25: 40% in 78s | day 831
+day vs stockfish-1320: 8% in 83s | day 857
+day-imagine vs random: 100% in 88s | day-imagine 1262
+day-imagine vs greedy: 80% in 98s | day-imagine 1022
+day-imagine vs stockfish-1320-75: 100% in 79s | day-imagine 1097
+day-imagine vs stockfish-1320-50: 85% in 141s | day-imagine 1088
+day-imagine vs stockfish-1320-25: 68% in 123s | day-imagine 1094
+day-imagine vs stockfish-1320: 0% in 125s | day-imagine 995
+stockfish-1320          1320  (1320 to 1320)
+day-imagine              995  (917 to 1061)
+stockfish-1320-25        914  (844 to 987)
+day                      792  (713 to 872)
+stockfish-1320-50        724  (649 to 782)
+shuffled                 682  (605 to 743)
+greedy                   657  (579 to 719)
+dl                       653  (576 to 715)
+no-central-brain         649  (572 to 709)
+stockfish-1320-75        643  (569 to 702)
+quick                    631  (552 to 698)
+no-optic-lobe            590  (510 to 657)
+random                   546  (470 to 611)
+bio                      495  (424 to 561)
+newborn                  425  (338 to 494)
+{'time': '2026-10-21 18:53', 'positions': 26169531, 'top1': 0.2354, 'held_out_loss': 2.8401, 'elo': 792, 'low': 713, 'high': 872, 'elo_imagine': 995, 'imagine_low': 917, 'imagine_high': 1061, 'imagine_weight': 0.25}
+2026-10-21 18:53:02 stopping, as asked: the pictures
+figures in docs/img
+2026-10-21 18:53:05 done

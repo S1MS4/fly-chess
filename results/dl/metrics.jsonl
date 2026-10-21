@@ -1,0 +1,84 @@
+{"step": 0, "positions": 0, "minutes": 0.0, "top1": 0.1758, "good_moves": 0.2573, "held_out_loss": 3.0698, "blind_top1": 0.1169, "blind_good_moves": 0.1946}
+{"step": 50, "positions": 6400, "minutes": 0.33, "policy_loss": 3.0215, "value_loss": 0.2845, "positions_per_s": 318.9}
+{"step": 100, "positions": 12800, "minutes": 0.64, "policy_loss": 2.9955, "value_loss": 0.2908, "positions_per_s": 352.2}
+{"step": 150, "positions": 19200, "minutes": 0.94, "policy_loss": 2.9831, "value_loss": 0.2987, "positions_per_s": 352.2}
+{"step": 200, "positions": 25600, "minutes": 1.24, "policy_loss": 3.0036, "value_loss": 0.293, "positions_per_s": 352.6}
+{"step": 250, "positions": 32000, "minutes": 1.55, "policy_loss": 2.9903, "value_loss": 0.3068, "positions_per_s": 352.5}
+{"step": 300, "positions": 38400, "minutes": 1.85, "policy_loss": 2.9993, "value_loss": 0.3012, "positions_per_s": 352.4}
+{"step": 350, "positions": 44800, "minutes": 2.15, "policy_loss": 2.9914, "value_loss": 0.2826, "positions_per_s": 352.5}
+{"step": 400, "positions": 51200, "minutes": 2.45, "policy_loss": 2.9975, "value_loss": 0.2954, "positions_per_s": 352.7}
+{"step": 450, "positions": 57600, "minutes": 2.76, "policy_loss": 2.9774, "value_loss": 0.2872, "positions_per_s": 352.5}
+{"step": 500, "positions": 64000, "minutes": 3.06, "policy_loss": 3.0, "value_loss": 0.2903, "positions_per_s": 352.5, "top1": 0.187, "good_moves": 0.2808, "held_out_loss": 3.0153}
+{"step": 550, "positions": 70400, "minutes": 3.36, "policy_loss": 2.9879, "value_loss": 0.2872, "positions_per_s": 352.7}
+{"step": 600, "positions": 76800, "minutes": 3.66, "policy_loss": 3.003, "value_loss": 0.2849, "positions_per_s": 352.7}
+{"step": 650, "positions": 83200, "minutes": 3.97, "policy_loss": 2.9724, "value_loss": 0.283, "positions_per_s": 352.5}
+{"step": 700, "positions": 89600, "minutes": 4.27, "policy_loss": 2.9958, "value_loss": 0.29, "positions_per_s": 351.8}
+{"step": 750, "positions": 96000, "minutes": 4.57, "policy_loss": 3.0039, "value_loss": 0.2793, "positions_per_s": 351.3}
+{"step": 800, "positions": 102400, "minutes": 4.88, "policy_loss": 2.9904, "value_loss": 0.2844, "positions_per_s": 351.3}
+{"step": 850, "positions": 108800, "minutes": 5.18, "policy_loss": 2.9833, "value_loss": 0.2963, "positions_per_s": 352.6}
+{"step": 900, "positions": 115200, "minutes": 5.48, "policy_loss": 2.991, "value_loss": 0.2801, "positions_per_s": 352.1}
+{"step": 950, "positions": 121600, "minutes": 5.78, "policy_loss": 2.9775, "value_loss": 0.287, "positions_per_s": 352.5}
+{"step": 1000, "positions": 128000, "minutes": 6.09, "policy_loss": 2.9892, "value_loss": 0.2844, "positions_per_s": 352.5, "top1": 0.187, "good_moves": 0.2808, "held_out_loss": 3.0068}
+{"step": 1050, "positions": 134400, "minutes": 6.39, "policy_loss": 2.9714, "value_loss": 0.2878, "positions_per_s": 352.6}
+{"step": 1100, "positions": 140800, "minutes": 6.69, "policy_loss": 2.9716, "value_loss": 0.2798, "positions_per_s": 352.6}
+{"step": 1150, "positions": 147200, "minutes": 6.99, "policy_loss": 2.9917, "value_loss": 0.2946, "positions_per_s": 352.6}
+{"step": 1200, "positions": 153600, "minutes": 7.3, "policy_loss": 2.9914, "value_loss": 0.2936, "positions_per_s": 352.7}
+{"step": 1250, "positions": 160000, "minutes": 7.6, "policy_loss": 2.9769, "value_loss": 0.2958, "positions_per_s": 352.5}
+{"step": 1300, "positions": 166400, "minutes": 7.9, "policy_loss": 3.0044, "value_loss": 0.2836, "positions_per_s": 352.6}
+{"step": 1350, "positions": 172800, "minutes": 8.2, "policy_loss": 2.9813, "value_loss": 0.2876, "positions_per_s": 352.1}
+{"step": 1400, "positions": 179200, "minutes": 8.51, "policy_loss": 2.9771, "value_loss": 0.2881, "positions_per_s": 352.2}
+{"step": 1450, "positions": 185600, "minutes": 8.81, "policy_loss": 2.9806, "value_loss": 0.2859, "positions_per_s": 352.6}
+{"step": 1500, "positions": 192000, "minutes": 9.11, "policy_loss": 2.9671, "value_loss": 0.2905, "positions_per_s": 352.5, "top1": 0.1904, "good_moves": 0.2856, "held_out_loss": 3.0026}
+{"step": 1550, "positions": 198400, "minutes": 9.42, "policy_loss": 2.9914, "value_loss": 0.2963, "positions_per_s": 352.4}
+{"step": 1600, "positions": 204800, "minutes": 9.73, "policy_loss": 2.9781, "value_loss": 0.2909, "positions_per_s": 342.7}
+{"step": 1650, "positions": 211200, "minutes": 10.03, "policy_loss": 2.9744, "value_loss": 0.2845, "positions_per_s": 352.0}
+{"step": 1700, "positions": 217600, "minutes": 10.33, "policy_loss": 2.9611, "value_loss": 0.2838, "positions_per_s": 352.3}
+{"step": 1750, "positions": 224000, "minutes": 10.64, "policy_loss": 2.966, "value_loss": 0.2944, "positions_per_s": 352.3}
+{"step": 1800, "positions": 230400, "minutes": 10.94, "policy_loss": 2.996, "value_loss": 0.2797, "positions_per_s": 352.6}
+{"step": 1850, "positions": 236800, "minutes": 11.24, "policy_loss": 2.9707, "value_loss": 0.2826, "positions_per_s": 352.2}
+{"step": 1900, "positions": 243200, "minutes": 11.54, "policy_loss": 2.9806, "value_loss": 0.2835, "positions_per_s": 352.3}
+{"step": 1950, "positions": 249600, "minutes": 11.85, "policy_loss": 2.9877, "value_loss": 0.284, "positions_per_s": 352.2}
+{"step": 2000, "positions": 256000, "minutes": 12.15, "policy_loss": 2.9689, "value_loss": 0.2851, "positions_per_s": 352.4, "top1": 0.1963, "good_moves": 0.2886, "held_out_loss": 2.9959}
+{"step": 2050, "positions": 262400, "minutes": 12.45, "policy_loss": 2.9803, "value_loss": 0.2935, "positions_per_s": 352.3}
+{"step": 2100, "positions": 268800, "minutes": 12.75, "policy_loss": 2.9925, "value_loss": 0.2796, "positions_per_s": 352.2}
+{"step": 2150, "positions": 275200, "minutes": 13.06, "policy_loss": 2.9806, "value_loss": 0.2886, "positions_per_s": 352.2}
+{"step": 2200, "positions": 281600, "minutes": 13.36, "policy_loss": 2.9659, "value_loss": 0.2895, "positions_per_s": 352.5}
+{"step": 2250, "positions": 288000, "minutes": 13.66, "policy_loss": 2.9788, "value_loss": 0.2787, "positions_per_s": 352.3}
+{"step": 2300, "positions": 294400, "minutes": 13.97, "policy_loss": 2.9699, "value_loss": 0.2842, "positions_per_s": 352.3}
+{"step": 2350, "positions": 300800, "minutes": 14.27, "policy_loss": 2.9747, "value_loss": 0.2816, "positions_per_s": 352.3}
+{"step": 2400, "positions": 307200, "minutes": 14.57, "policy_loss": 2.9604, "value_loss": 0.2887, "positions_per_s": 352.2}
+{"step": 2450, "positions": 313600, "minutes": 14.87, "policy_loss": 2.9754, "value_loss": 0.2904, "positions_per_s": 352.3}
+{"step": 2500, "positions": 320000, "minutes": 15.18, "policy_loss": 2.9762, "value_loss": 0.2873, "positions_per_s": 352.0, "top1": 0.1943, "good_moves": 0.2822, "held_out_loss": 2.9855}
+{"step": 2550, "positions": 326400, "minutes": 15.48, "policy_loss": 2.9657, "value_loss": 0.2879, "positions_per_s": 351.9}
+{"step": 2600, "positions": 332800, "minutes": 15.78, "policy_loss": 2.959, "value_loss": 0.2821, "positions_per_s": 351.9}
+{"step": 2650, "positions": 339200, "minutes": 16.09, "policy_loss": 2.9763, "value_loss": 0.2854, "positions_per_s": 351.9}
+{"step": 2700, "positions": 345600, "minutes": 16.39, "policy_loss": 2.9594, "value_loss": 0.2847, "positions_per_s": 351.9}
+{"step": 2750, "positions": 352000, "minutes": 16.69, "policy_loss": 2.9777, "value_loss": 0.287, "positions_per_s": 351.9}
+{"step": 2800, "positions": 358400, "minutes": 17.0, "policy_loss": 2.9669, "value_loss": 0.2781, "positions_per_s": 351.9}
+{"step": 2850, "positions": 364800, "minutes": 17.3, "policy_loss": 2.9591, "value_loss": 0.2871, "positions_per_s": 352.1}
+{"step": 2900, "positions": 371200, "minutes": 17.6, "policy_loss": 2.9629, "value_loss": 0.2843, "positions_per_s": 351.4}
+{"step": 2950, "positions": 377600, "minutes": 17.91, "policy_loss": 2.9597, "value_loss": 0.2814, "positions_per_s": 351.5}
+{"step": 3000, "positions": 384000, "minutes": 18.21, "policy_loss": 2.9572, "value_loss": 0.2896, "positions_per_s": 351.7, "top1": 0.1968, "good_moves": 0.2866, "held_out_loss": 2.9807}
+{"step": 3050, "positions": 390400, "minutes": 18.51, "policy_loss": 2.9527, "value_loss": 0.2838, "positions_per_s": 351.4}
+{"step": 3100, "positions": 396800, "minutes": 18.82, "policy_loss": 2.9518, "value_loss": 0.2842, "positions_per_s": 351.2}
+{"step": 3150, "positions": 403200, "minutes": 19.12, "policy_loss": 2.9715, "value_loss": 0.2772, "positions_per_s": 350.8}
+{"step": 3200, "positions": 409600, "minutes": 19.43, "policy_loss": 2.9504, "value_loss": 0.2852, "positions_per_s": 343.7}
+{"step": 3250, "positions": 416000, "minutes": 19.73, "policy_loss": 2.9375, "value_loss": 0.2948, "positions_per_s": 351.0}
+{"step": 3300, "positions": 422400, "minutes": 20.04, "policy_loss": 2.9426, "value_loss": 0.2891, "positions_per_s": 349.1}
+{"step": 3350, "positions": 428800, "minutes": 20.34, "policy_loss": 2.97, "value_loss": 0.2818, "positions_per_s": 350.9}
+{"step": 3400, "positions": 435200, "minutes": 20.65, "policy_loss": 2.9564, "value_loss": 0.2863, "positions_per_s": 351.1}
+{"step": 3450, "positions": 441600, "minutes": 20.95, "policy_loss": 2.9492, "value_loss": 0.2855, "positions_per_s": 350.8}
+{"step": 3500, "positions": 448000, "minutes": 21.26, "policy_loss": 2.9727, "value_loss": 0.2803, "positions_per_s": 350.9, "top1": 0.2017, "good_moves": 0.2935, "held_out_loss": 2.9773}
+{"step": 3550, "positions": 454400, "minutes": 21.56, "policy_loss": 2.9517, "value_loss": 0.2817, "positions_per_s": 351.0}
+{"step": 3600, "positions": 460800, "minutes": 21.86, "policy_loss": 2.9593, "value_loss": 0.2924, "positions_per_s": 351.1}
+{"step": 3650, "positions": 467200, "minutes": 22.17, "policy_loss": 2.9748, "value_loss": 0.2832, "positions_per_s": 351.4}
+{"step": 3700, "positions": 473600, "minutes": 22.47, "policy_loss": 2.9603, "value_loss": 0.2819, "positions_per_s": 351.3}
+{"step": 3750, "positions": 480000, "minutes": 22.77, "policy_loss": 2.9412, "value_loss": 0.284, "positions_per_s": 351.1}
+{"step": 3800, "positions": 486400, "minutes": 23.08, "policy_loss": 2.9607, "value_loss": 0.2844, "positions_per_s": 351.4}
+{"step": 3850, "positions": 492800, "minutes": 23.38, "policy_loss": 2.9632, "value_loss": 0.2845, "positions_per_s": 351.4}
+{"step": 3900, "positions": 499200, "minutes": 23.69, "policy_loss": 2.9502, "value_loss": 0.278, "positions_per_s": 351.3}
+{"step": 3950, "positions": 505600, "minutes": 23.99, "policy_loss": 2.9671, "value_loss": 0.2832, "positions_per_s": 351.3}
+{"step": 4000, "positions": 512000, "minutes": 24.29, "policy_loss": 2.9358, "value_loss": 0.2873, "positions_per_s": 351.4, "top1": 0.2026, "good_moves": 0.2959, "held_out_loss": 2.9767}
+{"step": 4050, "positions": 518400, "minutes": 24.6, "policy_loss": 2.9753, "value_loss": 0.2769, "positions_per_s": 351.4}
+{"step": 4100, "positions": 524800, "minutes": 24.9, "policy_loss": 2.953, "value_loss": 0.2902, "positions_per_s": 351.2}
+{"step": 4117, "positions": 526976, "minutes": 25.0, "top1": 0.1992, "good_moves": 0.2915, "held_out_loss": 2.9628}

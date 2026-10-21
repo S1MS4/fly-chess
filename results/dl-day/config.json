@@ -1,0 +1,26 @@
+{
+ "name": "dl-day",
+ "eye": "fair",
+ "calm_unreached": true,
+ "read": [
+  9,
+  10,
+  11,
+  12
+ ],
+ "curriculum": 0.1,
+ "batch": 8192,
+ "lr": 0.002,
+ "max_epochs": 60,
+ "patience": 4,
+ "more_hours": 8.0,
+ "more_start": 6,
+ "refit_hours": 1000.0,
+ "skip_first_fit": true,
+ "max_cache_gb": 100.0,
+ "seed": 0,
+ "limit": null,
+ "prepare_more": null,
+ "shuffle_wiring": false,
+ "lesion": []
+}

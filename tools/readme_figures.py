@@ -773,6 +773,32 @@ RATED = {"dl": "Backprop fly", "day": "Day-long fly", "day-imagine": "Day-long f
          "greedy": "Greedy (takes the biggest piece)", "random": "Random mover"}
 
 
+def confusion_figure():
+    """The piece the fly moves against the piece Stockfish moves, from results/confusion.json (tools/confusion.py):
+    each row adds up to 100%, so a row says what the fly does when Stockfish's best move is that piece's."""
+    f = Path("results/confusion.json")
+    if not f.exists():
+        return
+    rec = json.loads(f.read_text())
+    m = np.array(rec["matrix"], float)
+    share = m / np.maximum(m.sum(1, keepdims=True), 1)
+    fig, ax = plt.subplots(figsize=(6.6, 5.4))
+    ax.imshow(share, cmap="Blues", vmin=0, vmax=1)
+    for r in range(len(m)):
+        for c in range(len(m)):
+            ax.text(c, r, f"{100 * share[r, c]:.0f}%\n{int(m[r, c])}", ha="center", va="center", fontsize=8.5,
+                    color="white" if share[r, c] > 0.55 else INK)
+    names = rec["classes"]
+    ax.set_xticks(range(len(names)), names)
+    ax.set_yticks(range(len(names)), [f"{n} ({int(m[k].sum())})" for k, n in enumerate(names)])
+    ax.set_xlabel("the piece the fly moves")
+    ax.set_ylabel("the piece Stockfish moves (positions)")
+    ax.grid(False)
+    ax.set_title(f"Right piece {100 * rec['right_piece']:.1f}% of the time, right move {100 * rec['top1']:.1f}%")
+    fig.tight_layout()
+    fig.savefig(OUT / "confusion.png")
+
+
 def progress_figure():
     """The day-long fly at every fit of the long run (the "final" lines of runs/dl-day/metrics.jsonl), after the
     25-minute backprop fly: top-1, good moves and the held-out loss, all on the same 4,096 held-out positions."""

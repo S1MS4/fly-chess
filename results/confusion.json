@@ -1,0 +1,75 @@
+{
+ "fly": "day",
+ "positions": 4096,
+ "time": "2026-10-21 23:32",
+ "classes": [
+  "pawn",
+  "knight",
+  "bishop",
+  "rook",
+  "queen",
+  "king"
+ ],
+ "rows": "the piece Stockfish's best move moves",
+ "columns": "the piece the fly's favourite move moves",
+ "matrix": [
+  [
+   419,
+   139,
+   113,
+   146,
+   105,
+   47
+  ],
+  [
+   105,
+   304,
+   85,
+   69,
+   69,
+   16
+  ],
+  [
+   86,
+   67,
+   284,
+   69,
+   55,
+   20
+  ],
+  [
+   86,
+   63,
+   59,
+   344,
+   83,
+   37
+  ],
+  [
+   89,
+   63,
+   61,
+   71,
+   318,
+   17
+  ],
+  [
+   69,
+   38,
+   40,
+   76,
+   38,
+   346
+  ]
+ ],
+ "right_piece": 0.4919,
+ "top1": 0.2356,
+ "right_piece_by_class": {
+  "pawn": 0.4324,
+  "knight": 0.4691,
+  "bishop": 0.4888,
+  "rook": 0.5119,
+  "queen": 0.5137,
+  "king": 0.57
+ }
+}

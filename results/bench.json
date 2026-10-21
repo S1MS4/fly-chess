@@ -1,0 +1,58 @@
+{
+ "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+ "cpu_ms_per_batch_128": 0.1,
+ "plastic 32": {
+  "ms": 164.6,
+  "positions_per_s": 194.4,
+  "gpu_util": 22,
+  "gpu_mem_mb": 5730.0
+ },
+ "plastic 64": {
+  "ms": 301.6,
+  "positions_per_s": 212.2,
+  "gpu_util": 66,
+  "gpu_mem_mb": 5730.0
+ },
+ "plastic 128": {
+  "ms": 580.8,
+  "positions_per_s": 220.4,
+  "gpu_util": 77,
+  "gpu_mem_mb": 5730.0
+ },
+ "plastic 256": {
+  "ms": 1181.3,
+  "positions_per_s": 216.7,
+  "gpu_util": 81,
+  "gpu_mem_mb": 5730.0
+ },
+ "forward reverse Cuthill-McKee 16": {
+  "ms": 45.7,
+  "positions_per_s": 349.9,
+  "gpu_util": 49,
+  "gpu_mem_mb": 5730.0
+ },
+ "forward reverse Cuthill-McKee 32": {
+  "ms": 79.8,
+  "positions_per_s": 400.9,
+  "gpu_util": 98,
+  "gpu_mem_mb": 5730.0
+ },
+ "forward reverse Cuthill-McKee 64": {
+  "ms": 176.5,
+  "positions_per_s": 362.6,
+  "gpu_util": 98,
+  "gpu_mem_mb": 5730.0
+ },
+ "forward reverse Cuthill-McKee 128": {
+  "ms": 353.4,
+  "positions_per_s": 362.1,
+  "gpu_util": 100,
+  "gpu_mem_mb": 5730.0
+ },
+ "forward reverse Cuthill-McKee 256": {
+  "ms": 705.9,
+  "positions_per_s": 362.7,
+  "gpu_util": 99,
+  "gpu_mem_mb": 5730.0
+ }
+}

@@ -1,0 +1,282 @@
+04:35:56 hot (GPU 68.0, zone 95.9): paused 1 processes
+04:36:37 cool again (GPU 47.0, zone 81.9): resumed
+07:08:07 hot (GPU 68.0, zone 95.9): paused 1 processes
+07:08:47 cool again (GPU 49.0, zone 83.9): resumed
+07:12:08 hot (GPU 68.0, zone 95.9): paused 1 processes
+07:12:48 cool again (GPU 48.0, zone 83.9): resumed
+07:15:28 hot (GPU 68.0, zone 95.9): paused 1 processes
+07:16:08 cool again (GPU 48.0, zone 83.9): resumed
+07:19:49 hot (GPU 68.0, zone 95.9): paused 1 processes
+07:20:29 cool again (GPU 47.0, zone 83.9): resumed
+07:26:50 hot (GPU 68.0, zone 95.9): paused 1 processes
+07:27:30 cool again (GPU 48.0, zone 82.9): resumed
+07:30:10 hot (GPU 68.0, zone 95.9): paused 1 processes
+07:30:51 cool again (GPU 48.0, zone 84.9): resumed
+07:33:51 hot (GPU 68.0, zone 95.9): paused 1 processes
+07:34:31 cool again (GPU 48.0, zone 83.9): resumed
+07:37:31 hot (GPU 67.0, zone 95.9): paused 1 processes
+07:38:12 cool again (GPU 47.0, zone 80.9): resumed
+07:44:12 hot (GPU 67.0, zone 95.9): paused 1 processes
+07:44:52 cool again (GPU 47.0, zone 81.9): resumed
+07:48:33 hot (GPU 68.0, zone 95.9): paused 1 processes
+07:49:13 cool again (GPU 47.0, zone 82.9): resumed
+07:54:34 hot (GPU 68.0, zone 95.9): paused 1 processes
+07:55:14 cool again (GPU 47.0, zone 80.9): resumed
+07:59:55 hot (GPU 68.0, zone 95.9): paused 1 processes
+08:00:35 cool again (GPU 48.0, zone 83.9): resumed
+08:05:15 hot (GPU 67.0, zone 95.9): paused 1 processes
+08:05:55 cool again (GPU 47.0, zone 83.9): resumed
+08:09:56 hot (GPU 68.0, zone 96.9): paused 1 processes
+08:10:36 cool again (GPU 47.0, zone 82.9): resumed
+08:17:17 hot (GPU 68.0, zone 95.9): paused 1 processes
+08:17:57 cool again (GPU 48.0, zone 82.9): resumed
+08:21:17 hot (GPU 68.0, zone 96.9): paused 1 processes
+08:21:58 cool again (GPU 48.0, zone 84.9): resumed
+08:25:38 hot (GPU 68.0, zone 95.9): paused 1 processes
+08:26:18 cool again (GPU 48.0, zone 83.9): resumed
+08:28:18 hot (GPU 67.0, zone 95.9): paused 1 processes
+08:28:58 cool again (GPU 47.0, zone 84.9): resumed
+08:32:59 hot (GPU 68.0, zone 96.9): paused 1 processes
+08:33:39 cool again (GPU 47.0, zone 81.9): resumed
+08:35:25 restarted with --cpu-stop 93 --cpu-go 84
+08:38:05 hot (GPU 66.0, zone 93.9): paused 1 processes
+08:38:45 cool again (GPU 47.0, zone 83.9): resumed
+08:40:46 hot (GPU 65.0, zone 93.9): paused 1 processes
+08:41:26 cool again (GPU 46.0, zone 82.9): resumed
+08:43:46 hot (GPU 66.0, zone 93.9): paused 1 processes
+08:44:46 cool again (GPU 45.0, zone 77.9): resumed
+08:47:47 hot (GPU 67.0, zone 94.9): paused 1 processes
+08:48:27 cool again (GPU 46.0, zone 82.9): resumed
+08:50:07 hot (GPU 65.0, zone 93.9): paused 1 processes
+08:50:47 cool again (GPU 45.0, zone 81.9): resumed
+08:53:07 hot (GPU 67.0, zone 93.9): paused 1 processes
+08:53:47 cool again (GPU 47.0, zone 83.9): resumed
+08:55:07 hot (GPU 66.0, zone 93.9): paused 1 processes
+08:55:48 cool again (GPU 47.0, zone 82.9): resumed
+08:57:28 hot (GPU 66.0, zone 94.9): paused 1 processes
+08:58:08 cool again (GPU 47.0, zone 82.9): resumed
+08:59:28 hot (GPU 66.0, zone 93.9): paused 1 processes
+09:00:08 cool again (GPU 47.0, zone 82.9): resumed
+09:01:48 hot (GPU 67.0, zone 93.9): paused 1 processes
+09:02:28 cool again (GPU 47.0, zone 82.9): resumed
+09:07:09 hot (GPU 70.0, zone 94.9): paused 1 processes
+09:08:09 cool again (GPU 47.0, zone 83.9): resumed
+09:09:29 hot (GPU 67.0, zone 93.9): paused 1 processes
+09:10:30 cool again (GPU 47.0, zone 81.9): resumed
+09:14:10 hot (GPU 70.0, zone 96.9): paused 1 processes
+09:14:50 cool again (GPU 50.0, zone 76.9): resumed
+09:15:50 hot (GPU 68.0, zone 94.9): paused 1 processes
+09:16:30 cool again (GPU 49.0, zone 79.9): resumed
+09:17:51 hot (GPU 69.0, zone 94.9): paused 1 processes
+09:19:11 cool again (GPU 46.0, zone 82.9): resumed
+09:19:51 hot (GPU 64.0, zone 93.9): paused 1 processes
+09:20:51 cool again (GPU 45.0, zone 83.9): resumed
+09:21:31 hot (GPU 64.0, zone 93.9): paused 1 processes
+09:22:31 cool again (GPU 45.0, zone 82.9): resumed
+09:23:31 hot (GPU 66.0, zone 93.9): paused 1 processes
+09:24:11 cool again (GPU 48.0, zone 83.9): resumed
+09:25:12 hot (GPU 66.0, zone 96.9): paused 1 processes
+09:26:32 cool again (GPU 45.0, zone 81.9): resumed
+09:27:32 hot (GPU 66.0, zone 93.9): paused 1 processes
+09:28:32 cool again (GPU 46.0, zone 82.9): resumed
+09:29:32 hot (GPU 66.0, zone 96.9): paused 1 processes
+09:30:12 cool again (GPU 47.0, zone 83.9): resumed
+09:30:52 hot (GPU 64.0, zone 95.9): paused 1 processes
+09:31:32 cool again (GPU 48.0, zone 82.9): resumed
+09:32:33 hot (GPU 67.0, zone 96.9): paused 1 processes
+09:33:33 cool again (GPU 47.0, zone 82.9): resumed
+09:34:33 hot (GPU 66.0, zone 93.9): paused 1 processes
+09:35:33 cool again (GPU 46.0, zone 82.9): resumed
+09:36:33 hot (GPU 66.0, zone 95.9): paused 1 processes
+09:37:33 cool again (GPU 46.0, zone 82.9): resumed
+09:38:33 hot (GPU 66.0, zone 93.9): paused 1 processes
+09:39:54 cool again (GPU 44.0, zone 81.9): resumed
+09:40:54 hot (GPU 66.0, zone 94.9): paused 1 processes
+09:41:34 cool again (GPU 47.0, zone 83.9): resumed
+09:42:14 hot (GPU 64.0, zone 95.9): paused 1 processes
+09:42:54 cool again (GPU 47.0, zone 83.9): resumed
+09:43:34 hot (GPU 65.0, zone 93.9): paused 1 processes
+09:44:34 cool again (GPU 46.0, zone 83.9): resumed
+09:45:14 hot (GPU 64.0, zone 93.9): paused 1 processes
+09:45:54 cool again (GPU 48.0, zone 82.9): resumed
+09:46:35 hot (GPU 65.0, zone 93.9): paused 1 processes
+09:47:35 cool again (GPU 46.0, zone 83.9): resumed
+09:48:35 hot (GPU 66.0, zone 94.9): paused 1 processes
+09:49:55 cool again (GPU 45.0, zone 80.9): resumed
+09:50:55 hot (GPU 66.0, zone 95.9): paused 1 processes
+09:52:15 cool again (GPU 45.0, zone 83.9): resumed
+09:53:35 hot (GPU 66.0, zone 95.9): paused 1 processes
+09:54:16 cool again (GPU 48.0, zone 82.9): resumed
+09:54:56 hot (GPU 65.0, zone 94.9): paused 1 processes
+09:55:16 cool again (GPU 50.0, zone 82.9): resumed
+09:56:16 hot (GPU 68.0, zone 94.9): paused 1 processes
+09:57:36 cool again (GPU 46.0, zone 80.9): resumed
+09:59:16 hot (GPU 69.0, zone 96.9): paused 1 processes
+09:59:56 cool again (GPU 50.0, zone 82.9): resumed
+10:00:36 hot (GPU 67.0, zone 95.9): paused 1 processes
+10:00:56 cool again (GPU 51.0, zone 83.9): resumed
+10:01:37 hot (GPU 68.0, zone 94.9): paused 3 processes
+10:02:57 cool again (GPU 46.0, zone 82.9): resumed
+10:03:57 hot (GPU 67.0, zone 94.9): paused 1 processes
+10:04:57 cool again (GPU 47.0, zone 83.9): resumed
+10:06:17 hot (GPU 69.0, zone 95.9): paused 1 processes
+10:07:37 cool again (GPU 46.0, zone 81.9): resumed
+10:08:37 hot (GPU 67.0, zone 93.9): paused 1 processes
+10:09:38 cool again (GPU 47.0, zone 83.9): resumed
+10:10:38 hot (GPU 67.0, zone 95.9): paused 1 processes
+10:11:58 cool again (GPU 46.0, zone 78.9): resumed
+10:12:58 hot (GPU 65.0, zone 94.9): paused 1 processes
+10:13:58 cool again (GPU 46.0, zone 83.9): resumed
+10:14:58 hot (GPU 67.0, zone 93.9): paused 1 processes
+10:15:38 cool again (GPU 48.0, zone 83.9): resumed
+10:16:39 hot (GPU 67.0, zone 93.9): paused 1 processes
+10:17:39 cool again (GPU 47.0, zone 81.9): resumed
+10:18:39 hot (GPU 67.0, zone 93.9): paused 1 processes
+10:19:59 cool again (GPU 46.0, zone 79.9): resumed
+10:20:39 hot (GPU 65.0, zone 93.9): paused 1 processes
+10:21:19 cool again (GPU 47.0, zone 83.9): resumed
+10:22:39 hot (GPU 68.0, zone 95.9): paused 1 processes
+10:23:19 cool again (GPU 49.0, zone 82.9): resumed
+10:24:00 hot (GPU 66.0, zone 93.9): paused 1 processes
+10:24:40 cool again (GPU 49.0, zone 83.9): resumed
+10:25:20 hot (GPU 66.0, zone 94.9): paused 1 processes
+10:26:40 cool again (GPU 46.0, zone 79.9): resumed
+10:28:00 hot (GPU 68.0, zone 95.9): paused 1 processes
+10:29:00 cool again (GPU 47.0, zone 82.9): resumed
+10:30:20 hot (GPU 68.0, zone 93.9): paused 1 processes
+10:31:21 cool again (GPU 47.0, zone 80.9): resumed
+10:32:01 hot (GPU 66.0, zone 94.9): paused 1 processes
+10:32:21 cool again (GPU 50.0, zone 82.9): resumed
+10:33:41 hot (GPU 69.0, zone 96.9): paused 1 processes
+10:35:01 cool again (GPU 47.0, zone 83.9): resumed
+10:36:21 hot (GPU 69.0, zone 97.9): paused 1 processes
+10:37:01 cool again (GPU 49.0, zone 82.9): resumed
+10:37:41 hot (GPU 66.0, zone 94.9): paused 1 processes
+10:38:01 cool again (GPU 51.0, zone 83.9): resumed
+10:38:42 hot (GPU 67.0, zone 94.9): paused 1 processes
+10:39:22 cool again (GPU 49.0, zone 83.9): resumed
+10:40:02 hot (GPU 67.0, zone 93.9): paused 1 processes
+10:41:02 cool again (GPU 47.0, zone 82.9): resumed
+10:42:02 hot (GPU 67.0, zone 94.9): paused 1 processes
+10:42:42 cool again (GPU 49.0, zone 83.9): resumed
+10:43:22 hot (GPU 66.0, zone 94.9): paused 1 processes
+10:44:22 cool again (GPU 47.0, zone 83.9): resumed
+11:17:28 hot (GPU 57.0, zone 94.9): paused 2 processes
+11:18:08 cool again (GPU 48.0, zone 80.9): resumed
+20:37:42 hot (GPU 70.0, zone 98.9): paused 1 processes
+20:39:02 cool again (GPU 46.0, zone 77.9): resumed
+20:42:03 hot (GPU 70.0, zone 95.9): paused 1 processes
+20:43:03 cool again (GPU 48.0, zone 83.9): resumed
+20:44:23 hot (GPU 68.0, zone 93.9): paused 1 processes
+20:45:23 cool again (GPU 47.0, zone 82.9): resumed
+20:46:43 hot (GPU 68.0, zone 94.9): paused 1 processes
+20:47:43 cool again (GPU 47.0, zone 81.9): resumed
+20:49:04 hot (GPU 68.0, zone 94.9): paused 1 processes
+20:49:44 cool again (GPU 48.0, zone 83.9): resumed
+20:50:44 hot (GPU 67.0, zone 93.9): paused 1 processes
+20:51:24 cool again (GPU 48.0, zone 83.9): resumed
+20:52:44 hot (GPU 68.0, zone 93.9): paused 1 processes
+20:53:24 cool again (GPU 48.0, zone 82.9): resumed
+20:54:44 hot (GPU 68.0, zone 93.9): paused 1 processes
+20:55:25 cool again (GPU 48.0, zone 83.9): resumed
+20:56:45 hot (GPU 68.0, zone 93.9): paused 1 processes
+20:57:45 cool again (GPU 47.0, zone 80.9): resumed
+20:59:05 hot (GPU 68.0, zone 93.9): paused 1 processes
+20:59:45 cool again (GPU 49.0, zone 83.9): resumed
+21:00:45 hot (GPU 67.0, zone 93.9): paused 1 processes
+21:01:45 cool again (GPU 47.0, zone 81.9): resumed
+21:03:26 hot (GPU 68.0, zone 94.9): paused 1 processes
+21:04:06 cool again (GPU 49.0, zone 83.9): resumed
+21:11:06 GPU 72.0, zone 89.9: running 85% of the time
+21:13:06 hot (GPU 71.0, zone 96.9): paused 1 processes
+21:13:06 GPU 71.0, zone 96.9: running 65% of the time
+21:14:26 cool again (GPU 48.0, zone 83.9): resumed at 65%
+21:14:46 GPU 61.0, zone 86.9: running 85% of the time
+21:16:06 hot (GPU 68.0, zone 94.9): paused 1 processes
+21:16:06 GPU 68.0, zone 94.9: running 65% of the time
+21:17:06 cool again (GPU 47.0, zone 83.9): resumed at 65%
+21:17:27 GPU 61.0, zone 87.9: running 85% of the time
+21:18:47 hot (GPU 68.0, zone 93.9): paused 1 processes
+21:18:47 GPU 68.0, zone 93.9: running 65% of the time
+21:19:47 cool again (GPU 47.0, zone 82.9): resumed at 65%
+21:20:07 GPU 60.0, zone 83.9: running 75% of the time
+21:22:28 hot (GPU 68.0, zone 93.9): paused 1 processes
+21:22:28 GPU 68.0, zone 93.9: running 55% of the time
+21:23:08 cool again (GPU 49.0, zone 83.9): resumed at 55%
+21:23:28 GPU 61.0, zone 87.9: running 75% of the time
+21:25:08 hot (GPU 67.0, zone 93.9): paused 1 processes
+21:25:08 GPU 67.0, zone 93.9: running 55% of the time
+21:25:48 cool again (GPU 49.0, zone 83.9): resumed at 55%
+21:26:08 GPU 61.0, zone 86.9: running 75% of the time
+21:29:49 hot (GPU 66.0, zone 93.9): paused 1 processes
+21:29:49 GPU 66.0, zone 93.9: running 45% of the time
+21:30:49 cool again (GPU 47.0, zone 82.9): resumed at 45%
+21:31:09 GPU 59.0, zone 84.9: running 65% of the time
+21:43:33 GPU 64.0, zone 85.9: running 54% of the time
+21:53:58 GPU 59.0, zone 71.9: running 64% of the time
+21:55:38 GPU 61.0, zone 71.9: running 74% of the time
+21:57:19 GPU 64.0, zone 82.9: running 84% of the time
+22:06:41 GPU 66.0, zone 77.9: running 95% of the time
+22:23:04 GPU 67.0, zone 85.9: running 84% of the time
+22:38:28 GPU 68.0, zone 85.9: running 68% of the time
+22:41:09 GPU 66.0, zone 80.9: running 78% of the time
+23:20:19 GPU 67.0, zone 77.9: running 89% of the time
+23:22:00 GPU 68.0, zone 84.9: running 99% of the time
+23:22:40 GPU 69.0, zone 90.9: running 89% of the time
+23:23:00 GPU 69.0, zone 89.9: running 76% of the time
+23:23:40 GPU 66.0, zone 85.9: running 66% of the time
+00:20:56 GPU 65.0, zone 73.9: running 77% of the time
+00:22:36 GPU 65.0, zone 78.9: running 87% of the time
+00:24:17 GPU 66.0, zone 78.9: running 97% of the time
+00:34:58 GPU 68.0, zone 86.9: running 80% of the time
+01:16:30 GPU 68.0, zone 84.9: running 67% of the time
+01:22:51 GPU 67.0, zone 77.9: running 77% of the time
+02:38:12 GPU 69.0, zone 87.9: running 60% of the time
+02:41:13 GPU 65.0, zone 80.9: running 71% of the time
+03:06:20 GPU 69.0, zone 87.9: running 56% of the time
+03:09:21 GPU 66.0, zone 80.9: running 68% of the time
+04:19:42 GPU 67.0, zone 79.9: running 79% of the time
+04:29:45 GPU 68.0, zone 88.9: running 66% of the time
+04:32:46 GPU 66.0, zone 80.9: running 76% of the time
+05:50:48 GPU 68.0, zone 87.9: running 59% of the time
+05:53:49 GPU 65.0, zone 79.9: running 71% of the time
+06:19:37 GPU 52.0, zone 64.9: running 82% of the time
+06:21:17 GPU 52.0, zone 63.9: running 92% of the time
+07:18:18 GPU 71.0, zone 87.9: running 73% of the time
+08:10:54 GPU 69.0, zone 85.9: running 59% of the time
+08:12:54 GPU 67.0, zone 80.9: running 69% of the time
+09:04:30 GPU 67.0, zone 76.9: running 81% of the time
+09:06:10 GPU 68.0, zone 78.9: running 91% of the time
+09:12:00 GPU 71.0, zone 92.9: running 78% of the time
+09:12:21 GPU 70.0, zone 90.9: running 63% of the time
+09:12:41 GPU 68.0, zone 87.9: running 51% of the time
+09:15:21 GPU 66.0, zone 80.9: running 61% of the time
+09:57:54 GPU 67.0, zone 82.9: running 71% of the time
+11:39:24 GPU 67.0, zone 86.9: running 58% of the time
+11:42:45 GPU 66.0, zone 82.9: running 68% of the time
+12:02:11 GPU 67.0, zone 88.9: running 52% of the time
+12:05:12 GPU 65.0, zone 81.9: running 63% of the time
+12:07:13 GPU 66.0, zone 80.9: running 73% of the time
+12:54:08 GPU 67.0, zone 85.9: running 61% of the time
+13:17:16 GPU 67.0, zone 81.9: running 72% of the time
+13:43:04 GPU 65.0, zone 84.9: running 62% of the time
+14:29:39 GPU 67.0, zone 82.9: running 73% of the time
+14:43:03 GPU 69.0, zone 86.9: running 61% of the time
+14:59:29 GPU 67.0, zone 76.9: running 72% of the time
+15:05:31 GPU 68.0, zone None: running 82% of the time
+15:09:43 hot (GPU 71.0, zone 93.9): paused 1 processes
+15:09:43 GPU 71.0, zone 93.9: running 80% of the time
+15:10:03 cool again (GPU 54.0, zone 62.9): resumed at 80%
+15:12:04 GPU 69.0, zone 89.9: running 64% of the time
+15:42:54 GPU 52.0, zone 69.9: running 75% of the time
+15:44:35 GPU 48.0, zone 64.9: running 85% of the time
+15:46:16 GPU 49.0, zone 63.9: running 95% of the time
+18:57:30 GPU 72.0, zone 92.9: running 81% of the time
+19:00:32 GPU 70.0, zone 79.9: running 92% of the time
+19:02:13 hot (GPU 72.0, zone 94.9): paused 1 processes
+19:02:13 GPU 72.0, zone 94.9: running 80% of the time
+19:02:33 cool again (GPU 54.0, zone 63.9): resumed at 80%
+19:04:14 GPU 69.0, zone 77.9: running 90% of the time
+19:06:17 hot (GPU None, zone 93.9): paused 1 processes
+19:06:17 GPU None, zone 93.9: running 72% of the time
+19:06:37 cool again (GPU 57.0, zone 79.9): resumed at 72%

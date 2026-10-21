@@ -1,0 +1,427 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792461912.102952     274 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792461914.725138     274 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+data/positions/packed.npz is newer than every shard, keeping it
+packed 123005 curriculum positions (6364 for testing) into data/curriculum/packed.npz
+2026-10-20 05:05:18 A. the brain over every downloaded position, then the readout
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792461919.344847     341 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792461920.435605     341 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+the brain went over everything downloaded in 0.00 hours
+E0000 00:00:1792461934.522654     341 util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+{'epoch': 1, 'fit': 'everything so far', 'positions': 2971775, 'minutes': 3.69, 'top1': 0.2119, 'good_moves': 0.3008, 'held_out_loss': 2.9302, 'finish_top1': 0.1138, 'finish_good_moves': 0.1705, 'finish_held_out_loss': 3.3112}
+{'epoch': 2, 'fit': 'everything so far', 'positions': 2971775, 'minutes': 7.1, 'top1': 0.2061, 'good_moves': 0.2954, 'held_out_loss': 2.9232, 'finish_top1': 0.1182, 'finish_good_moves': 0.1761, 'finish_held_out_loss': 3.3078}
+{'epoch': 3, 'fit': 'everything so far', 'positions': 2971775, 'minutes': 10.6, 'top1': 0.2119, 'good_moves': 0.3066, 'held_out_loss': 2.904, 'finish_top1': 0.1288, 'finish_good_moves': 0.1838, 'finish_held_out_loss': 3.2945}
+{'epoch': 4, 'fit': 'everything so far', 'positions': 2971775, 'minutes': 13.76, 'top1': 0.208, 'good_moves': 0.3032, 'held_out_loss': 2.8999, 'finish_top1': 0.1147, 'finish_good_moves': 0.1694, 'finish_held_out_loss': 3.3246}
+{'epoch': 5, 'fit': 'everything so far', 'positions': 2971775, 'minutes': 16.77, 'top1': 0.2173, 'good_moves': 0.3149, 'held_out_loss': 2.895, 'finish_top1': 0.1188, 'finish_good_moves': 0.1758, 'finish_held_out_loss': 3.3243}
+{'epoch': 6, 'fit': 'everything so far', 'positions': 2971775, 'minutes': 19.71, 'top1': 0.2144, 'good_moves': 0.3164, 'held_out_loss': 2.8949, 'finish_top1': 0.1271, 'finish_good_moves': 0.1837, 'finish_held_out_loss': 3.2754}
+{'epoch': 7, 'fit': 'everything so far', 'positions': 2971775, 'minutes': 22.6, 'top1': 0.2168, 'good_moves': 0.3154, 'held_out_loss': 2.8898, 'finish_top1': 0.1254, 'finish_good_moves': 0.1826, 'finish_held_out_loss': 3.3024}
+{'epoch': 8, 'fit': 'everything so far', 'positions': 2971775, 'minutes': 25.49, 'top1': 0.2197, 'good_moves': 0.3188, 'held_out_loss': 2.8902, 'finish_top1': 0.1306, 'finish_good_moves': 0.1873, 'finish_held_out_loss': 3.2817}
+{'epoch': 9, 'fit': 'everything so far', 'positions': 2971775, 'minutes': 28.36, 'top1': 0.2148, 'good_moves': 0.3105, 'held_out_loss': 2.8848, 'finish_top1': 0.1295, 'finish_good_moves': 0.1884, 'finish_held_out_loss': 3.2799}
+{'epoch': 10, 'fit': 'everything so far', 'positions': 2971775, 'minutes': 31.24, 'top1': 0.2124, 'good_moves': 0.312, 'held_out_loss': 2.8979, 'finish_top1': 0.1218, 'finish_good_moves': 0.1831, 'finish_held_out_loss': 3.3019}
+{'epoch': 11, 'fit': 'everything so far', 'positions': 2971775, 'minutes': 34.12, 'top1': 0.2227, 'good_moves': 0.3218, 'held_out_loss': 2.8843, 'finish_top1': 0.1281, 'finish_good_moves': 0.1898, 'finish_held_out_loss': 3.2849}
+{'epoch': 12, 'fit': 'everything so far', 'positions': 2971775, 'minutes': 36.98, 'top1': 0.2202, 'good_moves': 0.3105, 'held_out_loss': 2.8817, 'finish_top1': 0.132, 'finish_good_moves': 0.1915, 'finish_held_out_loss': 3.2852}
+{'epoch': 13, 'fit': 'everything so far', 'positions': 2971775, 'minutes': 39.87, 'top1': 0.2217, 'good_moves': 0.3188, 'held_out_loss': 2.879, 'finish_top1': 0.1326, 'finish_good_moves': 0.1925, 'finish_held_out_loss': 3.2742}
+{'epoch': 14, 'fit': 'everything so far', 'positions': 2971775, 'minutes': 42.75, 'top1': 0.229, 'good_moves': 0.3306, 'held_out_loss': 2.8832, 'finish_top1': 0.1259, 'finish_good_moves': 0.1848, 'finish_held_out_loss': 3.2872}
+{'epoch': 15, 'fit': 'everything so far', 'positions': 2971775, 'minutes': 45.62, 'top1': 0.2241, 'good_moves': 0.3242, 'held_out_loss': 2.8796, 'finish_top1': 0.1358, 'finish_good_moves': 0.1961, 'finish_held_out_loss': 3.2727}
+{'epoch': 16, 'fit': 'everything so far', 'positions': 2971775, 'minutes': 48.5, 'top1': 0.2241, 'good_moves': 0.3188, 'held_out_loss': 2.8796, 'finish_top1': 0.1328, 'finish_good_moves': 0.1941, 'finish_held_out_loss': 3.2734}
+{'epoch': 17, 'fit': 'everything so far', 'positions': 2971775, 'minutes': 51.38, 'top1': 0.2095, 'good_moves': 0.3091, 'held_out_loss': 2.887, 'finish_top1': 0.1398, 'finish_good_moves': 0.1983, 'finish_held_out_loss': 3.275}
+{'epoch': 'final', 'best_val_loss': 2.879, 'positions': 2971775, 'top1': 0.2302, 'good_moves': 0.3308, 'held_out_loss': 2.8681, 'finish_top1': 0.1321, 'finish_good_moves': 0.1912, 'finish_held_out_loss': 3.2743}
+saved checkpoints/dl-day
+2026-10-20 05:57:45 P. pilot pilot-readout
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792465067.103443    6927 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792465069.699107    6927 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+brain: 163803 neurons, 6234868 connections
+data: 3089816 positions
+E0000 00:00:1792465230.352856    6927 util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+readout epoch 1: policy loss 3.119
+readout epoch 2: policy loss 3.051
+readout epoch 3: policy loss 3.016
+readout epoch 4: policy loss 2.994
+readout epoch 5: policy loss 2.979
+readout epoch 6: policy loss 2.963
+readout epoch 7: policy loss 2.950
+readout epoch 8: policy loss 2.941
+curriculum: 116641 positions to learn from, 6364 to test finishing on
+{'step': 0, 'positions': 0, 'minutes': 0.0, 'top1': 0.1665, 'good_moves': 0.2593, 'held_out_loss': 3.0242, 'finish_top1': 0.0748, 'finish_good_moves': 0.116, 'finish_held_out_loss': 3.6529, 'blind_top1': 0.1169, 'blind_good_moves': 0.1946}
+{'step': 50, 'positions': 6400, 'minutes': 0.33, 'policy_loss': 3.0092, 'value_loss': 0.2505, 'positions_per_s': 326.4, 'grad_readout': 1.59947}
+{'step': 100, 'positions': 12800, 'minutes': 0.63, 'policy_loss': 2.996, 'value_loss': 0.2557, 'positions_per_s': 353.9, 'grad_readout': 1.64793}
+{'step': 150, 'positions': 19200, 'minutes': 0.93, 'policy_loss': 2.9871, 'value_loss': 0.2497, 'positions_per_s': 354.0, 'grad_readout': 1.63197}
+{'step': 200, 'positions': 25600, 'minutes': 1.23, 'policy_loss': 2.9725, 'value_loss': 0.2578, 'positions_per_s': 353.7, 'grad_readout': 1.66323}
+{'step': 250, 'positions': 32000, 'minutes': 1.53, 'policy_loss': 3.0023, 'value_loss': 0.2458, 'positions_per_s': 354.2, 'grad_readout': 1.83309, 'top1': 0.1758, 'good_moves': 0.2603, 'held_out_loss': 3.0031, 'finish_top1': 0.0789, 'finish_good_moves': 0.123, 'finish_held_out_loss': 3.6524}
+{'step': 300, 'positions': 38400, 'minutes': 1.83, 'policy_loss': 2.974, 'value_loss': 0.2531, 'positions_per_s': 353.5, 'grad_readout': 1.59603}
+{'step': 350, 'positions': 44800, 'minutes': 2.14, 'policy_loss': 2.9928, 'value_loss': 0.2538, 'positions_per_s': 353.8, 'grad_readout': 1.66501}
+{'step': 400, 'positions': 51200, 'minutes': 2.44, 'policy_loss': 2.9738, 'value_loss': 0.25, 'positions_per_s': 353.5, 'grad_readout': 1.65941}
+{'step': 450, 'positions': 57600, 'minutes': 2.74, 'policy_loss': 2.995, 'value_loss': 0.2549, 'positions_per_s': 353.9, 'grad_readout': 1.77045}
+{'step': 500, 'positions': 64000, 'minutes': 3.04, 'policy_loss': 2.9762, 'value_loss': 0.2516, 'positions_per_s': 353.9, 'grad_readout': 1.56691, 'top1': 0.1768, 'good_moves': 0.2651, 'held_out_loss': 2.9948, 'finish_top1': 0.0743, 'finish_good_moves': 0.1183, 'finish_held_out_loss': 3.6565}
+{'step': 550, 'positions': 70400, 'minutes': 3.34, 'policy_loss': 2.9782, 'value_loss': 0.2512, 'positions_per_s': 353.8, 'grad_readout': 1.66368}
+{'step': 600, 'positions': 76800, 'minutes': 3.64, 'policy_loss': 2.9821, 'value_loss': 0.2479, 'positions_per_s': 353.6, 'grad_readout': 1.70316}
+{'step': 650, 'positions': 83200, 'minutes': 3.94, 'policy_loss': 2.9659, 'value_loss': 0.2557, 'positions_per_s': 354.0, 'grad_readout': 1.89183}
+{'step': 700, 'positions': 89600, 'minutes': 4.25, 'policy_loss': 2.9828, 'value_loss': 0.2521, 'positions_per_s': 354.0, 'grad_readout': 1.59809}
+{'step': 750, 'positions': 96000, 'minutes': 4.55, 'policy_loss': 2.9659, 'value_loss': 0.2458, 'positions_per_s': 352.8, 'grad_readout': 1.75726, 'top1': 0.1787, 'good_moves': 0.2686, 'held_out_loss': 2.994, 'finish_top1': 0.0794, 'finish_good_moves': 0.124, 'finish_held_out_loss': 3.6453}
+{'step': 800, 'positions': 102400, 'minutes': 4.85, 'policy_loss': 2.979, 'value_loss': 0.2484, 'positions_per_s': 353.7, 'grad_readout': 1.65244}
+{'step': 850, 'positions': 108800, 'minutes': 5.15, 'policy_loss': 2.9508, 'value_loss': 0.258, 'positions_per_s': 353.8, 'grad_readout': 1.8679}
+{'step': 900, 'positions': 115200, 'minutes': 5.45, 'policy_loss': 2.9713, 'value_loss': 0.254, 'positions_per_s': 353.8, 'grad_readout': 1.68669}
+{'step': 950, 'positions': 121600, 'minutes': 5.75, 'policy_loss': 2.9565, 'value_loss': 0.246, 'positions_per_s': 353.6, 'grad_readout': 1.67061}
+{'step': 1000, 'positions': 128000, 'minutes': 6.06, 'policy_loss': 2.9828, 'value_loss': 0.2493, 'positions_per_s': 353.7, 'grad_readout': 1.69383, 'top1': 0.1758, 'good_moves': 0.2661, 'held_out_loss': 2.9852, 'finish_top1': 0.0764, 'finish_good_moves': 0.1171, 'finish_held_out_loss': 3.6611}
+{'step': 1050, 'positions': 134400, 'minutes': 6.36, 'policy_loss': 2.9595, 'value_loss': 0.2548, 'positions_per_s': 353.9, 'grad_readout': 1.59143}
+{'step': 1100, 'positions': 140800, 'minutes': 6.66, 'policy_loss': 2.9563, 'value_loss': 0.2489, 'positions_per_s': 353.6, 'grad_readout': 1.48433}
+{'step': 1150, 'positions': 147200, 'minutes': 6.96, 'policy_loss': 2.948, 'value_loss': 0.2526, 'positions_per_s': 353.7, 'grad_readout': 1.55511}
+{'step': 1200, 'positions': 153600, 'minutes': 7.26, 'policy_loss': 2.9573, 'value_loss': 0.2536, 'positions_per_s': 353.7, 'grad_readout': 1.66951}
+{'step': 1250, 'positions': 160000, 'minutes': 7.56, 'policy_loss': 2.9637, 'value_loss': 0.2501, 'positions_per_s': 353.8, 'grad_readout': 1.55068, 'top1': 0.1777, 'good_moves': 0.2656, 'held_out_loss': 2.9795, 'finish_top1': 0.0748, 'finish_good_moves': 0.1196, 'finish_held_out_loss': 3.6474}
+{'step': 1300, 'positions': 166400, 'minutes': 7.86, 'policy_loss': 2.9615, 'value_loss': 0.2459, 'positions_per_s': 353.8, 'grad_readout': 1.53751}
+{'step': 1350, 'positions': 172800, 'minutes': 8.17, 'policy_loss': 2.9715, 'value_loss': 0.2503, 'positions_per_s': 347.7, 'grad_readout': 1.5878}
+{'step': 1400, 'positions': 179200, 'minutes': 8.47, 'policy_loss': 2.9688, 'value_loss': 0.249, 'positions_per_s': 353.6, 'grad_readout': 1.73137}
+{'step': 1450, 'positions': 185600, 'minutes': 8.78, 'policy_loss': 2.9462, 'value_loss': 0.2493, 'positions_per_s': 353.6, 'grad_readout': 1.57603}
+{'step': 1500, 'positions': 192000, 'minutes': 9.08, 'policy_loss': 2.9406, 'value_loss': 0.2508, 'positions_per_s': 353.7, 'grad_readout': 1.61572, 'top1': 0.189, 'good_moves': 0.2729, 'held_out_loss': 2.9765, 'finish_top1': 0.0819, 'finish_good_moves': 0.1251, 'finish_held_out_loss': 3.6529}
+{'step': 1550, 'positions': 198400, 'minutes': 9.38, 'policy_loss': 2.9467, 'value_loss': 0.2529, 'positions_per_s': 353.6, 'grad_readout': 1.55875}
+{'step': 1600, 'positions': 204800, 'minutes': 9.68, 'policy_loss': 2.9643, 'value_loss': 0.2551, 'positions_per_s': 353.5, 'grad_readout': 1.5859}
+{'step': 1650, 'positions': 211200, 'minutes': 9.98, 'policy_loss': 2.9501, 'value_loss': 0.2414, 'positions_per_s': 353.4, 'grad_readout': 1.46759}
+{'step': 1700, 'positions': 217600, 'minutes': 10.28, 'policy_loss': 2.9503, 'value_loss': 0.2464, 'positions_per_s': 353.7, 'grad_readout': 1.67028}
+{'step': 1750, 'positions': 224000, 'minutes': 10.58, 'policy_loss': 2.9468, 'value_loss': 0.2455, 'positions_per_s': 354.3, 'grad_readout': 1.46287, 'top1': 0.1787, 'good_moves': 0.269, 'held_out_loss': 2.9699, 'finish_top1': 0.0787, 'finish_good_moves': 0.1249, 'finish_held_out_loss': 3.6495}
+{'step': 1800, 'positions': 230400, 'minutes': 10.89, 'policy_loss': 2.9624, 'value_loss': 0.2511, 'positions_per_s': 353.8, 'grad_readout': 1.62165}
+{'step': 1850, 'positions': 236800, 'minutes': 11.19, 'policy_loss': 2.9409, 'value_loss': 0.247, 'positions_per_s': 353.8, 'grad_readout': 1.638}
+{'step': 1900, 'positions': 243200, 'minutes': 11.49, 'policy_loss': 2.9578, 'value_loss': 0.2494, 'positions_per_s': 353.9, 'grad_readout': 1.53738}
+{'step': 1950, 'positions': 249600, 'minutes': 11.79, 'policy_loss': 2.9612, 'value_loss': 0.2494, 'positions_per_s': 353.9, 'grad_readout': 1.46321}
+{'step': 2000, 'positions': 256000, 'minutes': 12.09, 'policy_loss': 2.9728, 'value_loss': 0.2471, 'positions_per_s': 353.4, 'grad_readout': 1.48013, 'top1': 0.1855, 'good_moves': 0.2773, 'held_out_loss': 2.9683, 'finish_top1': 0.0808, 'finish_good_moves': 0.1276, 'finish_held_out_loss': 3.6429}
+{'step': 2050, 'positions': 262400, 'minutes': 12.39, 'policy_loss': 2.9583, 'value_loss': 0.2527, 'positions_per_s': 354.0, 'grad_readout': 1.48385}
+{'step': 2100, 'positions': 268800, 'minutes': 12.69, 'policy_loss': 2.9569, 'value_loss': 0.2426, 'positions_per_s': 353.8, 'grad_readout': 1.52152}
+{'step': 2150, 'positions': 275200, 'minutes': 13.0, 'policy_loss': 2.9393, 'value_loss': 0.2473, 'positions_per_s': 353.5, 'grad_readout': 1.4631}
+{'step': 2200, 'positions': 281600, 'minutes': 13.3, 'policy_loss': 2.9536, 'value_loss': 0.2593, 'positions_per_s': 353.6, 'grad_readout': 1.4628}
+{'step': 2250, 'positions': 288000, 'minutes': 13.6, 'policy_loss': 2.9541, 'value_loss': 0.2489, 'positions_per_s': 353.5, 'grad_readout': 1.44983, 'top1': 0.1895, 'good_moves': 0.2773, 'held_out_loss': 2.9662, 'finish_top1': 0.0786, 'finish_good_moves': 0.1235, 'finish_held_out_loss': 3.6422}
+{'step': 2300, 'positions': 294400, 'minutes': 13.9, 'policy_loss': 2.9305, 'value_loss': 0.2523, 'positions_per_s': 353.8, 'grad_readout': 1.49079}
+{'step': 2350, 'positions': 300800, 'minutes': 14.2, 'policy_loss': 2.9402, 'value_loss': 0.2451, 'positions_per_s': 353.9, 'grad_readout': 1.45553}
+{'step': 2400, 'positions': 307200, 'minutes': 14.5, 'policy_loss': 2.9338, 'value_loss': 0.2485, 'positions_per_s': 353.7, 'grad_readout': 1.58039}
+{'step': 2450, 'positions': 313600, 'minutes': 14.81, 'policy_loss': 2.9427, 'value_loss': 0.2544, 'positions_per_s': 353.2, 'grad_readout': 1.42217}
+{'step': 2483, 'positions': 317824, 'minutes': 15.01, 'top1': 0.1973, 'good_moves': 0.291, 'held_out_loss': 2.9491, 'finish_top1': 0.0803, 'finish_good_moves': 0.1262, 'finish_held_out_loss': 3.6412, 'best_val_loss': 2.9662}
+2026-10-20 06:20:32 P. pilot pilot-neurons
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792466433.714763    9794 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792466436.112313    9794 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+brain: 163803 neurons, 6234868 connections
+data: 3089816 positions
+E0000 00:00:1792466597.655994    9794 util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+readout epoch 1: policy loss 3.119
+readout epoch 2: policy loss 3.051
+readout epoch 3: policy loss 3.016
+readout epoch 4: policy loss 2.994
+readout epoch 5: policy loss 2.979
+readout epoch 6: policy loss 2.963
+readout epoch 7: policy loss 2.950
+readout epoch 8: policy loss 2.941
+curriculum: 116641 positions to learn from, 6364 to test finishing on
+{'step': 0, 'positions': 0, 'minutes': 0.0, 'top1': 0.167, 'good_moves': 0.2598, 'held_out_loss': 3.0243, 'finish_top1': 0.075, 'finish_good_moves': 0.1161, 'finish_held_out_loss': 3.6529, 'blind_top1': 0.1169, 'blind_good_moves': 0.1946}
+{'step': 50, 'positions': 6400, 'minutes': 0.48, 'policy_loss': 3.0407, 'value_loss': 0.2574, 'positions_per_s': 223.0, 'grad_readout': 1.97582, 'grad_neurons': 0.22713}
+{'step': 100, 'positions': 12800, 'minutes': 0.93, 'policy_loss': 3.0534, 'value_loss': 0.2784, 'positions_per_s': 237.4, 'grad_readout': 2.18608, 'grad_neurons': 0.21184}
+{'step': 150, 'positions': 19200, 'minutes': 1.38, 'policy_loss': 3.0677, 'value_loss': 0.2787, 'positions_per_s': 236.8, 'grad_readout': 1.8107, 'grad_neurons': 0.1789}
+{'step': 200, 'positions': 25600, 'minutes': 1.83, 'policy_loss': 3.0596, 'value_loss': 0.2915, 'positions_per_s': 237.5, 'grad_readout': 2.40975, 'grad_neurons': 0.22622}
+{'step': 250, 'positions': 32000, 'minutes': 2.28, 'policy_loss': 3.0926, 'value_loss': 0.2693, 'positions_per_s': 237.5, 'grad_readout': 1.97781, 'grad_neurons': 0.1906, 'top1': 0.126, 'good_moves': 0.207, 'held_out_loss': 3.0751, 'finish_top1': 0.0561, 'finish_good_moves': 0.1023, 'finish_held_out_loss': 3.6951}
+{'step': 300, 'positions': 38400, 'minutes': 2.73, 'policy_loss': 3.0613, 'value_loss': 0.2799, 'positions_per_s': 237.1, 'grad_readout': 1.91578, 'grad_neurons': 0.19048}
+{'step': 350, 'positions': 44800, 'minutes': 3.18, 'policy_loss': 3.0789, 'value_loss': 0.2865, 'positions_per_s': 237.5, 'grad_readout': 2.40901, 'grad_neurons': 0.2347}
+{'step': 400, 'positions': 51200, 'minutes': 3.62, 'policy_loss': 3.062, 'value_loss': 0.2773, 'positions_per_s': 237.6, 'grad_readout': 1.80929, 'grad_neurons': 0.18713}
+{'step': 450, 'positions': 57600, 'minutes': 4.07, 'policy_loss': 3.0846, 'value_loss': 0.2817, 'positions_per_s': 237.5, 'grad_readout': 1.98998, 'grad_neurons': 0.2069}
+{'step': 500, 'positions': 64000, 'minutes': 4.52, 'policy_loss': 3.0614, 'value_loss': 0.2751, 'positions_per_s': 236.9, 'grad_readout': 1.60443, 'grad_neurons': 0.17493, 'top1': 0.1382, 'good_moves': 0.2158, 'held_out_loss': 3.0698, 'finish_top1': 0.0669, 'finish_good_moves': 0.1117, 'finish_held_out_loss': 3.6634}
+{'step': 550, 'positions': 70400, 'minutes': 4.97, 'policy_loss': 3.0611, 'value_loss': 0.2804, 'positions_per_s': 237.3, 'grad_readout': 2.13207, 'grad_neurons': 0.22919}
+{'step': 600, 'positions': 76800, 'minutes': 5.42, 'policy_loss': 3.072, 'value_loss': 0.2717, 'positions_per_s': 237.0, 'grad_readout': 1.74322, 'grad_neurons': 0.19409}
+{'step': 650, 'positions': 83200, 'minutes': 5.87, 'policy_loss': 3.055, 'value_loss': 0.2775, 'positions_per_s': 237.1, 'grad_readout': 1.89715, 'grad_neurons': 0.21112}
+{'step': 700, 'positions': 89600, 'minutes': 6.32, 'policy_loss': 3.0587, 'value_loss': 0.2734, 'positions_per_s': 237.2, 'grad_readout': 1.71114, 'grad_neurons': 0.19552}
+{'step': 750, 'positions': 96000, 'minutes': 6.77, 'policy_loss': 3.0492, 'value_loss': 0.266, 'positions_per_s': 236.5, 'grad_readout': 1.58621, 'grad_neurons': 0.18709, 'top1': 0.1396, 'good_moves': 0.2197, 'held_out_loss': 3.0697, 'finish_top1': 0.0699, 'finish_good_moves': 0.1087, 'finish_held_out_loss': 3.6464}
+{'step': 800, 'positions': 102400, 'minutes': 7.22, 'policy_loss': 3.0616, 'value_loss': 0.2689, 'positions_per_s': 237.8, 'grad_readout': 1.76433, 'grad_neurons': 0.20829}
+{'step': 850, 'positions': 108800, 'minutes': 7.67, 'policy_loss': 3.0364, 'value_loss': 0.2772, 'positions_per_s': 237.2, 'grad_readout': 2.27394, 'grad_neurons': 0.26038}
+{'step': 900, 'positions': 115200, 'minutes': 8.12, 'policy_loss': 3.0451, 'value_loss': 0.2718, 'positions_per_s': 237.2, 'grad_readout': 1.57775, 'grad_neurons': 0.19171}
+{'step': 950, 'positions': 121600, 'minutes': 8.57, 'policy_loss': 3.0404, 'value_loss': 0.2652, 'positions_per_s': 237.1, 'grad_readout': 1.5722, 'grad_neurons': 0.19729}
+{'step': 1000, 'positions': 128000, 'minutes': 9.03, 'policy_loss': 3.0608, 'value_loss': 0.2678, 'positions_per_s': 235.0, 'grad_readout': 1.77036, 'grad_neurons': 0.216, 'top1': 0.1426, 'good_moves': 0.231, 'held_out_loss': 3.0525, 'finish_top1': 0.0693, 'finish_good_moves': 0.1138, 'finish_held_out_loss': 3.6521}
+{'step': 1050, 'positions': 134400, 'minutes': 9.47, 'policy_loss': 3.0374, 'value_loss': 0.2721, 'positions_per_s': 237.9, 'grad_readout': 1.47724, 'grad_neurons': 0.18819}
+{'step': 1100, 'positions': 140800, 'minutes': 9.92, 'policy_loss': 3.0357, 'value_loss': 0.2661, 'positions_per_s': 237.2, 'grad_readout': 1.31613, 'grad_neurons': 0.16868}
+{'step': 1150, 'positions': 147200, 'minutes': 10.37, 'policy_loss': 3.0318, 'value_loss': 0.2685, 'positions_per_s': 237.1, 'grad_readout': 1.4287, 'grad_neurons': 0.18086}
+{'step': 1200, 'positions': 153600, 'minutes': 10.82, 'policy_loss': 3.032, 'value_loss': 0.2688, 'positions_per_s': 237.7, 'grad_readout': 1.6392, 'grad_neurons': 0.2058}
+{'step': 1250, 'positions': 160000, 'minutes': 11.27, 'policy_loss': 3.0427, 'value_loss': 0.2688, 'positions_per_s': 237.8, 'grad_readout': 1.65343, 'grad_neurons': 0.20776, 'top1': 0.1475, 'good_moves': 0.231, 'held_out_loss': 3.0518, 'finish_top1': 0.0707, 'finish_good_moves': 0.112, 'finish_held_out_loss': 3.6296}
+{'step': 1300, 'positions': 166400, 'minutes': 11.72, 'policy_loss': 3.0322, 'value_loss': 0.2626, 'positions_per_s': 237.3, 'grad_readout': 1.35702, 'grad_neurons': 0.17863}
+{'step': 1350, 'positions': 172800, 'minutes': 12.17, 'policy_loss': 3.0477, 'value_loss': 0.2639, 'positions_per_s': 237.4, 'grad_readout': 1.45211, 'grad_neurons': 0.1868}
+{'step': 1400, 'positions': 179200, 'minutes': 12.62, 'policy_loss': 3.0488, 'value_loss': 0.2675, 'positions_per_s': 237.2, 'grad_readout': 1.51313, 'grad_neurons': 0.19434}
+{'step': 1450, 'positions': 185600, 'minutes': 13.07, 'policy_loss': 3.0253, 'value_loss': 0.2641, 'positions_per_s': 237.7, 'grad_readout': 1.35976, 'grad_neurons': 0.17526}
+{'step': 1500, 'positions': 192000, 'minutes': 13.52, 'policy_loss': 3.0242, 'value_loss': 0.2649, 'positions_per_s': 237.7, 'grad_readout': 1.47482, 'grad_neurons': 0.19363, 'top1': 0.1484, 'good_moves': 0.2344, 'held_out_loss': 3.0442, 'finish_top1': 0.0715, 'finish_good_moves': 0.113, 'finish_held_out_loss': 3.6282}
+{'step': 1550, 'positions': 198400, 'minutes': 13.97, 'policy_loss': 3.0241, 'value_loss': 0.2702, 'positions_per_s': 237.4, 'grad_readout': 1.34551, 'grad_neurons': 0.17453}
+{'step': 1600, 'positions': 204800, 'minutes': 14.42, 'policy_loss': 3.038, 'value_loss': 0.2703, 'positions_per_s': 237.5, 'grad_readout': 1.33063, 'grad_neurons': 0.17441}
+{'step': 1650, 'positions': 211200, 'minutes': 14.86, 'policy_loss': 3.0307, 'value_loss': 0.2582, 'positions_per_s': 237.9, 'grad_readout': 1.29887, 'grad_neurons': 0.17123}
+{'step': 1666, 'positions': 213248, 'minutes': 15.01, 'top1': 0.1582, 'good_moves': 0.2495, 'held_out_loss': 3.0377, 'finish_top1': 0.0726, 'finish_good_moves': 0.1127, 'finish_held_out_loss': 3.6288, 'best_val_loss': 3.0442}
+2026-10-20 06:42:04 P. pilot pilot-synapses
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792467724.915946   12511 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792467726.070929   12511 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+brain: 163803 neurons, 6234868 connections
+data: 3089816 positions
+E0000 00:00:1792467886.690474   12511 util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+readout epoch 1: policy loss 3.119
+readout epoch 2: policy loss 3.051
+readout epoch 3: policy loss 3.016
+readout epoch 4: policy loss 2.994
+readout epoch 5: policy loss 2.979
+readout epoch 6: policy loss 2.963
+readout epoch 7: policy loss 2.950
+readout epoch 8: policy loss 2.941
+curriculum: 116641 positions to learn from, 6364 to test finishing on
+{'step': 0, 'positions': 0, 'minutes': 0.0, 'top1': 0.1665, 'good_moves': 0.2598, 'held_out_loss': 3.0243, 'finish_top1': 0.0748, 'finish_good_moves': 0.116, 'finish_held_out_loss': 3.6529, 'blind_top1': 0.1169, 'blind_good_moves': 0.1946}
+{'step': 50, 'positions': 6400, 'minutes': 0.53, 'policy_loss': 3.054, 'value_loss': 0.2616, 'positions_per_s': 202.5, 'grad_readout': 2.17473, 'grad_synapses': 0.14771, 'grad_neurons': 0.23181}
+{'step': 100, 'positions': 12800, 'minutes': 1.01, 'policy_loss': 3.0702, 'value_loss': 0.2827, 'positions_per_s': 219.5, 'grad_readout': 2.56024, 'grad_synapses': 0.1296, 'grad_neurons': 0.23875}
+{'step': 150, 'positions': 19200, 'minutes': 1.5, 'policy_loss': 3.0696, 'value_loss': 0.2803, 'positions_per_s': 219.5, 'grad_readout': 1.89684, 'grad_synapses': 0.105, 'grad_neurons': 0.19305}
+{'step': 200, 'positions': 25600, 'minutes': 1.99, 'policy_loss': 3.0546, 'value_loss': 0.2898, 'positions_per_s': 218.9, 'grad_readout': 2.35477, 'grad_synapses': 0.12454, 'grad_neurons': 0.23259}
+{'step': 250, 'positions': 32000, 'minutes': 2.47, 'policy_loss': 3.0911, 'value_loss': 0.2672, 'positions_per_s': 219.8, 'grad_readout': 1.73648, 'grad_synapses': 0.09798, 'grad_neurons': 0.1812, 'top1': 0.1279, 'good_moves': 0.2046, 'held_out_loss': 3.08, 'finish_top1': 0.0577, 'finish_good_moves': 0.1014, 'finish_held_out_loss': 3.688}
+{'step': 300, 'positions': 38400, 'minutes': 2.96, 'policy_loss': 3.0599, 'value_loss': 0.2755, 'positions_per_s': 219.3, 'grad_readout': 1.69521, 'grad_synapses': 0.09767, 'grad_neurons': 0.18265}
+{'step': 350, 'positions': 44800, 'minutes': 3.45, 'policy_loss': 3.0788, 'value_loss': 0.282, 'positions_per_s': 218.8, 'grad_readout': 2.21104, 'grad_synapses': 0.12316, 'grad_neurons': 0.23186}
+{'step': 400, 'positions': 51200, 'minutes': 3.93, 'policy_loss': 3.0595, 'value_loss': 0.2737, 'positions_per_s': 219.8, 'grad_readout': 1.75063, 'grad_synapses': 0.10268, 'grad_neurons': 0.19356}
+{'step': 450, 'positions': 57600, 'minutes': 4.42, 'policy_loss': 3.0799, 'value_loss': 0.2763, 'positions_per_s': 219.3, 'grad_readout': 1.80545, 'grad_synapses': 0.10944, 'grad_neurons': 0.20459}
+{'step': 500, 'positions': 64000, 'minutes': 4.9, 'policy_loss': 3.0564, 'value_loss': 0.2712, 'positions_per_s': 219.7, 'grad_readout': 1.51908, 'grad_synapses': 0.09627, 'grad_neurons': 0.17911, 'top1': 0.1357, 'good_moves': 0.2104, 'held_out_loss': 3.0617, 'finish_top1': 0.0695, 'finish_good_moves': 0.113, 'finish_held_out_loss': 3.6413}
+{'step': 550, 'positions': 70400, 'minutes': 5.39, 'policy_loss': 3.053, 'value_loss': 0.2756, 'positions_per_s': 219.2, 'grad_readout': 1.83709, 'grad_synapses': 0.11683, 'grad_neurons': 0.2178}
+{'step': 600, 'positions': 76800, 'minutes': 5.88, 'policy_loss': 3.0636, 'value_loss': 0.2681, 'positions_per_s': 218.7, 'grad_readout': 1.76236, 'grad_synapses': 0.11531, 'grad_neurons': 0.21367}
+{'step': 650, 'positions': 83200, 'minutes': 6.36, 'policy_loss': 3.0479, 'value_loss': 0.2716, 'positions_per_s': 219.8, 'grad_readout': 1.70151, 'grad_synapses': 0.11113, 'grad_neurons': 0.20795}
+{'step': 700, 'positions': 89600, 'minutes': 6.85, 'policy_loss': 3.0532, 'value_loss': 0.2673, 'positions_per_s': 219.8, 'grad_readout': 1.47031, 'grad_synapses': 0.09901, 'grad_neurons': 0.18524}
+{'step': 750, 'positions': 96000, 'minutes': 7.33, 'policy_loss': 3.0432, 'value_loss': 0.2589, 'positions_per_s': 218.9, 'grad_readout': 1.44975, 'grad_synapses': 0.10058, 'grad_neurons': 0.18657, 'top1': 0.1445, 'good_moves': 0.228, 'held_out_loss': 3.0598, 'finish_top1': 0.0679, 'finish_good_moves': 0.1065, 'finish_held_out_loss': 3.6278}
+{'step': 800, 'positions': 102400, 'minutes': 7.82, 'policy_loss': 3.0566, 'value_loss': 0.2656, 'positions_per_s': 219.5, 'grad_readout': 1.60009, 'grad_synapses': 0.10826, 'grad_neurons': 0.20136}
+{'step': 850, 'positions': 108800, 'minutes': 8.31, 'policy_loss': 3.0277, 'value_loss': 0.2714, 'positions_per_s': 219.2, 'grad_readout': 1.93788, 'grad_synapses': 0.12718, 'grad_neurons': 0.23756}
+{'step': 900, 'positions': 115200, 'minutes': 8.8, 'policy_loss': 3.0405, 'value_loss': 0.2687, 'positions_per_s': 216.4, 'grad_readout': 1.44155, 'grad_synapses': 0.10056, 'grad_neurons': 0.18544}
+{'step': 950, 'positions': 121600, 'minutes': 9.29, 'policy_loss': 3.0352, 'value_loss': 0.2604, 'positions_per_s': 219.5, 'grad_readout': 1.43442, 'grad_synapses': 0.10252, 'grad_neurons': 0.18909}
+{'step': 1000, 'positions': 128000, 'minutes': 9.77, 'policy_loss': 3.0532, 'value_loss': 0.2604, 'positions_per_s': 219.0, 'grad_readout': 1.45392, 'grad_synapses': 0.10207, 'grad_neurons': 0.18838, 'top1': 0.144, 'good_moves': 0.2373, 'held_out_loss': 3.0465, 'finish_top1': 0.066, 'finish_good_moves': 0.1108, 'finish_held_out_loss': 3.6422}
+{'step': 1050, 'positions': 134400, 'minutes': 10.26, 'policy_loss': 3.0323, 'value_loss': 0.2675, 'positions_per_s': 219.3, 'grad_readout': 1.34525, 'grad_synapses': 0.09969, 'grad_neurons': 0.18028}
+{'step': 1100, 'positions': 140800, 'minutes': 10.75, 'policy_loss': 3.0297, 'value_loss': 0.2641, 'positions_per_s': 219.7, 'grad_readout': 1.16907, 'grad_synapses': 0.08664, 'grad_neurons': 0.15799}
+{'step': 1150, 'positions': 147200, 'minutes': 11.23, 'policy_loss': 3.0262, 'value_loss': 0.2673, 'positions_per_s': 219.7, 'grad_readout': 1.27701, 'grad_synapses': 0.09407, 'grad_neurons': 0.16996}
+{'step': 1200, 'positions': 153600, 'minutes': 11.72, 'policy_loss': 3.0269, 'value_loss': 0.2661, 'positions_per_s': 219.8, 'grad_readout': 1.35928, 'grad_synapses': 0.1012, 'grad_neurons': 0.18136}
+{'step': 1250, 'positions': 160000, 'minutes': 12.2, 'policy_loss': 3.0373, 'value_loss': 0.266, 'positions_per_s': 219.4, 'grad_readout': 1.30266, 'grad_synapses': 0.09543, 'grad_neurons': 0.17382, 'top1': 0.1504, 'good_moves': 0.2305, 'held_out_loss': 3.0466, 'finish_top1': 0.0699, 'finish_good_moves': 0.1138, 'finish_held_out_loss': 3.6238}
+{'step': 1300, 'positions': 166400, 'minutes': 12.69, 'policy_loss': 3.0291, 'value_loss': 0.2601, 'positions_per_s': 219.4, 'grad_readout': 1.20509, 'grad_synapses': 0.09143, 'grad_neurons': 0.16486}
+{'step': 1350, 'positions': 172800, 'minutes': 13.18, 'policy_loss': 3.0454, 'value_loss': 0.2609, 'positions_per_s': 219.1, 'grad_readout': 1.29946, 'grad_synapses': 0.09636, 'grad_neurons': 0.17395}
+{'step': 1400, 'positions': 179200, 'minutes': 13.66, 'policy_loss': 3.0455, 'value_loss': 0.2646, 'positions_per_s': 219.7, 'grad_readout': 1.32537, 'grad_synapses': 0.0966, 'grad_neurons': 0.17468}
+{'step': 1450, 'positions': 185600, 'minutes': 14.15, 'policy_loss': 3.0197, 'value_loss': 0.2638, 'positions_per_s': 219.3, 'grad_readout': 1.20479, 'grad_synapses': 0.08915, 'grad_neurons': 0.16115}
+{'step': 1500, 'positions': 192000, 'minutes': 14.63, 'policy_loss': 3.0208, 'value_loss': 0.263, 'positions_per_s': 219.7, 'grad_readout': 1.29093, 'grad_synapses': 0.0968, 'grad_neurons': 0.17441, 'top1': 0.1543, 'good_moves': 0.2373, 'held_out_loss': 3.0421, 'finish_top1': 0.0726, 'finish_good_moves': 0.1177, 'finish_held_out_loss': 3.6211}
+{'step': 1538, 'positions': 196864, 'minutes': 15.0, 'top1': 0.1577, 'good_moves': 0.2471, 'held_out_loss': 3.0358, 'finish_top1': 0.0724, 'finish_good_moves': 0.1172, 'finish_held_out_loss': 3.6212, 'best_val_loss': 3.0421}
+2026-10-20 07:03:33 B. more ChessBench files for 18 hours
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792469014.294822   15249 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792469015.402862   15249 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+the brain went over everything downloaded in 0.00 hours
+E0000 00:00:1792469029.583485   15249 util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792469031.582935   15383 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792469032.768285   15383 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792469034.364309   15409 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_006.npy: 32 of 515,050 positions, 52 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792469035.530122   15409 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:10<00:00, 10.16s/file]100%|██████████| 1/1 [00:10<00:00, 10.16s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_006.npy: 64,032 of 515,050 positions, 389 a second
+more_006.npy: 128,032 of 515,050 positions, 348 a second
+more_006.npy: 192,032 of 515,050 positions, 336 a second
+more_006.npy: 256,032 of 515,050 positions, 330 a second
+more_006.npy: 320,032 of 515,050 positions, 340 a second
+more_006.npy: 384,032 of 515,050 positions, 336 a second
+more_006.npy: 448,032 of 515,050 positions, 343 a second
+more_006.npy: 512,032 of 515,050 positions, 339 a second
+more_006.npy: 515,050 of 515,050 positions, 339 a second
+1 more files, 86 GB free, 17.6 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792470557.336922   18365 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_007.npy: 32 of 516,603 positions, 77 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792470558.565863   18365 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:10<00:00, 10.62s/file]100%|██████████| 1/1 [00:10<00:00, 10.62s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_007.npy: 64,032 of 516,603 positions, 313 a second
+more_007.npy: 128,032 of 516,603 positions, 313 a second
+more_007.npy: 192,032 of 516,603 positions, 313 a second
+more_007.npy: 256,032 of 516,603 positions, 330 a second
+more_007.npy: 320,032 of 516,603 positions, 327 a second
+more_007.npy: 384,032 of 516,603 positions, 336 a second
+more_007.npy: 448,032 of 516,603 positions, 332 a second
+more_007.npy: 512,032 of 516,603 positions, 339 a second
+more_007.npy: 516,603 of 516,603 positions, 331 a second
+2 more files, 85 GB free, 17.1 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792472123.006597   21388 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_008.npy: 32 of 515,451 positions, 88 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792472124.197888   21388 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:09<00:00,  9.96s/file]100%|██████████| 1/1 [00:09<00:00,  9.96s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_008.npy: 64,032 of 515,451 positions, 390 a second
+more_008.npy: 128,032 of 515,451 positions, 348 a second
+more_008.npy: 192,032 of 515,451 positions, 362 a second
+more_008.npy: 256,032 of 515,451 positions, 348 a second
+more_008.npy: 320,032 of 515,451 positions, 341 a second
+more_008.npy: 384,032 of 515,451 positions, 348 a second
+more_008.npy: 448,032 of 515,451 positions, 354 a second
+more_008.npy: 512,032 of 515,451 positions, 348 a second
+more_008.npy: 515,451 of 515,451 positions, 349 a second
+3 more files, 84 GB free, 16.7 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792473603.050472   24253 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_009.npy: 32 of 514,787 positions, 101 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792473604.238650   24253 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:10<00:00, 10.65s/file]100%|██████████| 1/1 [00:10<00:00, 10.65s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_009.npy: 64,032 of 514,787 positions, 313 a second
+more_009.npy: 128,032 of 514,787 positions, 314 a second
+more_009.npy: 192,032 of 514,787 positions, 314 a second
+more_009.npy: 256,032 of 514,787 positions, 330 a second
+more_009.npy: 320,032 of 514,787 positions, 327 a second
+more_009.npy: 384,032 of 514,787 positions, 324 a second
+more_009.npy: 448,032 of 514,787 positions, 323 a second
+more_009.npy: 512,032 of 514,787 positions, 318 a second
+more_009.npy: 514,787 of 514,787 positions, 318 a second
+4 more files, 83 GB free, 16.3 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792475223.775464   27415 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_010.npy: 32 of 516,449 positions, 92 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792475225.023913   27415 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:11<00:00, 11.65s/file]100%|██████████| 1/1 [00:11<00:00, 11.66s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_010.npy: 64,032 of 516,449 positions, 261 a second
+more_010.npy: 128,032 of 516,449 positions, 285 a second
+more_010.npy: 192,032 of 516,449 positions, 277 a second
+more_010.npy: 256,032 of 516,449 positions, 273 a second
+more_010.npy: 320,032 of 516,449 positions, 290 a second
+more_010.npy: 384,032 of 516,449 positions, 289 a second
+more_010.npy: 448,032 of 516,449 positions, 289 a second
+more_010.npy: 512,032 of 516,449 positions, 285 a second
+more_010.npy: 516,449 of 516,449 positions, 286 a second
+5 more files, 82 GB free, 15.8 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792477034.383519   31011 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_011.npy: 32 of 515,595 positions, 73 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792477035.840862   31011 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]100%|██████████| 1/1 [00:10<00:00, 10.38s/file]100%|██████████| 1/1 [00:10<00:00, 10.38s/file]
+done, now run: python -m flychess.train_dl --prepare
+more_011.npy: 64,032 of 515,595 positions, 175 a second
+more_011.npy: 128,032 of 515,595 positions, 180 a second
+more_011.npy: 192,032 of 515,595 positions, 189 a second
+more_011.npy: 256,032 of 515,595 positions, 185 a second
+more_011.npy: 320,032 of 515,595 positions, 185 a second
+more_011.npy: 384,032 of 515,595 positions, 182 a second
+more_011.npy: 448,032 of 515,595 positions, 192 a second
+more_011.npy: 512,032 of 515,595 positions, 194 a second
+more_011.npy: 515,595 of 515,595 positions, 195 a second
+6 more files, 82 GB free, 15.0 hours left
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792479686.689021   36135 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+more_012.npy: 32 of 515,421 positions, 85 a second
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792479687.991996   36135 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  0%|          | 0/1 [00:00<?, ?file/s]  0%|          | 0/1 [01:29<?, ?file/s]
+Traceback (most recent call last):
+  File "/home/ariju/.venvs/flychess/lib/python3.12/site-packages/urllib3/response.py", line 929, in _error_catcher
+    yield
+  File "/home/ariju/.venvs/flychess/lib/python3.12/site-packages/urllib3/response.py", line 1067, in _raw_read
+    raise IncompleteRead(self._fp_bytes_read, self.length_remaining)
+urllib3.exceptions.IncompleteRead: IncompleteRead(67984833 bytes read, 4513592 more expected)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/c/Users/ariju/Documents/code_proj/fly-chess/scripts/download_chessbench.py", line 65, in <module>
+    main()
+  File "/mnt/c/Users/ariju/Documents/code_proj/fly-chess/scripts/download_chessbench.py", line 60, in main
+    download(i, args.out)
+  File "/mnt/c/Users/ariju/Documents/code_proj/fly-chess/scripts/download_chessbench.py", line 37, in download
+    for rec in msgpack.Unpacker(zstandard.ZstdDecompressor().stream_reader(r.raw), raw=False):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "msgpack/_unpacker.pyx", line 594, in msgpack._cmsgpack.Unpacker.__next__
+  File "msgpack/_unpacker.pyx", line 513, in msgpack._cmsgpack.Unpacker._unpack
+  File "msgpack/_unpacker.pyx", line 474, in msgpack._cmsgpack.Unpacker.read_from_file
+  File "/home/ariju/.venvs/flychess/lib/python3.12/site-packages/urllib3/response.py", line 1134, in read
+    data = self._raw_read(amt)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ariju/.venvs/flychess/lib/python3.12/site-packages/urllib3/response.py", line 1045, in _raw_read
+    with self._error_catcher():
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ariju/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/ariju/.venvs/flychess/lib/python3.12/site-packages/urllib3/response.py", line 949, in _error_catcher
+    raise ProtocolError(arg, e) from e
+urllib3.exceptions.ProtocolError: ('Connection broken: IncompleteRead(67984833 bytes read, 4513592 more expected)', IncompleteRead(67984833 bytes read, 4513592 more expected))
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/c/Users/ariju/Documents/code_proj/fly-chess/flychess/train_cached.py", line 330, in <module>
+    main()
+  File "/mnt/c/Users/ariju/Documents/code_proj/fly-chess/flychess/train_cached.py", line 260, in main
+    prepare_more(args.prepare_more, cache)
+  File "/mnt/c/Users/ariju/Documents/code_proj/fly-chess/flychess/train_cached.py", line 83, in prepare_more
+    subprocess.run([sys.executable, "scripts/download_chessbench.py", "--start", str(i), "--files", "1",
+  File "/home/ariju/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/ariju/.venvs/flychess/bin/python', 'scripts/download_chessbench.py', '--start', '13', '--files', '1', '--out', 'data/positions_more']' returned non-zero exit status 1.
+more_012.npy: 64,032 of 515,421 positions, 166 a second
+more_012.npy: 128,032 of 515,421 positions, 185 a second
+more_012.npy: 192,032 of 515,421 positions, 189 a second
+more_012.npy: 256,032 of 515,421 positions, 191 a second
+more_012.npy: 320,032 of 515,421 positions, 190 a second
+more_012.npy: 384,032 of 515,421 positions, 199 a second
+more_012.npy: 448,032 of 515,421 positions, 197 a second
+more_012.npy: 512,032 of 515,421 positions, 197 a second
+more_012.npy: 515,421 of 515,421 positions, 197 a second
+7 more files, 81 GB free, 14.3 hours left
+couldn't get ChessBench file 13, stopping here
+{'epoch': 1, 'fit': '7 more files, the last fit', 'positions': 6581131, 'minutes': 3.15, 'top1': 0.2202, 'good_moves': 0.3159, 'held_out_loss': 2.8714, 'finish_top1': 0.1378, 'finish_good_moves': 0.1977, 'finish_held_out_loss': 3.2659}
+{'epoch': 2, 'fit': '7 more files, the last fit', 'positions': 6581131, 'minutes': 5.61, 'top1': 0.2192, 'good_moves': 0.3188, 'held_out_loss': 2.8738, 'finish_top1': 0.1373, 'finish_good_moves': 0.2005, 'finish_held_out_loss': 3.254}
+{'epoch': 3, 'fit': '7 more files, the last fit', 'positions': 6581131, 'minutes': 8.04, 'top1': 0.2295, 'good_moves': 0.3311, 'held_out_loss': 2.8731, 'finish_top1': 0.1425, 'finish_good_moves': 0.203, 'finish_held_out_loss': 3.2503}
+{'epoch': 4, 'fit': '7 more files, the last fit', 'positions': 6581131, 'minutes': 10.13, 'top1': 0.2227, 'good_moves': 0.3213, 'held_out_loss': 2.8742, 'finish_top1': 0.1376, 'finish_good_moves': 0.2011, 'finish_held_out_loss': 3.2553}
+{'epoch': 5, 'fit': '7 more files, the last fit', 'positions': 6581131, 'minutes': 12.43, 'top1': 0.2188, 'good_moves': 0.3086, 'held_out_loss': 2.8684, 'finish_top1': 0.1389, 'finish_good_moves': 0.2013, 'finish_held_out_loss': 3.2462}
+{'epoch': 6, 'fit': '7 more files, the last fit', 'positions': 6581131, 'minutes': 14.5, 'top1': 0.2271, 'good_moves': 0.3213, 'held_out_loss': 2.8644, 'finish_top1': 0.1403, 'finish_good_moves': 0.2054, 'finish_held_out_loss': 3.243}
+{'epoch': 7, 'fit': '7 more files, the last fit', 'positions': 6581131, 'minutes': 17.02, 'top1': 0.2231, 'good_moves': 0.3223, 'held_out_loss': 2.8674, 'finish_top1': 0.1409, 'finish_good_moves': 0.2032, 'finish_held_out_loss': 3.2498}
+{'epoch': 8, 'fit': '7 more files, the last fit', 'positions': 6581131, 'minutes': 18.99, 'top1': 0.2217, 'good_moves': 0.3213, 'held_out_loss': 2.8658, 'finish_top1': 0.1362, 'finish_good_moves': 0.1978, 'finish_held_out_loss': 3.2587}
+{'epoch': 9, 'fit': '7 more files, the last fit', 'positions': 6581131, 'minutes': 21.5, 'top1': 0.2256, 'good_moves': 0.3237, 'held_out_loss': 2.8607, 'finish_top1': 0.1323, 'finish_good_moves': 0.1952, 'finish_held_out_loss': 3.2593}
+{'epoch': 10, 'fit': '7 more files, the last fit', 'positions': 6581131, 'minutes': 23.54, 'top1': 0.2251, 'good_moves': 0.3276, 'held_out_loss': 2.8651, 'finish_top1': 0.1383, 'finish_good_moves': 0.2011, 'finish_held_out_loss': 3.2475}
+{'epoch': 11, 'fit': '7 more files, the last fit', 'positions': 6581131, 'minutes': 25.7, 'top1': 0.2305, 'good_moves': 0.3276, 'held_out_loss': 2.8635, 'finish_top1': 0.1406, 'finish_good_moves': 0.1983, 'finish_held_out_loss': 3.2576}
+{'epoch': 12, 'fit': '7 more files, the last fit', 'positions': 6581131, 'minutes': 28.06, 'top1': 0.2251, 'good_moves': 0.3228, 'held_out_loss': 2.8652, 'finish_top1': 0.1348, 'finish_good_moves': 0.1937, 'finish_held_out_loss': 3.2612}
+{'epoch': 13, 'fit': '7 more files, the last fit', 'positions': 6581131, 'minutes': 30.27, 'top1': 0.2202, 'good_moves': 0.3174, 'held_out_loss': 2.865, 'finish_top1': 0.1372, 'finish_good_moves': 0.2007, 'finish_held_out_loss': 3.257}
+{'epoch': 'final', 'best_val_loss': 2.8607, 'positions': 6581131, 'top1': 0.231, 'good_moves': 0.3372, 'held_out_loss': 2.8534, 'finish_top1': 0.1317, 'finish_good_moves': 0.1948, 'finish_held_out_loss': 3.2594}
+saved checkpoints/dl-day
+2026-10-20 11:16:04 the new fly's Elo
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792484165.318124   44832 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792484167.620510   44832 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+day vs random: 68% in 29s | day 701
+day vs greedy: 52% in 29s | day 700
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/c/Users/ariju/Documents/code_proj/fly-chess/flychess/rating.py", line 223, in <module>
+    main()
+  File "/mnt/c/Users/ariju/Documents/code_proj/fly-chess/flychess/rating.py", line 212, in main
+    run(fly, opp, kind, name, seed)
+  File "/mnt/c/Users/ariju/Documents/code_proj/fly-chess/flychess/rating.py", line 187, in run
+    new = play_pair(a, b, name_a, name_b, args.games, seed)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/ariju/Documents/code_proj/fly-chess/flychess/rating.py", line 66, in play_pair
+    out.append({"white": names[0], "black": names[1], "score": play_game(white, black, info=info), **info})
+                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/ariju/Documents/code_proj/fly-chess/flychess/play.py", line 257, in play_game
+    board.push(player.move(board))
+               ^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/ariju/Documents/code_proj/fly-chess/flychess/play.py", line 227, in move
+    return self.sf.move(board)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/ariju/Documents/code_proj/fly-chess/flychess/play.py", line 209, in move
+    return self.engine.play(board, self.limit).move
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ariju/.venvs/flychess/lib/python3.12/site-packages/chess/engine.py", line 2980, in play
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/ariju/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ariju/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+TimeoutError

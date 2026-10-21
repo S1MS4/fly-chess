@@ -1,0 +1,18 @@
+18985 stalemate traps
+stalemates: 2000 of 18985 labelled
+stalemates: 4000 of 18985 labelled
+stalemates: 6000 of 18985 labelled
+stalemates: 8000 of 18985 labelled
+stalemates: 10000 of 18985 labelled
+stalemates: 12000 of 18985 labelled
+stalemates: 14000 of 18985 labelled
+stalemates: 16000 of 18985 labelled
+stalemates: 18000 of 18985 labelled
+stalemates: 18985 of 18985 labelled
+saved data/curriculum/stalemates.parquet: 18985 positions, 986 for testing
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792598242.047916  268613 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792598243.335604  268613 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+data/positions/packed.npz is newer than every shard, keeping it
+packed 141990 curriculum positions (7350 for testing) into data/curriculum/packed.npz

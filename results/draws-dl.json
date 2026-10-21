@@ -1,0 +1,426 @@
+{
+ "anchor": {
+  "player": "stockfish-1320",
+  "elo": 1320
+ },
+ "date": "2026-10-20",
+ "ratings": {},
+ "pairs": [
+  {
+   "a": "dl",
+   "b": "random",
+   "won": 2,
+   "drawn": 18,
+   "lost": 0
+  },
+  {
+   "a": "dl",
+   "b": "greedy",
+   "won": 0,
+   "drawn": 19,
+   "lost": 1
+  }
+ ],
+ "games": [
+  {
+   "white": "dl",
+   "black": "random",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 69,
+   "material": 18,
+   "material_max": 21,
+   "material_min": 0
+  },
+  {
+   "white": "random",
+   "black": "dl",
+   "score": 0.5,
+   "end": "threefold repetition",
+   "moves": 60,
+   "material": -20,
+   "material_max": 0,
+   "material_min": -24
+  },
+  {
+   "white": "dl",
+   "black": "random",
+   "score": 0.5,
+   "end": "move cap",
+   "moves": 201,
+   "material": 9,
+   "material_max": 32,
+   "material_min": 0
+  },
+  {
+   "white": "random",
+   "black": "dl",
+   "score": 0.5,
+   "end": "fifty moves",
+   "moves": 187,
+   "material": -2,
+   "material_max": 1,
+   "material_min": -15
+  },
+  {
+   "white": "dl",
+   "black": "random",
+   "score": 0.5,
+   "end": "move cap",
+   "moves": 201,
+   "material": 11,
+   "material_max": 33,
+   "material_min": 0
+  },
+  {
+   "white": "random",
+   "black": "dl",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 70,
+   "material": -20,
+   "material_max": 0,
+   "material_min": -29
+  },
+  {
+   "white": "dl",
+   "black": "random",
+   "score": 0.5,
+   "end": "threefold repetition",
+   "moves": 144,
+   "material": 6,
+   "material_max": 19,
+   "material_min": 0
+  },
+  {
+   "white": "random",
+   "black": "dl",
+   "score": 0.5,
+   "end": "threefold repetition",
+   "moves": 146,
+   "material": -6,
+   "material_max": 0,
+   "material_min": -17
+  },
+  {
+   "white": "dl",
+   "black": "random",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 11,
+   "material": 13,
+   "material_max": 13,
+   "material_min": 0
+  },
+  {
+   "white": "random",
+   "black": "dl",
+   "score": 0.5,
+   "end": "fifty moves",
+   "moves": 176,
+   "material": -12,
+   "material_max": 1,
+   "material_min": -26
+  },
+  {
+   "white": "dl",
+   "black": "random",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 72,
+   "material": 15,
+   "material_max": 29,
+   "material_min": -4
+  },
+  {
+   "white": "random",
+   "black": "dl",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 12,
+   "material": -8,
+   "material_max": 0,
+   "material_min": -8
+  },
+  {
+   "white": "dl",
+   "black": "random",
+   "score": 0.5,
+   "end": "threefold repetition",
+   "moves": 45,
+   "material": 31,
+   "material_max": 35,
+   "material_min": 0
+  },
+  {
+   "white": "random",
+   "black": "dl",
+   "score": 0.5,
+   "end": "threefold repetition",
+   "moves": 199,
+   "material": -5,
+   "material_max": 0,
+   "material_min": -25
+  },
+  {
+   "white": "dl",
+   "black": "random",
+   "score": 0.5,
+   "end": "fifty moves",
+   "moves": 134,
+   "material": 16,
+   "material_max": 20,
+   "material_min": -8
+  },
+  {
+   "white": "random",
+   "black": "dl",
+   "score": 0.5,
+   "end": "threefold repetition",
+   "moves": 143,
+   "material": -9,
+   "material_max": 0,
+   "material_min": -28
+  },
+  {
+   "white": "dl",
+   "black": "random",
+   "score": 0.5,
+   "end": "insufficient material",
+   "moves": 154,
+   "material": 0,
+   "material_max": 22,
+   "material_min": 0
+  },
+  {
+   "white": "random",
+   "black": "dl",
+   "score": 0.5,
+   "end": "threefold repetition",
+   "moves": 90,
+   "material": -15,
+   "material_max": 0,
+   "material_min": -35
+  },
+  {
+   "white": "dl",
+   "black": "random",
+   "score": 0.5,
+   "end": "threefold repetition",
+   "moves": 151,
+   "material": 3,
+   "material_max": 23,
+   "material_min": -3
+  },
+  {
+   "white": "random",
+   "black": "dl",
+   "score": 0.5,
+   "end": "threefold repetition",
+   "moves": 77,
+   "material": -8,
+   "material_max": 0,
+   "material_min": -23
+  },
+  {
+   "white": "dl",
+   "black": "greedy",
+   "score": 0.5,
+   "end": "insufficient material",
+   "moves": 62,
+   "material": 0,
+   "material_max": 8,
+   "material_min": -14
+  },
+  {
+   "white": "greedy",
+   "black": "dl",
+   "score": 0.5,
+   "end": "threefold repetition",
+   "moves": 62,
+   "material": 0,
+   "material_max": 15,
+   "material_min": -2
+  },
+  {
+   "white": "dl",
+   "black": "greedy",
+   "score": 0.5,
+   "end": "insufficient material",
+   "moves": 72,
+   "material": 0,
+   "material_max": 4,
+   "material_min": -11
+  },
+  {
+   "white": "greedy",
+   "black": "dl",
+   "score": 0.5,
+   "end": "fifty moves",
+   "moves": 152,
+   "material": -1,
+   "material_max": 8,
+   "material_min": -12
+  },
+  {
+   "white": "dl",
+   "black": "greedy",
+   "score": 0.5,
+   "end": "threefold repetition",
+   "moves": 89,
+   "material": 1,
+   "material_max": 9,
+   "material_min": -8
+  },
+  {
+   "white": "greedy",
+   "black": "dl",
+   "score": 0.5,
+   "end": "insufficient material",
+   "moves": 77,
+   "material": 0,
+   "material_max": 10,
+   "material_min": -8
+  },
+  {
+   "white": "dl",
+   "black": "greedy",
+   "score": 0.5,
+   "end": "insufficient material",
+   "moves": 98,
+   "material": 0,
+   "material_max": 17,
+   "material_min": -4
+  },
+  {
+   "white": "greedy",
+   "black": "dl",
+   "score": 0.5,
+   "end": "insufficient material",
+   "moves": 100,
+   "material": 0,
+   "material_max": 8,
+   "material_min": -16
+  },
+  {
+   "white": "dl",
+   "black": "greedy",
+   "score": 0.5,
+   "end": "threefold repetition",
+   "moves": 81,
+   "material": 1,
+   "material_max": 8,
+   "material_min": -21
+  },
+  {
+   "white": "greedy",
+   "black": "dl",
+   "score": 0.5,
+   "end": "threefold repetition",
+   "moves": 85,
+   "material": -1,
+   "material_max": 13,
+   "material_min": -6
+  },
+  {
+   "white": "dl",
+   "black": "greedy",
+   "score": 0.5,
+   "end": "insufficient material",
+   "moves": 63,
+   "material": -3,
+   "material_max": 7,
+   "material_min": -17
+  },
+  {
+   "white": "greedy",
+   "black": "dl",
+   "score": 0.5,
+   "end": "fifty moves",
+   "moves": 106,
+   "material": -1,
+   "material_max": 2,
+   "material_min": -10
+  },
+  {
+   "white": "dl",
+   "black": "greedy",
+   "score": 0.5,
+   "end": "insufficient material",
+   "moves": 118,
+   "material": 0,
+   "material_max": 10,
+   "material_min": -9
+  },
+  {
+   "white": "greedy",
+   "black": "dl",
+   "score": 0.5,
+   "end": "threefold repetition",
+   "moves": 99,
+   "material": -1,
+   "material_max": 9,
+   "material_min": -5
+  },
+  {
+   "white": "dl",
+   "black": "greedy",
+   "score": 0.5,
+   "end": "insufficient material",
+   "moves": 116,
+   "material": 0,
+   "material_max": 7,
+   "material_min": -15
+  },
+  {
+   "white": "greedy",
+   "black": "dl",
+   "score": 0.5,
+   "end": "insufficient material",
+   "moves": 92,
+   "material": 0,
+   "material_max": 18,
+   "material_min": -7
+  },
+  {
+   "white": "dl",
+   "black": "greedy",
+   "score": 0.5,
+   "end": "fifty moves",
+   "moves": 177,
+   "material": 1,
+   "material_max": 10,
+   "material_min": -6
+  },
+  {
+   "white": "greedy",
+   "black": "dl",
+   "score": 0.5,
+   "end": "insufficient material",
+   "moves": 121,
+   "material": 0,
+   "material_max": 13,
+   "material_min": 0
+  },
+  {
+   "white": "dl",
+   "black": "greedy",
+   "score": 0.5,
+   "end": "threefold repetition",
+   "moves": 81,
+   "material": 1,
+   "material_max": 1,
+   "material_min": -16
+  },
+  {
+   "white": "greedy",
+   "black": "dl",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 17,
+   "material": 6,
+   "material_max": 12,
+   "material_min": 0
+  }
+ ]
+}

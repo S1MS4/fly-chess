@@ -1,0 +1,32 @@
+2026-10-20 20:29:06 the new fly's Elo
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792517347.353903  108576 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792517350.098621  108576 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+day vs stockfish-1320-75: 70% in 48s | day 743
+day vs stockfish-1320-50: 70% in 67s | day 788
+day vs stockfish-1320-25: 35% in 85s | day 807
+day vs stockfish-1320: 0% in 74s | day 788
+stockfish-1320          1320  (1320 to 1320)
+stockfish-1320-25        949  (884 to 1034)
+day                      788  (716 to 853)
+stockfish-1320-50        752  (685 to 824)
+shuffled                 712  (647 to 782)
+dl                       683  (619 to 757)
+greedy                   682  (619 to 743)
+no-central-brain         680  (617 to 748)
+stockfish-1320-75        676  (612 to 748)
+quick                    661  (589 to 737)
+no-optic-lobe            620  (552 to 689)
+random                   580  (514 to 651)
+bio                      525  (455 to 598)
+newborn                  455  (388 to 533)
+2026-10-20 20:33:54 pictures
+figures in docs/img
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792517637.880995  109309 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792517639.023913  109309 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+plasticity pilot-synapses: median |change| 0.010%, 0.4% moved more than 1%, at the leash: 0.00%
+plasticity in docs/img
+2026-10-20 20:34:06 done

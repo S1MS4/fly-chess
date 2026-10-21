@@ -1,0 +1,19 @@
+{"lessons": 0, "minutes": 0, "val_pair_acc": 0.4873046875, "top1": 0.056666666666666664}
+{"lessons": 6400, "minutes": 0.65, "pair_acc": 0.4808, "val_pair_acc": 0.46875}
+{"lessons": 12800, "minutes": 1.4, "pair_acc": 0.4667, "val_pair_acc": 0.5029296875}
+{"lessons": 19200, "minutes": 2.15, "pair_acc": 0.4894, "val_pair_acc": 0.5263671875}
+{"lessons": 25600, "minutes": 2.9, "pair_acc": 0.4966, "val_pair_acc": 0.5146484375}
+{"lessons": 32000, "minutes": 3.65, "pair_acc": 0.5109, "val_pair_acc": 0.529296875, "top1": 0.05333333333333334}
+{"lessons": 38400, "minutes": 4.95, "pair_acc": 0.5072, "val_pair_acc": 0.53125}
+{"lessons": 44800, "minutes": 5.7, "pair_acc": 0.5141, "val_pair_acc": 0.5341796875}
+{"lessons": 51200, "minutes": 6.45, "pair_acc": 0.5034, "val_pair_acc": 0.53125}
+{"lessons": 57600, "minutes": 7.2, "pair_acc": 0.4939, "val_pair_acc": 0.5361328125}
+{"lessons": 64000, "minutes": 7.95, "pair_acc": 0.4873, "val_pair_acc": 0.544921875, "top1": 0.043333333333333335}
+{"lessons": 70400, "minutes": 9.24, "pair_acc": 0.4898, "val_pair_acc": 0.5341796875}
+{"lessons": 76800, "minutes": 10.0, "pair_acc": 0.4972, "val_pair_acc": 0.529296875}
+{"lessons": 83200, "minutes": 10.75, "pair_acc": 0.5003, "val_pair_acc": 0.52734375}
+{"lessons": 89600, "minutes": 11.5, "pair_acc": 0.4986, "val_pair_acc": 0.525390625}
+{"lessons": 96000, "minutes": 12.25, "pair_acc": 0.5114, "val_pair_acc": 0.5205078125, "top1": 0.043333333333333335}
+{"lessons": 102400, "minutes": 13.54, "pair_acc": 0.4967, "val_pair_acc": 0.5185546875}
+{"lessons": 108800, "minutes": 14.29, "pair_acc": 0.4881, "val_pair_acc": 0.5283203125}
+{"lessons": 114816, "minutes": 15.0, "val_pair_acc": 0.533203125, "top1": 0.04}

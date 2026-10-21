@@ -1,0 +1,2 @@
+{"time": "2026-10-21 07:13", "positions": 17403960, "top1": 0.2292, "held_out_loss": 2.8526, "elo": 752, "low": 677, "high": 821, "elo_imagine": 934, "imagine_low": 859, "imagine_high": 1001, "imagine_weight": 1}
+{"time": "2026-10-21 18:53", "positions": 26169531, "top1": 0.2354, "held_out_loss": 2.8401, "elo": 792, "low": 713, "high": 872, "elo_imagine": 995, "imagine_low": 917, "imagine_high": 1061, "imagine_weight": 0.25}

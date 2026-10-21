@@ -1,0 +1,202 @@
+{
+ "rules": [
+  {
+   "name": "summed doses, transmitter valence (the first rule)",
+   "mean": false,
+   "differential": false,
+   "valence": "transmitter",
+   "lr": 0.05,
+   "batches": 250,
+   "curve": [
+    [
+     0,
+     0.44921875
+    ],
+    [
+     50,
+     0.42578125
+    ],
+    [
+     100,
+     0.4296875
+    ],
+    [
+     150,
+     0.443359375
+    ],
+    [
+     200,
+     0.439453125
+    ],
+    [
+     250,
+     0.447265625
+    ]
+   ]
+  },
+  {
+   "name": "only the cells that differ, transmitter valence",
+   "mean": true,
+   "differential": true,
+   "valence": "transmitter",
+   "lr": 1.0,
+   "batches": 250,
+   "curve": [
+    [
+     0,
+     0.458984375
+    ],
+    [
+     50,
+     0.392578125
+    ],
+    [
+     100,
+     0.416015625
+    ],
+    [
+     150,
+     0.41796875
+    ],
+    [
+     200,
+     0.42578125
+    ],
+    [
+     250,
+     0.421875
+    ]
+   ]
+  },
+  {
+   "name": "only the cells that differ, compartment valence",
+   "mean": true,
+   "differential": true,
+   "valence": "compartment",
+   "lr": 1.0,
+   "batches": 250,
+   "curve": [
+    [
+     0,
+     0.484375
+    ],
+    [
+     50,
+     0.48046875
+    ],
+    [
+     100,
+     0.482421875
+    ],
+    [
+     150,
+     0.486328125
+    ],
+    [
+     200,
+     0.48046875
+    ],
+    [
+     250,
+     0.482421875
+    ]
+   ]
+  },
+  {
+   "name": "averaged doses, compartment valence, lr 1",
+   "mean": true,
+   "differential": false,
+   "valence": "compartment",
+   "lr": 1.0,
+   "batches": 250,
+   "curve": [
+    [
+     0,
+     0.44921875
+    ],
+    [
+     50,
+     0.52734375
+    ],
+    [
+     100,
+     0.533203125
+    ],
+    [
+     150,
+     0.505859375
+    ],
+    [
+     200,
+     0.484375
+    ],
+    [
+     250,
+     0.490234375
+    ]
+   ]
+  },
+  {
+   "name": "averaged doses, compartment valence, lr 0.1 (what bio.py uses)",
+   "mean": true,
+   "differential": false,
+   "valence": "compartment",
+   "lr": 0.1,
+   "batches": 500,
+   "curve": [
+    [
+     0,
+     0.46484375
+    ],
+    [
+     50,
+     0.5
+    ],
+    [
+     100,
+     0.494140625
+    ],
+    [
+     150,
+     0.47265625
+    ],
+    [
+     200,
+     0.482421875
+    ],
+    [
+     250,
+     0.48046875
+    ],
+    [
+     300,
+     0.513671875
+    ],
+    [
+     350,
+     0.501953125
+    ],
+    [
+     400,
+     0.529296875
+    ],
+    [
+     450,
+     0.51171875
+    ],
+    [
+     500,
+     0.53125
+    ]
+   ]
+  }
+ ],
+ "ceiling_kenyon_cells": {
+  "held_out": 0.60546875,
+  "train": 0.6634521484375
+ },
+ "ceiling_descending_neurons": {
+  "held_out": 0.60546875,
+  "train": 0.65020751953125
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "minutes": 10.0,
+ "batch": 128,
+ "lr_readout": 0.0003,
+ "lr_synapses": 0.0,
+ "lr_neurons": 0.0,
+ "eval_every": 500,
+ "window": 6,
+ "probe": 50000,
+ "shuffle_wiring": false,
+ "lesion": [],
+ "snapshot_every": 250,
+ "eye": "ranks",
+ "name": "dl-pictures"
+}

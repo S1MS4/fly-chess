@@ -1,0 +1,112 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792452602.811360    6545 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792452604.031559    6545 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+data/positions/packed.npz is newer than every shard, keeping it
+packed 123005 curriculum positions (6364 for testing) into data/curriculum/packed.npz
+2026-10-20 02:30:08 0. quick test
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792452608.963687    6591 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792452610.233625    6591 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+positions.npy: 32 of 8,192 positions, 95 a second
+positions.npy: 8,192 of 8,192 positions, 384 a second
+curriculum.npy: 32 of 8,192 positions, 171 a second
+curriculum.npy: 8,192 of 8,192 positions, 387 a second
+the brain went over everything downloaded in 0.01 hours
+E0000 00:00:1792452668.058567    6591 util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+{'epoch': 1, 'fit': 'everything so far', 'positions': 1961, 'minutes': 0.03, 'top1': 0.0869, 'good_moves': 0.1562, 'held_out_loss': 3.2336, 'finish_top1': 0.0664, 'finish_good_moves': 0.0995, 'finish_held_out_loss': 3.5578}
+{'epoch': 2, 'fit': 'everything so far', 'positions': 1961, 'minutes': 0.03, 'top1': 0.0913, 'good_moves': 0.1626, 'held_out_loss': 3.2444, 'finish_top1': 0.0474, 'finish_good_moves': 0.0877, 'finish_held_out_loss': 3.5364}
+{'epoch': 'final', 'best_val_loss': 3.2336, 'positions': 1961, 'top1': 0.1011, 'good_moves': 0.1741, 'held_out_loss': 3.2113, 'finish_top1': 0.0687, 'finish_good_moves': 0.1019, 'finish_held_out_loss': 3.5577}
+saved checkpoints/smoke-cached
+2026-10-20 02:31:26 A. the brain over every downloaded position, then the readout
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792452687.360874    6922 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792452688.525657    6922 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+positions.npy: 32 of 3,089,816 positions, 98 a second
+positions.npy: 64,032 of 3,089,816 positions, 389 a second
+positions.npy: 128,032 of 3,089,816 positions, 389 a second
+positions.npy: 192,032 of 3,089,816 positions, 389 a second
+positions.npy: 256,032 of 3,089,816 positions, 389 a second
+positions.npy: 320,032 of 3,089,816 positions, 389 a second
+positions.npy: 384,032 of 3,089,816 positions, 389 a second
+positions.npy: 448,032 of 3,089,816 positions, 389 a second
+positions.npy: 512,032 of 3,089,816 positions, 389 a second
+positions.npy: 576,032 of 3,089,816 positions, 389 a second
+positions.npy: 640,032 of 3,089,816 positions, 389 a second
+positions.npy: 704,032 of 3,089,816 positions, 389 a second
+positions.npy: 768,032 of 3,089,816 positions, 389 a second
+positions.npy: 832,032 of 3,089,816 positions, 389 a second
+positions.npy: 896,032 of 3,089,816 positions, 389 a second
+positions.npy: 960,032 of 3,089,816 positions, 389 a second
+positions.npy: 1,024,032 of 3,089,816 positions, 389 a second
+positions.npy: 1,088,032 of 3,089,816 positions, 389 a second
+positions.npy: 1,152,032 of 3,089,816 positions, 389 a second
+positions.npy: 1,216,032 of 3,089,816 positions, 389 a second
+positions.npy: 1,280,032 of 3,089,816 positions, 389 a second
+positions.npy: 1,344,032 of 3,089,816 positions, 389 a second
+positions.npy: 1,408,032 of 3,089,816 positions, 389 a second
+positions.npy: 1,472,032 of 3,089,816 positions, 389 a second
+positions.npy: 1,536,032 of 3,089,816 positions, 389 a second
+positions.npy: 1,600,032 of 3,089,816 positions, 389 a second
+positions.npy: 1,664,032 of 3,089,816 positions, 389 a second
+positions.npy: 1,728,032 of 3,089,816 positions, 389 a second
+positions.npy: 1,792,032 of 3,089,816 positions, 389 a second
+positions.npy: 1,856,032 of 3,089,816 positions, 389 a second
+positions.npy: 1,920,032 of 3,089,816 positions, 389 a second
+positions.npy: 1,984,032 of 3,089,816 positions, 389 a second
+positions.npy: 2,048,032 of 3,089,816 positions, 389 a second
+positions.npy: 2,112,032 of 3,089,816 positions, 389 a second
+positions.npy: 2,176,032 of 3,089,816 positions, 389 a second
+positions.npy: 2,240,032 of 3,089,816 positions, 390 a second
+positions.npy: 2,304,032 of 3,089,816 positions, 390 a second
+positions.npy: 2,368,032 of 3,089,816 positions, 390 a second
+positions.npy: 2,432,032 of 3,089,816 positions, 390 a second
+positions.npy: 2,496,032 of 3,089,816 positions, 390 a second
+positions.npy: 2,560,032 of 3,089,816 positions, 389 a second
+positions.npy: 2,624,032 of 3,089,816 positions, 389 a second
+positions.npy: 2,688,032 of 3,089,816 positions, 389 a second
+positions.npy: 2,752,032 of 3,089,816 positions, 389 a second
+positions.npy: 2,816,032 of 3,089,816 positions, 389 a second
+positions.npy: 2,880,032 of 3,089,816 positions, 389 a second
+positions.npy: 2,944,032 of 3,089,816 positions, 387 a second
+positions.npy: 3,008,032 of 3,089,816 positions, 387 a second
+positions.npy: 3,072,032 of 3,089,816 positions, 387 a second
+positions.npy: 3,089,816 of 3,089,816 positions, 387 a second
+curriculum.npy: 32 of 123,005 positions, 38 a second
+curriculum.npy: 64,032 of 123,005 positions, 388 a second
+curriculum.npy: 123,005 of 123,005 positions, 389 a second
+the brain went over everything downloaded in 2.30 hours
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/c/Users/ariju/Documents/code_proj/fly-chess/flychess/train_cached.py", line 322, in <module>
+    main()
+  File "/mnt/c/Users/ariju/Documents/code_proj/fly-chess/flychess/train_cached.py", line 287, in main
+    fitter = Fitter(model, d, feats, cur, cur_feats, args, write)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/ariju/Documents/code_proj/fly-chess/flychess/train_cached.py", line 113, in __init__
+    self.feats, self.targets = to_gpu(feats), {k: tf.constant(d[k]) for k in FIELDS}
+                               ^^^^^^^^^^^^^
+  File "/mnt/c/Users/ariju/Documents/code_proj/fly-chess/flychess/train_cached.py", line 79, in to_gpu
+    v[i:i + chunk].assign(np.asarray(a[i:i + chunk]))
+    ~^^^^^^^^^^^^^
+  File "/home/ariju/.venvs/flychess/lib/python3.12/site-packages/tensorflow/python/ops/tensor_getitem_override.py", line 311, in _slice_helper_var
+    return _slice_helper(var.value(), slice_spec, var)
+                         ^^^^^^^^^^^
+  File "/home/ariju/.venvs/flychess/lib/python3.12/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 658, in value
+    return self._read_variable_op()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ariju/.venvs/flychess/lib/python3.12/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 843, in _read_variable_op
+    result = read_and_set_handle(no_copy)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ariju/.venvs/flychess/lib/python3.12/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 833, in read_and_set_handle
+    result = gen_resource_variable_ops.read_variable_op(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ariju/.venvs/flychess/lib/python3.12/site-packages/tensorflow/python/ops/gen_resource_variable_ops.py", line 538, in read_variable_op
+    _ops.raise_from_not_ok_status(e, name)
+  File "/home/ariju/.venvs/flychess/lib/python3.12/site-packages/tensorflow/python/framework/ops.py", line 6027, in raise_from_not_ok_status
+    raise core._status_to_exception(e) from None  # pylint: disable=protected-access
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tensorflow.python.framework.errors_impl.ResourceExhaustedError: {{function_node __wrapped__ReadVariableOp_device_/job:localhost/replica:0/task:0/device:GPU:0}} OOM when allocating tensor with shape[3089816,1314] and type uint8 on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc [Op:ReadVariableOp] name: 
