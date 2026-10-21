@@ -24,14 +24,10 @@ from . import connectome
 from .play import BioPlayer, DLFly, GreedyPlayer, RandomPlayer, StockfishPlayer, play_game
 
 
-def match(fly, opp, games: int) -> float:
-    total = 0.0
-    for g in range(games):
-        if g % 2 == 0:
-            total += play_game(fly, opp)
-        else:
-            total += 1 - play_game(opp, fly)
-    return total / games
+def match(fly, opp, games: int) -> dict:
+    """The fly's score over `games` games, half of them with each colour."""
+    res = [play_game(fly, opp) if g % 2 == 0 else 1 - play_game(opp, fly) for g in range(games)]
+    return {"score": sum(res) / games, "won": res.count(1.0), "drawn": res.count(0.5), "lost": res.count(0.0)}
 
 
 def main() -> None:
@@ -48,7 +44,7 @@ def main() -> None:
     if args.fly == "dl":
         fly = DLFly(args.checkpoint or "checkpoints/dl", c=c)
     else:
-        fly = BioPlayer(args.checkpoint or "checkpoints/bio/kc_mbon.npy", c=c)
+        fly = BioPlayer(args.checkpoint or "checkpoints/bio/kc_mbon.npz", c=c)
 
     results = {"random": match(fly, RandomPlayer(), args.games),
                "greedy": match(fly, GreedyPlayer(), args.games)}
@@ -56,9 +52,9 @@ def main() -> None:
     if shutil.which(os.environ.get("STOCKFISH", "stockfish")):
         for elo in args.elos:
             sf = StockfishPlayer(elo=elo)
-            s = match(fly, sf, args.games)
+            results[f"stockfish-{elo}"] = match(fly, sf, args.games)
             sf.close()
-            results[f"stockfish-{elo}"] = s
+            s = results[f"stockfish-{elo}"]["score"]
             s = min(max(s, 0.5 / args.games), 1 - 0.5 / args.games)  # avoid log(0)
             ratings.append(elo + 400 * math.log10(s / (1 - s)))
     else:

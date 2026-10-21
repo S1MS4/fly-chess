@@ -1,0 +1,7815 @@
+{
+ "anchor": {
+  "player": "stockfish-1320",
+  "elo": 1320
+ },
+ "date": "2026-10-21",
+ "ratings": {
+  "bio": {
+   "elo": 495,
+   "low": 424,
+   "high": 561
+  },
+  "day": {
+   "elo": 792,
+   "low": 713,
+   "high": 872
+  },
+  "day-imagine": {
+   "elo": 995,
+   "low": 917,
+   "high": 1061
+  },
+  "dl": {
+   "elo": 653,
+   "low": 576,
+   "high": 715
+  },
+  "greedy": {
+   "elo": 657,
+   "low": 579,
+   "high": 719
+  },
+  "newborn": {
+   "elo": 425,
+   "low": 338,
+   "high": 494
+  },
+  "no-central-brain": {
+   "elo": 649,
+   "low": 572,
+   "high": 709
+  },
+  "no-optic-lobe": {
+   "elo": 590,
+   "low": 510,
+   "high": 657
+  },
+  "quick": {
+   "elo": 631,
+   "low": 552,
+   "high": 698
+  },
+  "random": {
+   "elo": 546,
+   "low": 470,
+   "high": 611
+  },
+  "shuffled": {
+   "elo": 682,
+   "low": 605,
+   "high": 743
+  },
+  "stockfish-1320": {
+   "elo": 1320,
+   "low": 1320,
+   "high": 1320
+  },
+  "stockfish-1320-25": {
+   "elo": 914,
+   "low": 844,
+   "high": 987
+  },
+  "stockfish-1320-50": {
+   "elo": 724,
+   "low": 649,
+   "high": 782
+  },
+  "stockfish-1320-75": {
+   "elo": 643,
+   "low": 569,
+   "high": 702
+  }
+ },
+ "pairs": [
+  {
+   "a": "stockfish-1320",
+   "b": "stockfish-1320-25",
+   "won": 19,
+   "drawn": 0,
+   "lost": 1
+  },
+  {
+   "a": "stockfish-1320-25",
+   "b": "stockfish-1320-50",
+   "won": 17,
+   "drawn": 1,
+   "lost": 2
+  },
+  {
+   "a": "stockfish-1320-50",
+   "b": "stockfish-1320-75",
+   "won": 16,
+   "drawn": 4,
+   "lost": 0
+  },
+  {
+   "a": "stockfish-1320-75",
+   "b": "random",
+   "won": 12,
+   "drawn": 8,
+   "lost": 0
+  },
+  {
+   "a": "greedy",
+   "b": "random",
+   "won": 3,
+   "drawn": 17,
+   "lost": 0
+  },
+  {
+   "a": "greedy",
+   "b": "stockfish-1320-75",
+   "won": 4,
+   "drawn": 15,
+   "lost": 1
+  },
+  {
+   "a": "greedy",
+   "b": "stockfish-1320-50",
+   "won": 4,
+   "drawn": 12,
+   "lost": 4
+  },
+  {
+   "a": "dl",
+   "b": "random",
+   "won": 2,
+   "drawn": 18,
+   "lost": 0
+  },
+  {
+   "a": "dl",
+   "b": "greedy",
+   "won": 0,
+   "drawn": 19,
+   "lost": 1
+  },
+  {
+   "a": "dl",
+   "b": "stockfish-1320-75",
+   "won": 2,
+   "drawn": 17,
+   "lost": 1
+  },
+  {
+   "a": "dl",
+   "b": "stockfish-1320-50",
+   "won": 1,
+   "drawn": 16,
+   "lost": 3
+  },
+  {
+   "a": "dl",
+   "b": "stockfish-1320-25",
+   "won": 0,
+   "drawn": 9,
+   "lost": 11
+  },
+  {
+   "a": "dl",
+   "b": "stockfish-1320",
+   "won": 0,
+   "drawn": 0,
+   "lost": 20
+  },
+  {
+   "a": "bio",
+   "b": "random",
+   "won": 5,
+   "drawn": 15,
+   "lost": 0
+  },
+  {
+   "a": "bio",
+   "b": "greedy",
+   "won": 0,
+   "drawn": 15,
+   "lost": 5
+  },
+  {
+   "a": "bio",
+   "b": "stockfish-1320-75",
+   "won": 0,
+   "drawn": 7,
+   "lost": 13
+  },
+  {
+   "a": "bio",
+   "b": "stockfish-1320-50",
+   "won": 0,
+   "drawn": 1,
+   "lost": 19
+  },
+  {
+   "a": "bio",
+   "b": "stockfish-1320-25",
+   "won": 0,
+   "drawn": 1,
+   "lost": 19
+  },
+  {
+   "a": "bio",
+   "b": "stockfish-1320",
+   "won": 0,
+   "drawn": 0,
+   "lost": 20
+  },
+  {
+   "a": "shuffled",
+   "b": "random",
+   "won": 7,
+   "drawn": 13,
+   "lost": 0
+  },
+  {
+   "a": "shuffled",
+   "b": "greedy",
+   "won": 2,
+   "drawn": 17,
+   "lost": 1
+  },
+  {
+   "a": "shuffled",
+   "b": "stockfish-1320-75",
+   "won": 0,
+   "drawn": 20,
+   "lost": 0
+  },
+  {
+   "a": "shuffled",
+   "b": "stockfish-1320-50",
+   "won": 2,
+   "drawn": 15,
+   "lost": 3
+  },
+  {
+   "a": "shuffled",
+   "b": "stockfish-1320-25",
+   "won": 0,
+   "drawn": 10,
+   "lost": 10
+  },
+  {
+   "a": "shuffled",
+   "b": "stockfish-1320",
+   "won": 0,
+   "drawn": 0,
+   "lost": 20
+  },
+  {
+   "a": "quick",
+   "b": "random",
+   "won": 3,
+   "drawn": 17,
+   "lost": 0
+  },
+  {
+   "a": "quick",
+   "b": "greedy",
+   "won": 0,
+   "drawn": 20,
+   "lost": 0
+  },
+  {
+   "a": "quick",
+   "b": "stockfish-1320-75",
+   "won": 1,
+   "drawn": 18,
+   "lost": 1
+  },
+  {
+   "a": "quick",
+   "b": "stockfish-1320-50",
+   "won": 0,
+   "drawn": 14,
+   "lost": 6
+  },
+  {
+   "a": "quick",
+   "b": "stockfish-1320-25",
+   "won": 0,
+   "drawn": 5,
+   "lost": 15
+  },
+  {
+   "a": "quick",
+   "b": "stockfish-1320",
+   "won": 0,
+   "drawn": 1,
+   "lost": 19
+  },
+  {
+   "a": "no-optic-lobe",
+   "b": "random",
+   "won": 1,
+   "drawn": 19,
+   "lost": 0
+  },
+  {
+   "a": "no-optic-lobe",
+   "b": "greedy",
+   "won": 0,
+   "drawn": 18,
+   "lost": 2
+  },
+  {
+   "a": "no-optic-lobe",
+   "b": "stockfish-1320-75",
+   "won": 0,
+   "drawn": 16,
+   "lost": 4
+  },
+  {
+   "a": "no-optic-lobe",
+   "b": "stockfish-1320-50",
+   "won": 0,
+   "drawn": 15,
+   "lost": 5
+  },
+  {
+   "a": "no-optic-lobe",
+   "b": "stockfish-1320-25",
+   "won": 0,
+   "drawn": 2,
+   "lost": 18
+  },
+  {
+   "a": "no-optic-lobe",
+   "b": "stockfish-1320",
+   "won": 0,
+   "drawn": 0,
+   "lost": 20
+  },
+  {
+   "a": "no-central-brain",
+   "b": "random",
+   "won": 2,
+   "drawn": 18,
+   "lost": 0
+  },
+  {
+   "a": "no-central-brain",
+   "b": "greedy",
+   "won": 0,
+   "drawn": 18,
+   "lost": 2
+  },
+  {
+   "a": "no-central-brain",
+   "b": "stockfish-1320-75",
+   "won": 1,
+   "drawn": 19,
+   "lost": 0
+  },
+  {
+   "a": "no-central-brain",
+   "b": "stockfish-1320-50",
+   "won": 1,
+   "drawn": 18,
+   "lost": 1
+  },
+  {
+   "a": "no-central-brain",
+   "b": "stockfish-1320-25",
+   "won": 0,
+   "drawn": 7,
+   "lost": 13
+  },
+  {
+   "a": "no-central-brain",
+   "b": "stockfish-1320",
+   "won": 0,
+   "drawn": 0,
+   "lost": 20
+  },
+  {
+   "a": "newborn",
+   "b": "random",
+   "won": 1,
+   "drawn": 15,
+   "lost": 4
+  },
+  {
+   "a": "newborn",
+   "b": "greedy",
+   "won": 0,
+   "drawn": 14,
+   "lost": 6
+  },
+  {
+   "a": "newborn",
+   "b": "stockfish-1320-75",
+   "won": 0,
+   "drawn": 4,
+   "lost": 16
+  },
+  {
+   "a": "newborn",
+   "b": "stockfish-1320-50",
+   "won": 0,
+   "drawn": 0,
+   "lost": 20
+  },
+  {
+   "a": "newborn",
+   "b": "stockfish-1320-25",
+   "won": 0,
+   "drawn": 0,
+   "lost": 20
+  },
+  {
+   "a": "newborn",
+   "b": "stockfish-1320",
+   "won": 0,
+   "drawn": 0,
+   "lost": 20
+  },
+  {
+   "a": "day",
+   "b": "random",
+   "won": 9,
+   "drawn": 11,
+   "lost": 0
+  },
+  {
+   "a": "day",
+   "b": "greedy",
+   "won": 3,
+   "drawn": 17,
+   "lost": 0
+  },
+  {
+   "a": "day",
+   "b": "stockfish-1320-75",
+   "won": 8,
+   "drawn": 12,
+   "lost": 0
+  },
+  {
+   "a": "day",
+   "b": "stockfish-1320-50",
+   "won": 8,
+   "drawn": 12,
+   "lost": 0
+  },
+  {
+   "a": "day",
+   "b": "stockfish-1320-25",
+   "won": 3,
+   "drawn": 10,
+   "lost": 7
+  },
+  {
+   "a": "day",
+   "b": "stockfish-1320",
+   "won": 0,
+   "drawn": 3,
+   "lost": 17
+  },
+  {
+   "a": "day-imagine",
+   "b": "random",
+   "won": 20,
+   "drawn": 0,
+   "lost": 0
+  },
+  {
+   "a": "day-imagine",
+   "b": "greedy",
+   "won": 12,
+   "drawn": 8,
+   "lost": 0
+  },
+  {
+   "a": "day-imagine",
+   "b": "stockfish-1320-75",
+   "won": 20,
+   "drawn": 0,
+   "lost": 0
+  },
+  {
+   "a": "day-imagine",
+   "b": "stockfish-1320-50",
+   "won": 16,
+   "drawn": 2,
+   "lost": 2
+  },
+  {
+   "a": "day-imagine",
+   "b": "stockfish-1320-25",
+   "won": 13,
+   "drawn": 1,
+   "lost": 6
+  },
+  {
+   "a": "day-imagine",
+   "b": "stockfish-1320",
+   "won": 0,
+   "drawn": 0,
+   "lost": 20
+  }
+ ],
+ "games": [
+  {
+   "white": "stockfish-1320",
+   "black": "stockfish-1320-25",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "stockfish-1320-25",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "stockfish-1320-25",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "stockfish-1320-25",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "stockfish-1320-25",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "stockfish-1320-25",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "stockfish-1320-25",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "stockfish-1320-25",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "stockfish-1320-25",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "stockfish-1320-50",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "stockfish-1320-50",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "stockfish-1320-50",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "stockfish-1320-50",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "stockfish-1320-50",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "stockfish-1320-50",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "stockfish-1320-50",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "stockfish-1320-25",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "stockfish-1320-50",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "stockfish-1320-75",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "stockfish-1320-75",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "stockfish-1320-75",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "stockfish-1320-75",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "stockfish-1320-75",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "stockfish-1320-75",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "stockfish-1320-75",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "stockfish-1320-75",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "random",
+   "score": 1.0
+  },
+  {
+   "white": "random",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "random",
+   "score": 1.0
+  },
+  {
+   "white": "random",
+   "black": "stockfish-1320-75",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "random",
+   "score": 1.0
+  },
+  {
+   "white": "random",
+   "black": "stockfish-1320-75",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "random",
+   "score": 1.0
+  },
+  {
+   "white": "random",
+   "black": "stockfish-1320-75",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "stockfish-1320-75",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "stockfish-1320-75",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "random",
+   "score": 1.0
+  },
+  {
+   "white": "random",
+   "black": "stockfish-1320-75",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "stockfish-1320-75",
+   "score": 0.0
+  },
+  {
+   "white": "greedy",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "random",
+   "score": 1.0
+  },
+  {
+   "white": "random",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "random",
+   "score": 1.0
+  },
+  {
+   "white": "random",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "random",
+   "score": 1.0
+  },
+  {
+   "white": "random",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "stockfish-1320-75",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "greedy",
+   "score": 0.0
+  },
+  {
+   "white": "greedy",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "stockfish-1320-75",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "stockfish-1320-75",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "stockfish-1320-75",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "stockfish-1320-50",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "stockfish-1320-50",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "greedy",
+   "score": 0.0
+  },
+  {
+   "white": "greedy",
+   "black": "stockfish-1320-50",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "greedy",
+   "score": 1.0
+  },
+  {
+   "white": "greedy",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "greedy",
+   "score": 1.0
+  },
+  {
+   "white": "greedy",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "dl",
+   "score": 0.0
+  },
+  {
+   "white": "dl",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "dl",
+   "score": 0.0
+  },
+  {
+   "white": "dl",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "greedy",
+   "score": 0.0
+  },
+  {
+   "white": "greedy",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320-75",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320-75",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320-75",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "dl",
+   "score": 1.0
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320-50",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320-25",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "dl",
+   "score": 1.0
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320-25",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "dl",
+   "score": 1.0
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "dl",
+   "score": 1.0
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "dl",
+   "score": 1.0
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320-25",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "dl",
+   "score": 1.0
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320-25",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "dl",
+   "score": 1.0
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320-25",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "dl",
+   "score": 0.5
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "dl",
+   "score": 1.0
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "dl",
+   "score": 1.0
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "dl",
+   "score": 1.0
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "dl",
+   "score": 1.0
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "dl",
+   "score": 1.0
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "dl",
+   "score": 1.0
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "dl",
+   "score": 1.0
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "dl",
+   "score": 1.0
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "dl",
+   "score": 1.0
+  },
+  {
+   "white": "dl",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "dl",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "bio",
+   "score": 0.5
+  },
+  {
+   "white": "bio",
+   "black": "random",
+   "score": 1.0
+  },
+  {
+   "white": "random",
+   "black": "bio",
+   "score": 0.5
+  },
+  {
+   "white": "bio",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "bio",
+   "score": 0.5
+  },
+  {
+   "white": "bio",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "bio",
+   "score": 0.5
+  },
+  {
+   "white": "bio",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "bio",
+   "score": 0.0
+  },
+  {
+   "white": "bio",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "bio",
+   "score": 0.0
+  },
+  {
+   "white": "bio",
+   "black": "random",
+   "score": 1.0
+  },
+  {
+   "white": "random",
+   "black": "bio",
+   "score": 0.5
+  },
+  {
+   "white": "bio",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "bio",
+   "score": 0.5
+  },
+  {
+   "white": "bio",
+   "black": "random",
+   "score": 1.0
+  },
+  {
+   "white": "random",
+   "black": "bio",
+   "score": 0.5
+  },
+  {
+   "white": "bio",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "bio",
+   "score": 0.5
+  },
+  {
+   "white": "bio",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "bio",
+   "score": 0.5
+  },
+  {
+   "white": "bio",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "bio",
+   "score": 0.5
+  },
+  {
+   "white": "bio",
+   "black": "greedy",
+   "score": 0.0
+  },
+  {
+   "white": "greedy",
+   "black": "bio",
+   "score": 0.5
+  },
+  {
+   "white": "bio",
+   "black": "greedy",
+   "score": 0.0
+  },
+  {
+   "white": "greedy",
+   "black": "bio",
+   "score": 0.5
+  },
+  {
+   "white": "bio",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "bio",
+   "score": 0.5
+  },
+  {
+   "white": "bio",
+   "black": "greedy",
+   "score": 0.0
+  },
+  {
+   "white": "greedy",
+   "black": "bio",
+   "score": 0.5
+  },
+  {
+   "white": "bio",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "bio",
+   "score": 0.5
+  },
+  {
+   "white": "bio",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "bio",
+   "score": 0.5
+  },
+  {
+   "white": "bio",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320-75",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320-75",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "bio",
+   "score": 0.5
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320-75",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "bio",
+   "score": 0.5
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "bio",
+   "score": 0.5
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320-75",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320-75",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320-75",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "bio",
+   "score": 0.5
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "bio",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "bio",
+   "score": 1.0
+  },
+  {
+   "white": "shuffled",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "shuffled",
+   "score": 0.0
+  },
+  {
+   "white": "shuffled",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "shuffled",
+   "score": 0.0
+  },
+  {
+   "white": "shuffled",
+   "black": "random",
+   "score": 1.0
+  },
+  {
+   "white": "random",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "shuffled",
+   "score": 0.0
+  },
+  {
+   "white": "shuffled",
+   "black": "random",
+   "score": 1.0
+  },
+  {
+   "white": "random",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "shuffled",
+   "score": 0.0
+  },
+  {
+   "white": "shuffled",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "shuffled",
+   "score": 0.0
+  },
+  {
+   "white": "shuffled",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "greedy",
+   "score": 1.0
+  },
+  {
+   "white": "greedy",
+   "black": "shuffled",
+   "score": 1.0
+  },
+  {
+   "white": "shuffled",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "greedy",
+   "score": 1.0
+  },
+  {
+   "white": "greedy",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320-50",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320-50",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320-25",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "shuffled",
+   "score": 1.0
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320-25",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "shuffled",
+   "score": 1.0
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "shuffled",
+   "score": 1.0
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320-25",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "shuffled",
+   "score": 1.0
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320-25",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "shuffled",
+   "score": 1.0
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320-25",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "shuffled",
+   "score": 1.0
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320-25",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "shuffled",
+   "score": 0.5
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "shuffled",
+   "score": 1.0
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "shuffled",
+   "score": 1.0
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "shuffled",
+   "score": 1.0
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "shuffled",
+   "score": 1.0
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "shuffled",
+   "score": 1.0
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "shuffled",
+   "score": 1.0
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "shuffled",
+   "score": 1.0
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "shuffled",
+   "score": 1.0
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "shuffled",
+   "score": 1.0
+  },
+  {
+   "white": "shuffled",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "shuffled",
+   "score": 1.0
+  },
+  {
+   "white": "quick",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "quick",
+   "score": 0.0
+  },
+  {
+   "white": "quick",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "random",
+   "score": 1.0
+  },
+  {
+   "white": "random",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "quick",
+   "score": 0.0
+  },
+  {
+   "white": "quick",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320-75",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "quick",
+   "score": 0.0
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "quick",
+   "score": 1.0
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "quick",
+   "score": 1.0
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "quick",
+   "score": 1.0
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320-25",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "quick",
+   "score": 1.0
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "quick",
+   "score": 1.0
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "quick",
+   "score": 1.0
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "quick",
+   "score": 1.0
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "quick",
+   "score": 1.0
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320-25",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "quick",
+   "score": 1.0
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "quick",
+   "score": 1.0
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "quick",
+   "score": 1.0
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "quick",
+   "score": 0.5
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "quick",
+   "score": 1.0
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "quick",
+   "score": 1.0
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "quick",
+   "score": 1.0
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "quick",
+   "score": 1.0
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "quick",
+   "score": 1.0
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "quick",
+   "score": 1.0
+  },
+  {
+   "white": "quick",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "quick",
+   "score": 1.0
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "no-optic-lobe",
+   "score": 0.0
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "greedy",
+   "score": 0.0
+  },
+  {
+   "white": "greedy",
+   "black": "no-optic-lobe",
+   "score": 1.0
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "no-optic-lobe",
+   "score": 1.0
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "no-optic-lobe",
+   "score": 1.0
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "no-optic-lobe",
+   "score": 1.0
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "no-optic-lobe",
+   "score": 1.0
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "no-optic-lobe",
+   "score": 1.0
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "no-optic-lobe",
+   "score": 1.0
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "no-optic-lobe",
+   "score": 1.0
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "no-optic-lobe",
+   "score": 1.0
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "no-optic-lobe",
+   "score": 1.0
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320-25",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "no-optic-lobe",
+   "score": 1.0
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "no-optic-lobe",
+   "score": 1.0
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "no-optic-lobe",
+   "score": 1.0
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "no-optic-lobe",
+   "score": 0.5
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "no-optic-lobe",
+   "score": 1.0
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "no-optic-lobe",
+   "score": 1.0
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "no-optic-lobe",
+   "score": 1.0
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "no-optic-lobe",
+   "score": 1.0
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "no-optic-lobe",
+   "score": 1.0
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "no-optic-lobe",
+   "score": 1.0
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "no-optic-lobe",
+   "score": 1.0
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "no-optic-lobe",
+   "score": 1.0
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "no-optic-lobe",
+   "score": 1.0
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "no-optic-lobe",
+   "score": 1.0
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "no-optic-lobe",
+   "score": 1.0
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "no-optic-lobe",
+   "score": 1.0
+  },
+  {
+   "white": "no-optic-lobe",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "no-optic-lobe",
+   "score": 1.0
+  },
+  {
+   "white": "no-central-brain",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "random",
+   "score": 1.0
+  },
+  {
+   "white": "random",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "random",
+   "score": 1.0
+  },
+  {
+   "white": "random",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "greedy",
+   "score": 0.0
+  },
+  {
+   "white": "greedy",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "no-central-brain",
+   "score": 1.0
+  },
+  {
+   "white": "no-central-brain",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320-75",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320-75",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320-50",
+   "score": 1.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320-50",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "no-central-brain",
+   "score": 1.0
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320-25",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "no-central-brain",
+   "score": 1.0
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "no-central-brain",
+   "score": 1.0
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "no-central-brain",
+   "score": 1.0
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320-25",
+   "score": 0.5
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "no-central-brain",
+   "score": 0.5
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "no-central-brain",
+   "score": 1.0
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "no-central-brain",
+   "score": 1.0
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "no-central-brain",
+   "score": 1.0
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "no-central-brain",
+   "score": 1.0
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "no-central-brain",
+   "score": 1.0
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "no-central-brain",
+   "score": 1.0
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "no-central-brain",
+   "score": 1.0
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "no-central-brain",
+   "score": 1.0
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "no-central-brain",
+   "score": 1.0
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "no-central-brain",
+   "score": 1.0
+  },
+  {
+   "white": "no-central-brain",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "no-central-brain",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "newborn",
+   "score": 0.5
+  },
+  {
+   "white": "newborn",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "newborn",
+   "score": 0.5
+  },
+  {
+   "white": "newborn",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "newborn",
+   "score": 0.5
+  },
+  {
+   "white": "newborn",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "newborn",
+   "score": 0.5
+  },
+  {
+   "white": "newborn",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "newborn",
+   "score": 0.5
+  },
+  {
+   "white": "newborn",
+   "black": "random",
+   "score": 1.0
+  },
+  {
+   "white": "random",
+   "black": "newborn",
+   "score": 0.5
+  },
+  {
+   "white": "newborn",
+   "black": "random",
+   "score": 0.0
+  },
+  {
+   "white": "random",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "random",
+   "score": 0.0
+  },
+  {
+   "white": "random",
+   "black": "newborn",
+   "score": 0.5
+  },
+  {
+   "white": "newborn",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "newborn",
+   "score": 0.5
+  },
+  {
+   "white": "newborn",
+   "black": "random",
+   "score": 0.5
+  },
+  {
+   "white": "random",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "newborn",
+   "score": 0.5
+  },
+  {
+   "white": "newborn",
+   "black": "greedy",
+   "score": 0.0
+  },
+  {
+   "white": "greedy",
+   "black": "newborn",
+   "score": 0.5
+  },
+  {
+   "white": "newborn",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "newborn",
+   "score": 0.5
+  },
+  {
+   "white": "newborn",
+   "black": "greedy",
+   "score": 0.0
+  },
+  {
+   "white": "greedy",
+   "black": "newborn",
+   "score": 0.5
+  },
+  {
+   "white": "newborn",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "newborn",
+   "score": 0.5
+  },
+  {
+   "white": "newborn",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "newborn",
+   "score": 0.5
+  },
+  {
+   "white": "newborn",
+   "black": "greedy",
+   "score": 0.0
+  },
+  {
+   "white": "greedy",
+   "black": "newborn",
+   "score": 0.5
+  },
+  {
+   "white": "newborn",
+   "black": "greedy",
+   "score": 0.0
+  },
+  {
+   "white": "greedy",
+   "black": "newborn",
+   "score": 0.5
+  },
+  {
+   "white": "newborn",
+   "black": "greedy",
+   "score": 0.5
+  },
+  {
+   "white": "greedy",
+   "black": "newborn",
+   "score": 0.5
+  },
+  {
+   "white": "newborn",
+   "black": "greedy",
+   "score": 0.0
+  },
+  {
+   "white": "greedy",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320-75",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320-75",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320-75",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "newborn",
+   "score": 0.5
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320-75",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "newborn",
+   "score": 0.5
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320-75",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320-75",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320-75",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320-75",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320-75",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "newborn",
+   "score": 0.5
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320-75",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "newborn",
+   "score": 0.5
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320-50",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320-25",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "newborn",
+   "black": "stockfish-1320",
+   "score": 0.0
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "newborn",
+   "score": 1.0
+  },
+  {
+   "white": "day",
+   "black": "random",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 57,
+   "material": 14,
+   "material_max": 21,
+   "material_min": -6
+  },
+  {
+   "white": "random",
+   "black": "day",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 37,
+   "material": -35,
+   "material_max": 0,
+   "material_min": -35
+  },
+  {
+   "white": "day",
+   "black": "random",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 43,
+   "material": 35,
+   "material_max": 40,
+   "material_min": 0
+  },
+  {
+   "white": "random",
+   "black": "day",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 45,
+   "material": -31,
+   "material_max": 1,
+   "material_min": -39
+  },
+  {
+   "white": "day",
+   "black": "random",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 26,
+   "material": 41,
+   "material_max": 41,
+   "material_min": 0
+  },
+  {
+   "white": "random",
+   "black": "day",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 76,
+   "material": -16,
+   "material_max": 0,
+   "material_min": -19
+  },
+  {
+   "white": "day",
+   "black": "random",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 62,
+   "material": 20,
+   "material_max": 20,
+   "material_min": 0
+  },
+  {
+   "white": "random",
+   "black": "day",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 108,
+   "material": -24,
+   "material_max": 6,
+   "material_min": -24
+  },
+  {
+   "white": "day",
+   "black": "random",
+   "score": 0.5,
+   "end": "fifty moves",
+   "moves": 140,
+   "material": 15,
+   "material_max": 28,
+   "material_min": 0
+  },
+  {
+   "white": "random",
+   "black": "day",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 175,
+   "material": -22,
+   "material_max": 0,
+   "material_min": -31
+  },
+  {
+   "white": "day",
+   "black": "random",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 43,
+   "material": 30,
+   "material_max": 32,
+   "material_min": -1
+  },
+  {
+   "white": "random",
+   "black": "day",
+   "score": 0.5,
+   "end": "threefold repetition",
+   "moves": 53,
+   "material": -36,
+   "material_max": 0,
+   "material_min": -36
+  },
+  {
+   "white": "day",
+   "black": "random",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 53,
+   "material": 22,
+   "material_max": 27,
+   "material_min": 0
+  },
+  {
+   "white": "random",
+   "black": "day",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 19,
+   "material": -32,
+   "material_max": 0,
+   "material_min": -32
+  },
+  {
+   "white": "day",
+   "black": "random",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 52,
+   "material": 23,
+   "material_max": 33,
+   "material_min": 0
+  },
+  {
+   "white": "random",
+   "black": "day",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 72,
+   "material": -37,
+   "material_max": 0,
+   "material_min": -39
+  },
+  {
+   "white": "day",
+   "black": "random",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 45,
+   "material": 22,
+   "material_max": 26,
+   "material_min": -1
+  },
+  {
+   "white": "random",
+   "black": "day",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 44,
+   "material": -39,
+   "material_max": 0,
+   "material_min": -39
+  },
+  {
+   "white": "day",
+   "black": "random",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 32,
+   "material": 44,
+   "material_max": 44,
+   "material_min": 0
+  },
+  {
+   "white": "random",
+   "black": "day",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 20,
+   "material": -25,
+   "material_max": 0,
+   "material_min": -25
+  },
+  {
+   "white": "day",
+   "black": "greedy",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 94,
+   "material": 20,
+   "material_max": 20,
+   "material_min": -2
+  },
+  {
+   "white": "greedy",
+   "black": "day",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 82,
+   "material": -26,
+   "material_max": 7,
+   "material_min": -26
+  },
+  {
+   "white": "day",
+   "black": "greedy",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 60,
+   "material": 19,
+   "material_max": 19,
+   "material_min": -15
+  },
+  {
+   "white": "greedy",
+   "black": "day",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 54,
+   "material": -25,
+   "material_max": 1,
+   "material_min": -25
+  },
+  {
+   "white": "day",
+   "black": "greedy",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 100,
+   "material": 9,
+   "material_max": 12,
+   "material_min": -9
+  },
+  {
+   "white": "greedy",
+   "black": "day",
+   "score": 0.5,
+   "end": "insufficient material",
+   "moves": 51,
+   "material": 0,
+   "material_max": 9,
+   "material_min": -11
+  },
+  {
+   "white": "day",
+   "black": "greedy",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 38,
+   "material": 18,
+   "material_max": 22,
+   "material_min": -2
+  },
+  {
+   "white": "greedy",
+   "black": "day",
+   "score": 0.5,
+   "end": "insufficient material",
+   "moves": 74,
+   "material": 0,
+   "material_max": 0,
+   "material_min": -20
+  },
+  {
+   "white": "day",
+   "black": "greedy",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 64,
+   "material": 19,
+   "material_max": 19,
+   "material_min": -4
+  },
+  {
+   "white": "greedy",
+   "black": "day",
+   "score": 0.5,
+   "end": "insufficient material",
+   "moves": 78,
+   "material": 0,
+   "material_max": 11,
+   "material_min": -9
+  },
+  {
+   "white": "day",
+   "black": "greedy",
+   "score": 0.5,
+   "end": "insufficient material",
+   "moves": 82,
+   "material": 0,
+   "material_max": 14,
+   "material_min": -8
+  },
+  {
+   "white": "greedy",
+   "black": "day",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 60,
+   "material": -20,
+   "material_max": 0,
+   "material_min": -20
+  },
+  {
+   "white": "day",
+   "black": "greedy",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 71,
+   "material": 20,
+   "material_max": 21,
+   "material_min": -3
+  },
+  {
+   "white": "greedy",
+   "black": "day",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 77,
+   "material": -23,
+   "material_max": 1,
+   "material_min": -23
+  },
+  {
+   "white": "day",
+   "black": "greedy",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 67,
+   "material": 19,
+   "material_max": 19,
+   "material_min": -11
+  },
+  {
+   "white": "greedy",
+   "black": "day",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 78,
+   "material": -9,
+   "material_max": 3,
+   "material_min": -23
+  },
+  {
+   "white": "day",
+   "black": "greedy",
+   "score": 0.5,
+   "end": "insufficient material",
+   "moves": 79,
+   "material": 0,
+   "material_max": 9,
+   "material_min": -9
+  },
+  {
+   "white": "greedy",
+   "black": "day",
+   "score": 0.5,
+   "end": "insufficient material",
+   "moves": 103,
+   "material": 0,
+   "material_max": 9,
+   "material_min": -12
+  },
+  {
+   "white": "day",
+   "black": "greedy",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 61,
+   "material": 20,
+   "material_max": 20,
+   "material_min": -3
+  },
+  {
+   "white": "greedy",
+   "black": "day",
+   "score": 0.5,
+   "end": "insufficient material",
+   "moves": 71,
+   "material": 0,
+   "material_max": 6,
+   "material_min": -13
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320-75",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 79,
+   "material": 24,
+   "material_max": 36,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "day",
+   "score": 0.5,
+   "end": "threefold repetition",
+   "moves": 44,
+   "material": -41,
+   "material_max": 0,
+   "material_min": -42
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320-75",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 52,
+   "material": 22,
+   "material_max": 28,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "day",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 45,
+   "material": -34,
+   "material_max": 0,
+   "material_min": -34
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320-75",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 40,
+   "material": 29,
+   "material_max": 29,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "day",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 69,
+   "material": -22,
+   "material_max": 2,
+   "material_min": -22
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320-75",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 82,
+   "material": 22,
+   "material_max": 34,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "day",
+   "score": 0.5,
+   "end": "threefold repetition",
+   "moves": 42,
+   "material": -29,
+   "material_max": 4,
+   "material_min": -29
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320-75",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 15,
+   "material": 15,
+   "material_max": 15,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "day",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 40,
+   "material": -24,
+   "material_max": 0,
+   "material_min": -28
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320-75",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 69,
+   "material": 22,
+   "material_max": 32,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "day",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 50,
+   "material": -26,
+   "material_max": 0,
+   "material_min": -26
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320-75",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 34,
+   "material": 31,
+   "material_max": 31,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "day",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 83,
+   "material": -29,
+   "material_max": 8,
+   "material_min": -29
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320-75",
+   "score": 0.5,
+   "end": "threefold repetition",
+   "moves": 83,
+   "material": 19,
+   "material_max": 19,
+   "material_min": -4
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "day",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 71,
+   "material": -29,
+   "material_max": 9,
+   "material_min": -29
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320-75",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 64,
+   "material": 19,
+   "material_max": 30,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "day",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 62,
+   "material": -31,
+   "material_max": 0,
+   "material_min": -35
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320-75",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 44,
+   "material": 25,
+   "material_max": 35,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "day",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 58,
+   "material": -39,
+   "material_max": 0,
+   "material_min": -39
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320-50",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 51,
+   "material": 21,
+   "material_max": 24,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "day",
+   "score": 0.5,
+   "end": "insufficient material",
+   "moves": 87,
+   "material": 0,
+   "material_max": 7,
+   "material_min": -11
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320-50",
+   "score": 0.5,
+   "end": "threefold repetition",
+   "moves": 51,
+   "material": 15,
+   "material_max": 23,
+   "material_min": -8
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "day",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 38,
+   "material": -22,
+   "material_max": 0,
+   "material_min": -22
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320-50",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 23,
+   "material": 34,
+   "material_max": 34,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "day",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 36,
+   "material": -22,
+   "material_max": 6,
+   "material_min": -22
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320-50",
+   "score": 0.5,
+   "end": "threefold repetition",
+   "moves": 68,
+   "material": 45,
+   "material_max": 45,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "day",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 34,
+   "material": -18,
+   "material_max": 3,
+   "material_min": -22
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320-50",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 62,
+   "material": 40,
+   "material_max": 40,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "day",
+   "score": 0.5,
+   "end": "insufficient material",
+   "moves": 82,
+   "material": 0,
+   "material_max": 10,
+   "material_min": -13
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320-50",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 79,
+   "material": 18,
+   "material_max": 19,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "day",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 44,
+   "material": -45,
+   "material_max": 0,
+   "material_min": -45
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320-50",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 53,
+   "material": 12,
+   "material_max": 12,
+   "material_min": -6
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "day",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 43,
+   "material": -34,
+   "material_max": 5,
+   "material_min": -34
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320-50",
+   "score": 0.5,
+   "end": "threefold repetition",
+   "moves": 58,
+   "material": 16,
+   "material_max": 21,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "day",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 6,
+   "material": 2,
+   "material_max": 2,
+   "material_min": -1
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320-50",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 83,
+   "material": 24,
+   "material_max": 24,
+   "material_min": -1
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "day",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 64,
+   "material": -16,
+   "material_max": 2,
+   "material_min": -16
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320-50",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 57,
+   "material": 23,
+   "material_max": 23,
+   "material_min": -8
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "day",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 44,
+   "material": -16,
+   "material_max": 0,
+   "material_min": -23
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320-25",
+   "score": 0.5,
+   "end": "threefold repetition",
+   "moves": 92,
+   "material": 9,
+   "material_max": 15,
+   "material_min": -14
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "day",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 30,
+   "material": 10,
+   "material_max": 15,
+   "material_min": -1
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320-25",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 32,
+   "material": 11,
+   "material_max": 12,
+   "material_min": -2
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "day",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 41,
+   "material": -23,
+   "material_max": 8,
+   "material_min": -23
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320-25",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 51,
+   "material": 13,
+   "material_max": 22,
+   "material_min": -1
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "day",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 13,
+   "material": 1,
+   "material_max": 2,
+   "material_min": -1
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320-25",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 36,
+   "material": 1,
+   "material_max": 3,
+   "material_min": -9
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "day",
+   "score": 0.5,
+   "end": "insufficient material",
+   "moves": 119,
+   "material": 0,
+   "material_max": 11,
+   "material_min": -2
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320-25",
+   "score": 0.5,
+   "end": "fifty moves",
+   "moves": 121,
+   "material": -5,
+   "material_max": 6,
+   "material_min": -18
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "day",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 43,
+   "material": 9,
+   "material_max": 9,
+   "material_min": -4
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320-25",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 71,
+   "material": 10,
+   "material_max": 19,
+   "material_min": -1
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "day",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 13,
+   "material": -22,
+   "material_max": 0,
+   "material_min": -22
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320-25",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 34,
+   "material": -6,
+   "material_max": 3,
+   "material_min": -12
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "day",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 38,
+   "material": -41,
+   "material_max": 0,
+   "material_min": -43
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320-25",
+   "score": 0.5,
+   "end": "threefold repetition",
+   "moves": 57,
+   "material": 25,
+   "material_max": 26,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "day",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 82,
+   "material": 17,
+   "material_max": 17,
+   "material_min": -3
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320-25",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 86,
+   "material": 21,
+   "material_max": 21,
+   "material_min": -1
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "day",
+   "score": 0.5,
+   "end": "insufficient material",
+   "moves": 107,
+   "material": 3,
+   "material_max": 6,
+   "material_min": -11
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320-25",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 28,
+   "material": 5,
+   "material_max": 5,
+   "material_min": -2
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "day",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 24,
+   "material": 10,
+   "material_max": 10,
+   "material_min": -6
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 40,
+   "material": -21,
+   "material_max": 3,
+   "material_min": -21
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "day",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 38,
+   "material": 17,
+   "material_max": 17,
+   "material_min": -4
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 32,
+   "material": -5,
+   "material_max": 6,
+   "material_min": -5
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "day",
+   "score": 0.5,
+   "end": "fifty moves",
+   "moves": 111,
+   "material": 5,
+   "material_max": 15,
+   "material_min": -4
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 33,
+   "material": -13,
+   "material_max": 1,
+   "material_min": -13
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "day",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 18,
+   "material": 1,
+   "material_max": 3,
+   "material_min": 0
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 48,
+   "material": -18,
+   "material_max": 3,
+   "material_min": -18
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "day",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 45,
+   "material": 10,
+   "material_max": 10,
+   "material_min": -3
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 33,
+   "material": 0,
+   "material_max": 8,
+   "material_min": -5
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "day",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 22,
+   "material": 14,
+   "material_max": 16,
+   "material_min": -2
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 47,
+   "material": -6,
+   "material_max": 10,
+   "material_min": -6
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "day",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 85,
+   "material": 9,
+   "material_max": 12,
+   "material_min": -2
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 39,
+   "material": -6,
+   "material_max": 9,
+   "material_min": -7
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "day",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 30,
+   "material": 7,
+   "material_max": 15,
+   "material_min": -3
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 30,
+   "material": -7,
+   "material_max": 0,
+   "material_min": -17
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "day",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 27,
+   "material": 12,
+   "material_max": 12,
+   "material_min": -8
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 27,
+   "material": -18,
+   "material_max": 3,
+   "material_min": -18
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "day",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 58,
+   "material": 16,
+   "material_max": 16,
+   "material_min": -7
+  },
+  {
+   "white": "day",
+   "black": "stockfish-1320",
+   "score": 0.5,
+   "end": "stalemate",
+   "moves": 86,
+   "material": 12,
+   "material_max": 25,
+   "material_min": -2
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "day",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 45,
+   "material": 6,
+   "material_max": 7,
+   "material_min": -9
+  },
+  {
+   "white": "day-imagine",
+   "black": "random",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 42,
+   "material": 28,
+   "material_max": 28,
+   "material_min": -5
+  },
+  {
+   "white": "random",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 38,
+   "material": -34,
+   "material_max": 0,
+   "material_min": -34
+  },
+  {
+   "white": "day-imagine",
+   "black": "random",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 32,
+   "material": 22,
+   "material_max": 22,
+   "material_min": -1
+  },
+  {
+   "white": "random",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 27,
+   "material": -33,
+   "material_max": 0,
+   "material_min": -35
+  },
+  {
+   "white": "day-imagine",
+   "black": "random",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 21,
+   "material": 13,
+   "material_max": 13,
+   "material_min": -4
+  },
+  {
+   "white": "random",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 17,
+   "material": -18,
+   "material_max": 0,
+   "material_min": -18
+  },
+  {
+   "white": "day-imagine",
+   "black": "random",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 26,
+   "material": 23,
+   "material_max": 23,
+   "material_min": 0
+  },
+  {
+   "white": "random",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 12,
+   "material": -6,
+   "material_max": 0,
+   "material_min": -6
+  },
+  {
+   "white": "day-imagine",
+   "black": "random",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 38,
+   "material": 37,
+   "material_max": 37,
+   "material_min": 0
+  },
+  {
+   "white": "random",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 24,
+   "material": -41,
+   "material_max": 4,
+   "material_min": -41
+  },
+  {
+   "white": "day-imagine",
+   "black": "random",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 23,
+   "material": 13,
+   "material_max": 13,
+   "material_min": -9
+  },
+  {
+   "white": "random",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 76,
+   "material": -26,
+   "material_max": 0,
+   "material_min": -26
+  },
+  {
+   "white": "day-imagine",
+   "black": "random",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 32,
+   "material": 31,
+   "material_max": 31,
+   "material_min": 0
+  },
+  {
+   "white": "random",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 25,
+   "material": -30,
+   "material_max": 0,
+   "material_min": -30
+  },
+  {
+   "white": "day-imagine",
+   "black": "random",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 11,
+   "material": 14,
+   "material_max": 14,
+   "material_min": 0
+  },
+  {
+   "white": "random",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 20,
+   "material": -21,
+   "material_max": 0,
+   "material_min": -21
+  },
+  {
+   "white": "day-imagine",
+   "black": "random",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 23,
+   "material": 20,
+   "material_max": 20,
+   "material_min": 0
+  },
+  {
+   "white": "random",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 46,
+   "material": -26,
+   "material_max": 0,
+   "material_min": -26
+  },
+  {
+   "white": "day-imagine",
+   "black": "random",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 20,
+   "material": 26,
+   "material_max": 26,
+   "material_min": 0
+  },
+  {
+   "white": "random",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 21,
+   "material": -14,
+   "material_max": 0,
+   "material_min": -14
+  },
+  {
+   "white": "day-imagine",
+   "black": "greedy",
+   "score": 0.5,
+   "end": "insufficient material",
+   "moves": 67,
+   "material": 0,
+   "material_max": 2,
+   "material_min": -18
+  },
+  {
+   "white": "greedy",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 36,
+   "material": -26,
+   "material_max": 2,
+   "material_min": -26
+  },
+  {
+   "white": "day-imagine",
+   "black": "greedy",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 18,
+   "material": 5,
+   "material_max": 15,
+   "material_min": -3
+  },
+  {
+   "white": "greedy",
+   "black": "day-imagine",
+   "score": 0.5,
+   "end": "insufficient material",
+   "moves": 66,
+   "material": 3,
+   "material_max": 3,
+   "material_min": -13
+  },
+  {
+   "white": "day-imagine",
+   "black": "greedy",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 46,
+   "material": 11,
+   "material_max": 12,
+   "material_min": -1
+  },
+  {
+   "white": "greedy",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 31,
+   "material": -11,
+   "material_max": 1,
+   "material_min": -17
+  },
+  {
+   "white": "day-imagine",
+   "black": "greedy",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 49,
+   "material": 8,
+   "material_max": 8,
+   "material_min": -10
+  },
+  {
+   "white": "greedy",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 9,
+   "material": -2,
+   "material_max": 0,
+   "material_min": -2
+  },
+  {
+   "white": "day-imagine",
+   "black": "greedy",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 21,
+   "material": 7,
+   "material_max": 9,
+   "material_min": -1
+  },
+  {
+   "white": "greedy",
+   "black": "day-imagine",
+   "score": 0.5,
+   "end": "insufficient material",
+   "moves": 98,
+   "material": 0,
+   "material_max": 10,
+   "material_min": -10
+  },
+  {
+   "white": "day-imagine",
+   "black": "greedy",
+   "score": 0.5,
+   "end": "insufficient material",
+   "moves": 71,
+   "material": 0,
+   "material_max": 11,
+   "material_min": -5
+  },
+  {
+   "white": "greedy",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 32,
+   "material": -21,
+   "material_max": 0,
+   "material_min": -21
+  },
+  {
+   "white": "day-imagine",
+   "black": "greedy",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 52,
+   "material": 18,
+   "material_max": 18,
+   "material_min": -5
+  },
+  {
+   "white": "greedy",
+   "black": "day-imagine",
+   "score": 0.5,
+   "end": "insufficient material",
+   "moves": 78,
+   "material": 0,
+   "material_max": 15,
+   "material_min": -1
+  },
+  {
+   "white": "day-imagine",
+   "black": "greedy",
+   "score": 0.5,
+   "end": "insufficient material",
+   "moves": 60,
+   "material": 0,
+   "material_max": 9,
+   "material_min": -7
+  },
+  {
+   "white": "greedy",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 70,
+   "material": -9,
+   "material_max": 3,
+   "material_min": -18
+  },
+  {
+   "white": "day-imagine",
+   "black": "greedy",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 80,
+   "material": 9,
+   "material_max": 9,
+   "material_min": -20
+  },
+  {
+   "white": "greedy",
+   "black": "day-imagine",
+   "score": 0.5,
+   "end": "threefold repetition",
+   "moves": 77,
+   "material": 0,
+   "material_max": 5,
+   "material_min": -14
+  },
+  {
+   "white": "day-imagine",
+   "black": "greedy",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 54,
+   "material": 12,
+   "material_max": 12,
+   "material_min": -11
+  },
+  {
+   "white": "greedy",
+   "black": "day-imagine",
+   "score": 0.5,
+   "end": "threefold repetition",
+   "moves": 67,
+   "material": 0,
+   "material_max": 13,
+   "material_min": -9
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320-75",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 15,
+   "material": 34,
+   "material_max": 34,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 21,
+   "material": -16,
+   "material_max": 0,
+   "material_min": -16
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320-75",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 31,
+   "material": 23,
+   "material_max": 23,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 30,
+   "material": -26,
+   "material_max": 0,
+   "material_min": -28
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320-75",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 21,
+   "material": 15,
+   "material_max": 19,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 13,
+   "material": -13,
+   "material_max": 0,
+   "material_min": -13
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320-75",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 32,
+   "material": 27,
+   "material_max": 28,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 49,
+   "material": -23,
+   "material_max": 7,
+   "material_min": -23
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320-75",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 39,
+   "material": 30,
+   "material_max": 30,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 27,
+   "material": -34,
+   "material_max": 0,
+   "material_min": -34
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320-75",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 19,
+   "material": 22,
+   "material_max": 22,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 13,
+   "material": -20,
+   "material_max": 0,
+   "material_min": -20
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320-75",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 36,
+   "material": 24,
+   "material_max": 24,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 21,
+   "material": -15,
+   "material_max": 1,
+   "material_min": -15
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320-75",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 11,
+   "material": 13,
+   "material_max": 13,
+   "material_min": -1
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 25,
+   "material": -27,
+   "material_max": 0,
+   "material_min": -27
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320-75",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 15,
+   "material": 18,
+   "material_max": 18,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 74,
+   "material": -19,
+   "material_max": 0,
+   "material_min": -31
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320-75",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 11,
+   "material": 12,
+   "material_max": 12,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-75",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 15,
+   "material": -20,
+   "material_max": 0,
+   "material_min": -20
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320-50",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 36,
+   "material": 1,
+   "material_max": 18,
+   "material_min": -4
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 30,
+   "material": -30,
+   "material_max": 0,
+   "material_min": -30
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320-50",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 35,
+   "material": 23,
+   "material_max": 30,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 26,
+   "material": -30,
+   "material_max": 0,
+   "material_min": -30
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320-50",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 30,
+   "material": 30,
+   "material_max": 30,
+   "material_min": -1
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 33,
+   "material": -25,
+   "material_max": 0,
+   "material_min": -27
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320-50",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 93,
+   "material": 10,
+   "material_max": 13,
+   "material_min": -10
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 70,
+   "material": -7,
+   "material_max": 2,
+   "material_min": -28
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320-50",
+   "score": 0.5,
+   "end": "threefold repetition",
+   "moves": 90,
+   "material": 12,
+   "material_max": 12,
+   "material_min": -9
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "day-imagine",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 38,
+   "material": 4,
+   "material_max": 10,
+   "material_min": -9
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320-50",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 34,
+   "material": 28,
+   "material_max": 34,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 80,
+   "material": -19,
+   "material_max": 6,
+   "material_min": -19
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320-50",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 37,
+   "material": 37,
+   "material_max": 37,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 37,
+   "material": -26,
+   "material_max": 8,
+   "material_min": -26
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320-50",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 22,
+   "material": 36,
+   "material_max": 36,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 29,
+   "material": -17,
+   "material_max": 0,
+   "material_min": -23
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320-50",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 32,
+   "material": 26,
+   "material_max": 31,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 33,
+   "material": -22,
+   "material_max": 2,
+   "material_min": -22
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320-50",
+   "score": 0.5,
+   "end": "insufficient material",
+   "moves": 67,
+   "material": 3,
+   "material_max": 13,
+   "material_min": -7
+  },
+  {
+   "white": "stockfish-1320-50",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 34,
+   "material": -31,
+   "material_max": 0,
+   "material_min": -31
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320-25",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 71,
+   "material": 20,
+   "material_max": 25,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 27,
+   "material": -25,
+   "material_max": 0,
+   "material_min": -25
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320-25",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 50,
+   "material": 22,
+   "material_max": 22,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 37,
+   "material": -25,
+   "material_max": 0,
+   "material_min": -26
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320-25",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 69,
+   "material": 11,
+   "material_max": 12,
+   "material_min": -9
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 47,
+   "material": -26,
+   "material_max": 7,
+   "material_min": -26
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320-25",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 22,
+   "material": -6,
+   "material_max": 5,
+   "material_min": -6
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "day-imagine",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 64,
+   "material": 11,
+   "material_max": 12,
+   "material_min": -5
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320-25",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 41,
+   "material": 35,
+   "material_max": 35,
+   "material_min": -1
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "day-imagine",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 23,
+   "material": 12,
+   "material_max": 12,
+   "material_min": -3
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320-25",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 17,
+   "material": 14,
+   "material_max": 16,
+   "material_min": -1
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "day-imagine",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 20,
+   "material": -3,
+   "material_max": 0,
+   "material_min": -4
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320-25",
+   "score": 0.5,
+   "end": "threefold repetition",
+   "moves": 58,
+   "material": 10,
+   "material_max": 11,
+   "material_min": -7
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 56,
+   "material": -15,
+   "material_max": 9,
+   "material_min": -18
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320-25",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 20,
+   "material": 15,
+   "material_max": 15,
+   "material_min": 0
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 37,
+   "material": -23,
+   "material_max": 11,
+   "material_min": -23
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320-25",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 14,
+   "material": -12,
+   "material_max": 1,
+   "material_min": -12
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "day-imagine",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 22,
+   "material": -12,
+   "material_max": 0,
+   "material_min": -13
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320-25",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 42,
+   "material": 17,
+   "material_max": 17,
+   "material_min": -6
+  },
+  {
+   "white": "stockfish-1320-25",
+   "black": "day-imagine",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 36,
+   "material": 11,
+   "material_max": 19,
+   "material_min": -1
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 21,
+   "material": -2,
+   "material_max": 1,
+   "material_min": -2
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "day-imagine",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 29,
+   "material": -2,
+   "material_max": 4,
+   "material_min": -5
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 39,
+   "material": -19,
+   "material_max": 2,
+   "material_min": -20
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "day-imagine",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 20,
+   "material": 3,
+   "material_max": 3,
+   "material_min": -2
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 33,
+   "material": -8,
+   "material_max": 5,
+   "material_min": -8
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "day-imagine",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 61,
+   "material": 11,
+   "material_max": 11,
+   "material_min": -9
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 48,
+   "material": -6,
+   "material_max": 14,
+   "material_min": -7
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "day-imagine",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 51,
+   "material": 8,
+   "material_max": 10,
+   "material_min": -2
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 117,
+   "material": -14,
+   "material_max": 7,
+   "material_min": -14
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "day-imagine",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 49,
+   "material": 12,
+   "material_max": 15,
+   "material_min": -4
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 27,
+   "material": -12,
+   "material_max": 4,
+   "material_min": -12
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "day-imagine",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 35,
+   "material": 2,
+   "material_max": 10,
+   "material_min": -2
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 25,
+   "material": -4,
+   "material_max": 4,
+   "material_min": -7
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "day-imagine",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 29,
+   "material": 23,
+   "material_max": 23,
+   "material_min": -3
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 28,
+   "material": -13,
+   "material_max": 1,
+   "material_min": -13
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "day-imagine",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 27,
+   "material": 7,
+   "material_max": 8,
+   "material_min": -2
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 61,
+   "material": -9,
+   "material_max": 4,
+   "material_min": -11
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "day-imagine",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 32,
+   "material": 23,
+   "material_max": 23,
+   "material_min": 0
+  },
+  {
+   "white": "day-imagine",
+   "black": "stockfish-1320",
+   "score": 0.0,
+   "end": "checkmate",
+   "moves": 44,
+   "material": -15,
+   "material_max": 3,
+   "material_min": -15
+  },
+  {
+   "white": "stockfish-1320",
+   "black": "day-imagine",
+   "score": 1.0,
+   "end": "checkmate",
+   "moves": 33,
+   "material": 19,
+   "material_max": 19,
+   "material_min": -1
+  }
+ ]
+}

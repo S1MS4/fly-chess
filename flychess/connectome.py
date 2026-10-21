@@ -2,7 +2,7 @@
 
 The raw download is three tables. This file squeezes them into one compact
 data/connectome/brain.npz with:
-  - a list of neurons (id, type, class, superclass, transmitter, region)
+  - a list of neurons (id, type, class, superclass, transmitter, region, soma position)
   - a list of connections (pre index, post index, synapse count, sign)
   - where each photoreceptor sits on the eye, so the board can be "shown" to it
 
@@ -17,6 +17,7 @@ import pandas as pd
 
 RAW = Path("data/connectome")
 BRAIN = RAW / "brain.npz"
+WEIGHTS = "connectome-weights-male-cns-v1.0-minconf-0.5-traced-only.feather"
 
 # Fast transmitters decide the sign. Acetylcholine excites. GABA and glutamate
 # (through GluCl channels) mostly inhibit in the fly. Histamine is what
@@ -61,29 +62,43 @@ def region_of(row) -> str:
     return "other"
 
 
+def transmitter(nt: pd.DataFrame, ids) -> pd.Series:
+    """Best guess per neuron: the consensus call, else the cell type's, else its own prediction."""
+    t = nt.drop_duplicates("body").set_index("body").reindex(ids)
+    known = lambda s: s.notna() & (s != "unclear")
+    tx = t.consensus_nt.where(known(t.consensus_nt), t.celltype_predicted_nt)
+    tx = tx.where(known(tx), t.predicted_nt)
+    return tx.where(known(tx), "acetylcholine").str.lower()
+
+
 def build(min_synapses: int, brain_only: bool) -> None:
     ann = pd.read_feather(RAW / "body-annotations-male-cns-v1.0-minconf-0.5.feather")
     nt = pd.read_feather(RAW / "body-neurotransmitters-male-cns-v1.0.feather")
-    w = pd.read_feather(RAW / "connectome-weights-male-cns-v1.0-minconf-0.5.feather")
+    w = pd.read_feather(RAW / WEIGHTS, columns=["body_pre", "body_post", "weight"])
     print(f"raw: {len(ann)} bodies, {len(w)} connections")
 
     # Keep real neurons: traced, with a superclass, not glia.
-    ann = ann[ann.status.isin(["Traced", "Anchor"]) & ann.superclass.notna()].copy()
+    ann = ann[ann.status.isin(["Traced", "Anchor"]) & ann.superclass.notna()].drop_duplicates("bodyId")
     if brain_only:
         ann = ann[~ann.superclass.str.startswith("vnc_")]
-    w = w[(w.weight >= min_synapses) & w.body_pre.isin(ann.bodyId) & w.body_post.isin(ann.bodyId)]
+    w = w[(w.weight >= min_synapses) & (w.body_pre != w.body_post)
+          & w.body_pre.isin(ann.bodyId) & w.body_post.isin(ann.bodyId)]
 
     # Drop neurons left with no connections at all.
     used = np.union1d(w.body_pre.values, w.body_post.values)
     ann = ann[ann.bodyId.isin(used)].reset_index(drop=True)
     ann["region"] = ann.apply(region_of, axis=1)
-    nt = nt.set_index("body").consensus_nt.reindex(ann.bodyId).fillna("acetylcholine").str.lower()
-    ann["nt"] = nt.values
+    ann["nt"] = transmitter(nt, ann.bodyId).values
     idx = pd.Series(np.arange(len(ann)), index=ann.bodyId)
 
     pre = idx[w.body_pre.values].values
     post = idx[w.body_post.values].values
     sign = ann.nt.map(SIGN).fillna(1.0).values[pre]
+    # Photoreceptors are histaminergic, and in a real eye light makes the lamina cells
+    # behind them fire less. A rate model starts with every neuron at zero, and you can't
+    # fire less than zero, so treated as inhibition the board would never get past the
+    # eye. It didn't: in the first version every neuron behind the eye stayed at exactly 0.
+    sign[ann.region.values[pre] == "photoreceptors"] = 1.0
     print(f"kept: {len(ann)} neurons, {len(pre)} connections (>= {min_synapses} synapses)")
 
     # Where does each photoreceptor look? Photoreceptors have no column label in
@@ -99,15 +114,19 @@ def build(min_synapses: int, brain_only: bool) -> None:
     hex2[e.pre.values] = ann.assignedOlHex2.values[e.post.values]
     print(f"photoreceptors placed on the eye: {len(e)} of {len(photo)}")
 
+    # Cell body positions in nanometres, for the 3D brain in the interface. Some neurons have none.
+    soma = np.full((len(ann), 3), np.nan, np.float32)
+    has_soma = ann.somaLocation.notna().values
+    soma[has_soma] = np.stack(ann.somaLocation.values[has_soma])
+
+    text = lambda s: s.fillna("").to_numpy(dtype=str)  # plain numpy strings, so loading needs no pickle
     np.savez_compressed(
         BRAIN,
-        body_id=ann.bodyId.values, type=ann.type.fillna("").values.astype(str),
-        cls=ann["class"].fillna("").values.astype(str), superclass=ann.superclass.values.astype(str),
-        side=ann.rootSide.fillna(ann.somaSide).fillna("").values.astype(str),
-        region=ann.region.values.astype(str), nt=ann.nt.values.astype(str),
+        body_id=ann.bodyId.to_numpy(), type=text(ann.type), cls=text(ann["class"]), superclass=text(ann.superclass),
+        side=text(ann.rootSide.fillna(ann.somaSide)), region=text(ann.region), nt=text(ann.nt),
         pre=pre.astype(np.int32), post=post.astype(np.int32),
         synapses=w.weight.values.astype(np.float32), sign=sign.astype(np.float32),
-        hex1=hex1.astype(np.float32), hex2=hex2.astype(np.float32),
+        hex1=hex1.astype(np.float32), hex2=hex2.astype(np.float32), soma=soma,
     )
     print(f"saved {BRAIN}")
 
@@ -127,6 +146,7 @@ class Connectome:
     sign: np.ndarray
     hex1: np.ndarray
     hex2: np.ndarray
+    soma: np.ndarray
 
     @property
     def n(self) -> int:
@@ -135,21 +155,20 @@ class Connectome:
     def where(self, region: str) -> np.ndarray:
         return np.where(self.region == region)[0]
 
+    def with_edges(self, keep: np.ndarray, post: np.ndarray | None = None) -> "Connectome":
+        """Same neurons, only the connections in `keep` (optionally pointing somewhere else)."""
+        return Connectome(**{**self.__dict__, "pre": self.pre[keep], "post": (self.post if post is None else post)[keep],
+                             "synapses": self.synapses[keep], "sign": self.sign[keep]})
+
     def shuffled(self, seed: int = 0) -> "Connectome":
         """Control brain: every neuron keeps its outputs' count, signs and strengths,
         but the targets are scrambled. Same statistics, wrong wiring."""
-        rng = np.random.default_rng(seed)
-        post = rng.permutation(self.post)
-        keep = post != self.pre
-        return Connectome(**{**self.__dict__, "pre": self.pre[keep], "post": post[keep],
-                             "synapses": self.synapses[keep], "sign": self.sign[keep]})
+        post = np.random.default_rng(seed).permutation(self.post)
+        return self.with_edges(post != self.pre, post)
 
     def lesioned(self, regions: list[str]) -> "Connectome":
         """Silence whole regions by cutting every connection out of them."""
-        dead = np.isin(self.region, regions)
-        keep = ~dead[self.pre]
-        return Connectome(**{**self.__dict__, "pre": self.pre[keep], "post": self.post[keep],
-                             "synapses": self.synapses[keep], "sign": self.sign[keep]})
+        return self.with_edges(~np.isin(self.region, regions)[self.pre])
 
 
 def load(shuffle: bool = False, lesion: list[str] | None = None) -> Connectome:
