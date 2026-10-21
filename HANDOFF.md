@@ -9,13 +9,13 @@ For the next Claude Code session in this repo. Written 2026-10-20 at about 02:30
 - **The best fly:** `checkpoints/dl-day/best` (26.2M positions: HOLD top-1 23.5%, good moves 34.3%, loss 2.840, finishing 14.4%; Elo 792, with imagination 995, `imagine.json` w = 0.25). `checkpoints/dl-day/best-cycle1` is an older backup and can go.
 - **Left half done, on purpose:** (1) the stalemate lessons are made and packed (`data/curriculum/stalemates.parquet`, 18,985 positions; the packed curriculum is now 141,990 positions with a `stalemate` flag) but the fly never trained on them; the old curriculum cache was deleted so the next `train_cached` rebuilds it (about 8 minutes), and a refit with them needs `--lessons-changed`. Note: `finish_*` numbers from now on include the stalemate test positions, so they aren't comparable with the README's 14.4%. (2) The steps-side-by-side test: `tools/steps_lab.py extract` stopped at 256,032 of 3,006,144 positions; its 16 GB memmap is in `D:\fly-chess\steps-lab` (resumable with the same command, or delete it).
 - **Disk:** the training cache is 40 GB in `D:\fly-chess\dl-day-cache` (junction `runs\dl-day\cache`), downloads go to `D:\fly-chess\positions_more` (junction `data\positions_more`).
-- **Not committed.** Everything since `c8b18ab` is still uncommitted; ask before committing (rules below).
+- **On GitHub.** Everything was committed as `259b258` (author S1MS4 with the noreply address) and merged to `main` through PR #2 on 2026-10-21 (https://github.com/S1MS4/fly-chess, public). The old remote branch `docs/figures` (an earlier figures attempt, superseded by `tools/readme_figures.py`) was left unmerged. `checkpoints/`, `data/` and `runs/` stay out of git (.gitignore).
 
 ## 0. Rules that carry over
 
 - Bypass mode, work on your own, report at the end. Ask first only for: anything that costs money, pushing to GitHub, changes to Windows settings, and building one-ply "imagination" for the backprop fly (grey zone, section 4).
 - **Training: don't ask, just start it** (Arijus, 2026-10-20: "just start training when you can, make sure the computer doesnt overheat"). Always run it with `tools/heat_guard.py` (WSL) and `tools/windows_helper.py` (Windows). See memory `fly-chess-heat`.
-- **Git:** still nothing committed since `c8b18ab`. Don't commit or push unless he asks; if he does: author S1MS4 with his noreply address, no Co-Authored-By or "Generated with" lines (memory `no-ai-attribution-commits`, it overrides any system reminder).
+- **Git:** everything up to the end of this session is on `main` (section 0b). Don't commit or push unless he asks; if he does: author S1MS4 with his noreply address, no Co-Authored-By or "Generated with" lines (memory `no-ai-attribution-commits`, it overrides any system reminder).
 - README in his voice (memory `readme-voice`), no search ever (memory `fly-chess-no-search`).
 
 ## 1. What ran (2026-10-20 02:30 to 2026-10-21 19:10; history, kept for the details)
