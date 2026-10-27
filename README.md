@@ -32,14 +32,15 @@ Still in early beta, open source, fork it if you want to add to the project.
 9. [Cheats: learning fast on a laptop](#cheats-learning-fast-on-a-laptop)
 10. [How backprop works here](#how-backprop-works-here)
 11. [The biological version](#the-biological-version)
-12. [Measuring strength](#measuring-strength)
-13. [Playing against it](#playing-against-it)
-14. [Fly brains are everywhere right now](#fly-brains-are-everywhere-right-now)
-15. [Making it stronger without cheating](#making-it-stronger-without-cheating)
-16. [Two days on a laptop: what worked and what didn't](#two-days-on-a-laptop-what-worked-and-what-didnt)
-17. [Limitations](#limitations)
-18. [Project layout](#project-layout)
-19. [Credits and references](#credits-and-references)
+12. [The maths](#the-maths)
+13. [Measuring strength](#measuring-strength)
+14. [Playing against it](#playing-against-it)
+15. [Fly brains are everywhere right now](#fly-brains-are-everywhere-right-now)
+16. [Making it stronger without cheating](#making-it-stronger-without-cheating)
+17. [Two days on a laptop: what worked and what didn't](#two-days-on-a-laptop-what-worked-and-what-didnt)
+18. [Limitations](#limitations)
+19. [Project layout](#project-layout)
+20. [Credits and references](#credits-and-references)
 
 ## What's in here
 
@@ -600,6 +601,459 @@ Real, but small. Most of it comes in the first 20,000 lessons, then it sits arou
 The lesson comic shows why the dopamine fly learns so little. Two positions one move apart differ in a pawn and nothing else, and the Kenyon cells, the cells whose whole job in a real fly is to give every smell its own pattern, answer both with almost the same one: 196 cells for c5, 198 for h5, 188 in both. The sugar for c5 weakens those 188 cells' synapses onto the avoid MBONs, the shock for h5 weakens the same 188 cells' synapses onto the approach MBONs, and only 8 and 10 cells carry anything that tells the two apart. A fly's olfactory system spends a lot of wiring on keeping similar smells apart. For chess positions that differ by one pawn, this one doesn't manage.
 
 The honest scoreboard: the backprop fly reads chess out of the same brain far better. What the dopamine fly shows is that the biological rule does push the right way, once the fly's own wiring decides which MBONs mean approach and the 5% cut stops turning rounding errors into answers. When I started, it didn't do either.
+
+## The maths
+
+Everything here is what the code computes, with the constants it uses. A bold letter is one number per neuron (or per square, or per move), $`\odot`$ multiplies two of them number by number, and a batch of positions is only more columns: where I write one position, the code does the same for every position in the batch and averages the losses. $`\log`$ is the natural log.
+
+### 1. Wiring the brain
+
+From [flychess/connectome.py](flychess/connectome.py) and [flychess/model.py](flychess/model.py). Neuron $`i`$ connects to another neuron $`j`$ if the tables have at least 5 synapses $`n_{ji}`$ between them. The sign of the connection comes from what the sending neuron releases ([which sign](#the-connectome)):
+
+```math
+\epsilon_i =
+\begin{cases}
++1 & i \text{ is a photoreceptor}\\
+-1 & \text{GABA, glutamate or histamine}\\
++1 & \text{anything else: acetylcholine, dopamine, serotonin, octopamine}
+\end{cases}
+```
+
+The transmitter is the consensus call, else the cell type's prediction, else the neuron's own, and acetylcholine if none of them says. Only the strength of a connection can learn, never its sign ([the weights](#the-weights)):
+
+```math
+W_{ji} = \epsilon_i\, \mathrm{softplus}(\theta_{ji}),\qquad \mathrm{softplus}(\theta) = \log\bigl(1 + e^{\theta}\bigr) > 0
+```
+
+Before training, each connection's strength is its share of the log synapse counts the receiving neuron gets:
+
+```math
+\mathrm{softplus}\bigl(\theta^{0}_{ji}\bigr) = \max\Bigl(\frac{\log(1 + n_{ji})}{\sum_k \log(1 + n_{jk})},\ 10^{-4}\Bigr)
+```
+
+So the strengths of every neuron's inputs add up to 1, and a connection with 100 synapses is only about twice as strong as one with 10. $`W`$ is a sparse matrix with one row per receiving neuron: 6,234,868 entries out of $`163{,}803^2`$.
+
+The control brains only change which connections there are, before $`\theta^0`$ is worked out. The shuffled brain hands the receiving ends of all the connections out again in a random order (and drops the few that land back on their own sender), and a lesion drops every connection whose sender is in the region that's cut out.
+
+### 2. The board on the eye
+
+From [flychess/encode.py](flychess/encode.py) and [flychess/io_maps.py](flychess/io_maps.py). A position is 12 planes of 64 squares, always from the side to move: when it's black's turn the board is mirrored first, ranks flipped and colours swapped.
+
+```math
+b_{p,q} = \mathbf{1}\{\text{piece } p \text{ stands on square } q\},\qquad q = 8 \cdot \text{rank} + \text{file}
+```
+
+Planes $`p`$ = 0 to 5 are the fly's own pawns, knights, bishops, rooks, queens and king, 6 to 11 the opponent's. A photoreceptor $`j`$ placed on the eye sits on one square $`q_j`$ and reports a set of planes $`F_j`$ there:
+
+```math
+F_j =
+\begin{cases}
+\{k_j,\ k_j + 6\} & \text{R1 to R6: one piece type } k_j \text{, either colour}\\
+\{0, 1, 2, 3, 4, 5\} & \text{R7: any piece of the fly's}\\
+\{6, 7, 8, 9, 10, 11\} & \text{R8: any piece of the opponent's}
+\end{cases}
+\qquad\qquad
+x_j = \sum_{p \in F_j} b_{p, q_j}
+```
+
+So $`x_j`$ is 1 when its square holds a piece it reports and 0 otherwise, every neuron that isn't a placed photoreceptor gets $`x_j = 0`$, and the eye sends the same $`\mathbf{x}`$ at every step. The R1 to R6 cells of a square take the piece types in turn, $`k_j = (\text{R1 to R6 cells placed on that square before } j)\ \mathrm{mod}\ 6`$ on the fair eye; the first eye took them in turn over the whole list of photoreceptors instead.
+
+Each photoreceptor takes the eye column $`(h_1, h_2)`$ (hex1, hex2) of the labelled cell it makes the most synapses onto. The first eye cut the two coordinates separately, with $`o(h)`$ the place of $`h`$ when all $`N`$ placed photoreceptors are sorted:
+
+```math
+\text{file}_j = \min\Bigl(\Bigl\lfloor \frac{8\, o(h_{1,j})}{N} \Bigr\rfloor,\ 7\Bigr),\qquad
+\text{rank}_j = \min\Bigl(\Bigl\lfloor \frac{8\, o(h_{2,j})}{N} \Bigr\rfloor,\ 7\Bigr)
+```
+
+The fair eye ([why](#the-board-goes-in-through-the-eye)) cuts columns $`c`$ in the turned coordinates $`u = h_1 - h_2`$ and $`v = h_1 + h_2`$, where the eye is round, and weighs every column by its cells: $`\omega_c`$ counts 1 for each R1 to R6 cell and 0.1 for each R7 or R8. Sorted along $`v`$, the columns go into 8 bands of equal weight, and every band, sorted along $`u`$, into 8 squares of equal weight:
+
+```math
+\text{rank}_c = \min\Bigl(\Bigl\lfloor 8\, \frac{\sum_{c' \in \mathcal{B}_v(c)} \omega_{c'}}{\sum_{c'} \omega_{c'}} \Bigr\rfloor,\ 7\Bigr),\qquad
+\text{file}_c = \min\Bigl(\Bigl\lfloor 8\, \frac{\sum_{c' \in \mathcal{B}_u(c)} \omega_{c'}}{\sum_{c' \in \text{band}} \omega_{c'}} \Bigr\rfloor,\ 7\Bigr)
+```
+
+where $`\mathcal{B}_v(c)`$ is the columns that come before $`c`$ sorted by $`v`$ (then $`u`$), and $`\mathcal{B}_u(c)`$ the columns of its band that come before it sorted by $`u`$ (then $`v`$). Every cell of a column gets the column's square.
+
+### 3. Twelve steps
+
+From [flychess/model.py](flychess/model.py) (`FlyBrain`). Every neuron has a rate between 0 and 1, all of them start at $`\mathbf{r}^{(0)} = 0`$, and each step $`t`$, from 1 to 12, updates all of them at once ([in words](#the-signal-spreads-for-12-steps)):
+
+```math
+\begin{aligned}
+\mathbf{u}^{(t)} &= W \mathbf{r}^{(t-1)} + \mathbf{x}\\
+\mathbf{z}^{(t)} &= \boldsymbol\alpha \odot \frac{\mathbf{u}^{(t)} - \boldsymbol\mu^{(t)}}{\boldsymbol\sigma^{(t)}} + \boldsymbol\beta\\
+\mathbf{r}^{(t)} &= (1 - \lambda)\, \mathbf{r}^{(t-1)} + \lambda \max\bigl(0,\ \mathrm{tanh}\, \mathbf{z}^{(t)}\bigr)
+\end{aligned}
+```
+
+- $`\mathbf{u}`$ is everything arriving at each neuron: its inputs' rates through the connections, plus the eye.
+- $`\boldsymbol\mu^{(t)}`$ and $`\boldsymbol\sigma^{(t)}`$ are homeostasis: each neuron's usual input at this step, and how much it moves from board to board.
+- $`\boldsymbol\alpha`$ and $`\boldsymbol\beta`$ are every neuron's own gain and bias. They start at 0.5 and 0.3 and only learn if `--lr-neurons` says so.
+- $`\lambda = 0.5`$ is the leak: every step the rate moves halfway towards $`\max(0, \mathrm{tanh}\, z)`$, the code's `relu(tanh(z))`.
+
+Homeostasis is measured once, before any training and without any targets ([why](#the-fly-was-brain-dead)). 256 positions go through the 12 steps, and at every step each neuron's input is averaged over them:
+
+```math
+\mu^{(t)}_j = \frac{1}{256} \sum_{b=1}^{256} u^{(t)}_j(b),\qquad
+\sigma^{(t)}_j = \max\left(\sqrt{\frac{1}{256} \sum_{b=1}^{256} \bigl(u^{(t)}_j(b) - \mu^{(t)}_j\bigr)^2},\ 0.02\right)
+```
+
+Each step is normalised with its own numbers as soon as they're measured, so step $`t + 1`$ is measured on the brain as it will really run. Without the floor of 0.02, a neuron whose input never moves would be scaled up a thousandfold or more. It still gets the biggest gain there is, $`\alpha / 0.02 = 25`$, and with `--calm-unreached` a neuron whose input didn't move at all at that step (a variance under $`10^{-10}`$) gets $`\sigma = 1`$ instead ([why that matters](#watching-the-error-go-back)). On the brain as measured that changes nothing: such a neuron gets the same input for every board, so $`u - \mu = 0`$ either way.
+
+| constant | value | | constant | value |
+|---|---|---|---|---|
+| steps | 12 | | leak $`\lambda`$ | 0.5 |
+| starting gain $`\alpha`$ | 0.5 | | starting bias $`\beta`$ | 0.3 |
+| floor on $`\sigma`$ | 0.02 | | "not reached" | variance $`< 10^{-10}`$ |
+| calibration positions | 256 | | | |
+
+### 4. From descending neurons to a move
+
+From [flychess/model.py](flychess/model.py) (`FlyChess`) and [flychess/encode.py](flychess/encode.py) (`policy`). The readout sees the 1,314 descending neurons, averaged over the steps $`\mathcal{R}`$ it reads: $`\{12\}`$ for the first flies, $`\{9, 10, 11, 12\}`$ for the day-long fly.
+
+```math
+\mathbf{d} = \frac{1}{\lvert \mathcal{R} \rvert} \sum_{t \in \mathcal{R}} \mathbf{r}^{(t)}_{\text{DN}}
+```
+
+Four linear readouts turn them into 64 from-square scores, 64 to-square scores, 5 promotion scores (none, queen, rook, bishop, knight) and a value:
+
+```math
+\begin{aligned}
+\mathbf{y}^{\text{from}} &= K^{\text{from}} \mathbf{d} + \mathbf{c}^{\text{from}}, &
+\mathbf{y}^{\text{to}} &= K^{\text{to}} \mathbf{d} + \mathbf{c}^{\text{to}},\\
+\mathbf{y}^{\text{pr}} &= K^{\text{pr}} \mathbf{d} + \mathbf{c}^{\text{pr}}, &
+v &= \mathrm{tanh}\bigl(\mathbf{k}^{\text{val}} \cdot \mathbf{d} + c^{\text{val}}\bigr)
+\end{aligned}
+```
+
+That's 1,314 × 134 weights and 134 biases, 176,210 numbers in all, and along with homeostasis the only numbers in the model that aren't the fly's. A move $`m`$ is a from-square, a to-square and a promotion (in the mirrored frame when the fly is black). Its score is the sum of its three, and softmax runs over the legal moves $`\mathcal{L}`$ only ([in words](#descending-neurons-make-the-move)):
+
+```math
+s(m) = y^{\text{from}}_{\text{from}(m)} + y^{\text{to}}_{\text{to}(m)} + y^{\text{pr}}_{\text{pr}(m)},\qquad
+P(m) = \frac{e^{s(m)}}{\sum_{m' \in \mathcal{L}} e^{s(m')}}
+```
+
+There's no temperature: $`P`$ is exactly the percentages the interface shows, and an illegal move never gets a score at all. The fly plays the legal move with the highest $`P`$ that doesn't bring back an earlier position of the game (if every move does, the highest anyway). In training, a position's legal moves are a list padded to 96, the padding scores $`-10^9`$, and the positions with more than 96 legal moves, about 1 in 1,000, are skipped.
+
+### 5. The loss
+
+From [flychess/train_dl.py](flychess/train_dl.py) (`target`, `losses`) and [scripts/download_chessbench.py](scripts/download_chessbench.py). ChessBench has Stockfish 16's chance to win after every legal move. The data keeps the best $`K \le 8`$ moves, $`c_1`$ to $`c_K`$ from the best down, with their chances $`\mathrm{win}_k`$ in percent (rounded to 0.1), and the target shares them out by how much winning chance each one gives away ([cheat 3](#3-learn-stockfishs-whole-opinion)):
+
+```math
+q(c_k) = \frac{e^{(\mathrm{win}_k - \mathrm{win}_1)/\tau}}{\sum_{k'=1}^{K} e^{(\mathrm{win}_{k'} - \mathrm{win}_1)/\tau}},\qquad \tau = 2.5,\qquad q(m) = 0 \text{ for every other legal move}
+```
+
+So a move 2.5 win% worse than the best gets $`1/e`$ of the best move's share. The value readout learns the best move's chance, turned into $`[-1, 1]`$:
+
+```math
+y = \frac{2\, \mathrm{win}_1}{100} - 1
+```
+
+The loss of a position is the cross-entropy over the legal moves plus the value's squared error, weighted the same, averaged over the batch:
+
+```math
+L = L_{\text{policy}} + (v - y)^2,\qquad
+L_{\text{policy}} = -\sum_{m \in \mathcal{L}} q(m) \log P(m) = H(q) + \mathrm{KL}(q \,\lVert\, P)
+```
+
+$`H(q)`$ is the target's own spread, which no fly can get under; the KL part is how far the fly's opinion is from Stockfish's. The held-out loss in the tables is the policy loss on positions that never train: the first 4,096 rows (HOLD, for the final numbers) and the next 2,048 (VAL, for the checks during a run). Writing $`\bar a`$ for $`\mathrm{d}L / \mathrm{d}a`$, how much the loss changes with $`a`$, what TensorFlow works out for the readout from this is short:
+
+```math
+\bar s(m) = P(m) - q(m),\qquad \bar v = 2\,(v - y)
+```
+
+Every legal move's score gets pushed up by the share Stockfish gives it and down by the share the fly gives it. The blind baseline ([cheat 2](#2-only-compare-legal-moves)) is the same loss on a score that never looks at the board, one number per from-square, to-square and promotion, $`s(m) = \phi_{\text{from}(m)} + \psi_{\text{to}(m)} + \chi_{\text{pr}(m)}`$, fitted on 200,000 positions with Adam (step 0.05, batch 1,024).
+
+### 6. The hand-written backward pass
+
+From [flychess/model.py](flychess/model.py) (`unroll`, `connection_grads`), used only when the brain learns too, with $`\bar a`$ as in [section 5](#5-the-loss). Training the brain needs the readout to read step 12 alone, so the error arrives at the descending neurons at step 12:
+
+```math
+\bar d_j = \sum_{m \in \mathcal{L}} \bigl(P(m) - q(m)\bigr)\bigl(K^{\text{from}}_{\text{from}(m),\,j} + K^{\text{to}}_{\text{to}(m),\,j} + K^{\text{pr}}_{\text{pr}(m),\,j}\bigr) + 2\,(v - y)(1 - v^2)\, k^{\text{val}}_j
+```
+
+$`\bar{\mathbf{r}}^{(12)}`$ is $`\bar{\mathbf{d}}`$ on the descending neurons and 0 on every other neuron. From there `unroll()` walks back one step at a time, $`t`$ from 12 down to 7 ([the code](#a-hand-written-backward-pass)):
+
+```math
+\begin{aligned}
+\bar{\mathbf{z}}^{(t)} &= \lambda\, \bar{\mathbf{r}}^{(t)} \odot \bigl(1 - \mathrm{tanh}^2\, \mathbf{z}^{(t)}\bigr) \odot \mathbf{1}\{\mathbf{z}^{(t)} > 0\}\\
+\bar{\mathbf{u}}^{(t)} &= \bar{\mathbf{z}}^{(t)} \odot \frac{\boldsymbol\alpha}{\boldsymbol\sigma^{(t)}}\\
+\bar{\mathbf{r}}^{(t-1)} &= (1 - \lambda)\, \bar{\mathbf{r}}^{(t)} + W^{\mathrm{T}} \bar{\mathbf{u}}^{(t)}
+\end{aligned}
+```
+
+The first line goes back through $`\lambda \max(0, \mathrm{tanh}\, z)`$, the second through homeostasis, and the third one step back in time, through the leak and through every connection the wrong way round. On the way, every number that can learn collects its blame, summed over the steps and the batch:
+
+```math
+\bar W_{ji} = \sum_{t} \bar u^{(t)}_j\, r^{(t-1)}_i,\qquad
+\bar\alpha_j = \sum_t \bar z^{(t)}_j\, \frac{u^{(t)}_j - \mu^{(t)}_j}{\sigma^{(t)}_j},\qquad
+\bar\beta_j = \sum_t \bar z^{(t)}_j,\qquad
+\bar\theta_{ji} = \epsilon_i\, \mathrm{sigmoid}(\theta_{ji})\, \bar W_{ji}
+```
+
+$`\bar W_{ji}`$ is the error at the neuron a connection feeds times the rate of the neuron it comes from. It's worked out only for the 6.2 million connections that exist, in one XLA kernel, and the last step, through softplus (whose slope is the sigmoid), is TensorFlow's own. Steps 1 to 6 get no blame (`--window 6`, truncated backprop through time), and [tests/test_gradient.py](tests/test_gradient.py) checks all of this against TensorFlow's autodiff.
+
+The second line is also why the error grows on its way back ([watching the error go back](#watching-the-error-go-back)). For a neuron the board hasn't reached, $`\sigma`$ is the floor and $`z = \beta = 0.3`$, so $`\bar u = 0.5 \cdot (1 - \mathrm{tanh}^2\, 0.3) \cdot 0.5 / 0.02 \cdot \bar r = 11.4\, \bar r`$ at every step.
+
+### 7. How the weights move
+
+From [flychess/train_dl.py](flychess/train_dl.py) and [flychess/train_cached.py](flychess/train_cached.py). After homeostasis comes the probe ([cheat 4](#4-fit-the-readout-first)): the brain runs once over 50,000 positions, and the readout alone is fitted on their descending neurons, 8 passes, batch 256, Adam with a step of $`10^{-3}`$.
+
+Then training streams new positions, 128 at a time. The readout, the synapses $`\theta`$ and the neurons' $`\alpha, \beta`$ have an Adam each with its own step size, $`3 \times 10^{-4}`$, 0 and 0 by default, where 0 means frozen ([cheat 5](#5-let-the-brain-be-train-the-readout)). Each group's gradient is scaled down to length 1 if it's longer,
+
+```math
+\bar{\mathbf{g}} \leftarrow \bar{\mathbf{g}} \cdot \min\Bigl(1,\ \frac{1}{\lVert \bar{\mathbf{g}} \rVert_2}\Bigr)
+```
+
+and the step size follows the clock, with $`p`$ the share of `--minutes` used up so far:
+
+```math
+\eta(p) = \eta_0 \cdot
+\begin{cases}
+p / 0.03 & p < 0.03\\
+\tfrac12 \Bigl(1 + \cos\bigl(\pi \min\bigl(1,\ \tfrac{p - 0.03}{0.97}\bigr)\bigr)\Bigr) & \text{otherwise}
+\end{cases}
+```
+
+`--brain-opt sgd` gives the brain SGD with momentum 0.9 instead, and `--max-change 0.2` keeps every synapse within 20% of its measured strength by clipping $`\theta`$ after every step: $`0.8\, \mathrm{softplus}(\theta^0) \le \mathrm{softplus}(\theta) \le 1.2\, \mathrm{softplus}(\theta^0)`$.
+
+**The fast way.** With the brain frozen, a position's descending neurons never change, so [train_cached.py](flychess/train_cached.py) runs the brain once per position and keeps them as bytes, $`\hat d_j = \mathrm{round}(255\, d_j) / 255`$ ([cheat 9](#9-a-day-on-a-laptop-measured-first)). The readout then goes over all of them pass after pass (batch 8,192, Adam at $`2 \times 10^{-3}`$), and after every pass it compares the VAL loss $`\ell`$ with the best so far, $`\ell^{*}`$, which starts at the readout it started from:
+
+```math
+\ell < \ell^{*} - 10^{-4} \quad\Longrightarrow\quad \ell^{*} \leftarrow \ell,\ \Theta^{*} \leftarrow \Theta,
+\qquad\text{otherwise}\qquad \Theta \leftarrow \Theta^{*},\ \eta \leftarrow \eta / 2
+```
+
+$`\Theta`$ is the readout's 176,210 numbers. It stops after 4 passes in a row without a new best, or 60 in all, and keeps $`\Theta^{*}`$, so a fit never saves anything worse than what it started from. With `--curriculum 0.1` a tenth of every batch (rounded) comes from the finishing lessons ([section 8](#8-lessons-in-finishing)), and the main positions whose best move already wins 99.5% or more are left out.
+
+**Watching it learn** ([tools/descent.py](tools/descent.py), [the pictures](#watching-it-learn)). With $`\Theta_1`$ to $`\Theta_K`$ the snapshots of the move readout (from, to and promotion), the picture's two directions are the first two of a PCA of the path, measured from where it ended. Row $`k`$ of a matrix $`D`$ is $`\Theta_k - \Theta_K`$, and with $`\boldsymbol\gamma`$ its singular values:
+
+```math
+D = U\, \mathrm{diag}(\boldsymbol\gamma)\, V^{\mathrm{T}},\qquad
+\text{snapshot } k \text{ at } \bigl((\Theta_k - \Theta_K) \cdot \mathbf{v}_1,\ (\Theta_k - \Theta_K) \cdot \mathbf{v}_2\bigr)
+```
+
+with $`\mathbf{v}_1, \mathbf{v}_2`$ the first two rows of $`V^{\mathrm{T}}`$, each holding a share $`\gamma_i^2 / \sum_{i'} \gamma_{i'}^2`$ of the movement. The surface is the policy loss on the 4,096 HOLD positions at $`\Theta_K + a \mathbf{v}_1 + b \mathbf{v}_2`$, on a 61 × 61 grid that covers the path and 25% more on every side. The move scores are linear in the readout's numbers, $`s_{\Theta_K + a \mathbf{v}_1 + b \mathbf{v}_2} = s_{\Theta_K} + a\, s_{\mathbf{v}_1} + b\, s_{\mathbf{v}_2}`$, so every point of the grid is three precomputed arrays and a softmax.
+
+| constant | value | | constant | value |
+|---|---|---|---|---|
+| probe | 50,000 positions, 8 passes | | probe batch, step | 256, $`10^{-3}`$ |
+| batch | 128 | | readout step $`\eta_0`$ | $`3 \times 10^{-4}`$ |
+| synapse and neuron steps | 0 (frozen) | | gradient length | at most 1 per group |
+| warm-up | first 3% of the run | | backprop window | the last 6 of 12 steps |
+| fast way: batch | 8,192 | | fast way: step | $`2 \times 10^{-3}`$, halved on a miss |
+| fast way: patience | 4 passes | | fast way: block | 262,144 positions (344 MB) |
+
+### 8. Lessons in finishing
+
+From [scripts/make_curriculum.py](scripts/make_curriculum.py) ([why](#why-it-cant-finish)). In a won position ChessBench calls almost every move 100%, so these positions get labelled again. Stockfish (depth 12, its 8 best moves) scores every move for the side to move, and a forced mate by how long it takes:
+
+```math
+S(m) =
+\begin{cases}
+10{,}000 - 100\, n & \text{mate in } n\\
+-10{,}000 + 100\, n & \text{mated in } n\\
+\mathrm{clip}(\text{centipawns},\ -5{,}000,\ 5{,}000) & \text{otherwise}
+\end{cases}
+```
+
+A position stays only if its best move $`m_1`$ has $`S(m_1) \ge 500`$, and its moves get a new win% and the value of a win:
+
+```math
+\mathrm{win}(m) = \max\Bigl(0,\ 100 - \frac{S(m_1) - S(m)}{40}\Bigr),\qquad y = 1
+```
+
+With $`\tau = 2.5`$ that gives a move 100 centipawns or one mate move slower than the best $`1/e`$ of its share: mate in 5 against mate in 6 is 100 against 97.5, and a stalemate next to a mate is 0. The held-out positions of the main data and a random 5% of the rest are kept for testing.
+
+### 9. The dopamine fly's brain
+
+From [flychess/bio.py](flychess/bio.py) (`BioFly`). It's the same brain and the same 12 steps as [section 3](#3-twelve-steps), with its own homeostasis and two changes. The synapses from Kenyon cell $`k`$ to MBON $`n`$ come out of $`W`$ into a matrix $`M`$ that can learn, starting at their measured strength $`M^0_{kn} = \lvert W_{nk} \rvert`$. And only the strongest 5% of Kenyon cells pass their signal on, the way the APL neuron keeps them sparse in a real fly, through a steep sigmoid rather than a hard cut ([why](#the-dopamine-fly-was-a-random-number-generator)):
+
+```math
+\hat r_k = r_k\, \mathrm{sigmoid}\Bigl(\frac{r_k - r_{[203]}}{0.01}\Bigr),\qquad 203 = \lfloor 0.05 \cdot 4{,}064 \rfloor
+```
+
+where $`r_{[203]}`$ is the 203rd highest Kenyon cell rate for this position. Each MBON gets the rest of the brain plus that:
+
+```math
+u^{(t)}_n = \bigl[W' \mathbf{r}^{(t-1)}\bigr]_n + \sum_k M_{kn}\, \hat r^{(t-1)}_k
+```
+
+with $`W'`$ the brain without those synapses. Whether an MBON means approach or avoid, and how much of each kind of dopamine reaches it, both come from the connectome. With $`D^{\text{PAM}}_n`$ and $`D^{\text{PPL1}}_n`$ the synapses the reward and the punishment dopamine neurons make onto MBON $`n`$ ([why this way round](#which-rule-teaches-it)):
+
+```math
+\nu_n =
+\begin{cases}
++1\ \text{(approach)} & D^{\text{PPL1}}_n > D^{\text{PAM}}_n\\
+-1\ \text{(avoid)} & D^{\text{PAM}}_n > D^{\text{PPL1}}_n\\
++1 \text{ if acetylcholine, else } -1 & \text{otherwise}
+\end{cases}
+\qquad
+\rho^{\text{PAM}}_n = \frac{D^{\text{PAM}}_n}{\max_{n'} D^{\text{PAM}}_{n'}},\qquad
+\rho^{\text{PPL1}}_n = \frac{D^{\text{PPL1}}_n}{\max_{n'} D^{\text{PPL1}}_{n'}}
+```
+
+For every legal move the fly looks at the position it leads to, from its own side, all of them in one batch, and the MBONs vote at step 12:
+
+```math
+A(m) = \sum_n \nu_n\, r^{(12)}_n\bigl(\text{position after } m\bigr),\qquad
+P(m) = \frac{e^{A(m)/T}}{\sum_{m' \in \mathcal{L}} e^{A(m')/T}},\qquad T = 1
+```
+
+It plays the move with the highest $`A`$ (that doesn't repeat a position), and $`P`$ is what the interface shows. Learning from games, it draws its move from $`P`$ instead.
+
+### 10. The three-factor rule
+
+From [flychess/bio.py](flychess/bio.py) (`tutor`, `dopamine`, `weaken`) and [flychess/train_bio.py](flychess/train_bio.py). No gradients: a synapse changes when three things meet at it, its Kenyon cell was active, dopamine arrived, and that dopamine neuron reaches its compartment ([how a real fly learns](#how-a-real-fly-learns)).
+
+**Tutor lessons**, the default. A batch is $`B = 64`$ pairs: the position after Stockfish's move ($`\text{good}_b`$) and the position after a random other legal move ($`\text{bad}_b`$). The dose is the chance the fly would still prefer the bad one:
+
+```math
+\pi_b = \mathrm{sigmoid}\Bigl(\frac{A(\text{bad}_b) - A(\text{good}_b)}{T}\Bigr)
+```
+
+with the argument clipped to ±30. It works like a reward prediction error: if choosing right pays 1, $`\pi_b`$ is how far that is from what the fly expects, so lessons it already gets right stop teaching it. Each Kenyon cell's tags are its activity in the lessons times their doses, averaged over the batch:
+
+```math
+\text{sugar}_k = \frac{1}{B} \sum_b \pi_b\, \hat r_k(\text{good}_b),\qquad
+\text{shock}_k = \frac{1}{B} \sum_b \pi_b\, \hat r_k(\text{bad}_b)
+```
+
+Sugar fires PAM and shock fires PPL1, and both weaken the tagged synapses by a share of their starting strength. Then everything drifts slowly back:
+
+```math
+\begin{aligned}
+M_{kn} &\leftarrow M_{kn} - \eta\, M^0_{kn} \bigl(\text{sugar}_k\, \rho^{\text{PAM}}_n + \text{shock}_k\, \rho^{\text{PPL1}}_n\bigr)\\
+M_{kn} &\leftarrow \max\bigl(0,\ M_{kn} + \kappa\, (M^0_{kn} - M_{kn})\bigr)
+\end{aligned}
+```
+
+So a synapse stays between 0 and its measured strength. PAM reaches mostly avoid MBONs, so after Stockfish's move the position drives avoid less; PPL1 reaches the approach ones, so after the other move it drives approach less.
+
+**Games** (`--games`). Every Kenyon cell keeps an eligibility trace, zero at the start of a game and topped up with every move the fly makes:
+
+```math
+e_k \leftarrow 0.8\, e_k + \hat r_k(\text{position after the fly's move})
+```
+
+After the opponent's reply the dopamine is what happened in between, with a pawn 1, a knight or bishop 3, a rook 5 and a queen 9:
+
+```math
+\delta = 0.1\,\bigl(\text{material after the reply} - \text{material before the fly's move}\bigr) - 0.05 \cdot \mathbf{1}\{\text{the fly is in check}\}
+```
+
+and at the end of the game $`\delta = +1`$ for a win, $`-1`$ for a loss and 0 for a draw. Every dose goes through the same rule with the trace as the tag, and the same drift back after it:
+
+```math
+M_{kn} \leftarrow M_{kn} - \eta\, M^0_{kn}\, e_k \bigl(\max(\delta, 0)\, \rho^{\text{PAM}}_n + \max(-\delta, 0)\, \rho^{\text{PPL1}}_n\bigr)
+```
+
+Here nothing is predicted: the dose is the raw outcome. The opponent gets harder (random, greedy, then Stockfish's skill level 0) once the fly's average over its last 50 games is above 0.6.
+
+**Measuring it.** On held-out pairs, how often the position after Stockfish's move scores higher, a tie counting half:
+
+```math
+\text{pairs right} = \frac{1}{N} \sum_{b=1}^{N} \Bigl(\mathbf{1}\bigl\{A(\text{good}_b) > A(\text{bad}_b)\bigr\} + \tfrac12\, \mathbf{1}\bigl\{A(\text{good}_b) = A(\text{bad}_b)\bigr\}\Bigr)
+```
+
+The dotted line in [which rule teaches it](#which-rule-teaches-it) is the best a linear readout of the Kenyon cells does ([tools/bio_rules.py](tools/bio_rules.py)): a logistic regression $`P(\text{good beats bad}) = \mathrm{sigmoid}\bigl(\mathbf{a} \cdot (\hat{\mathbf{r}}_{\text{good}} - \hat{\mathbf{r}}_{\text{bad}})\bigr)`$ fitted on 16,384 pairs, the best held-out score of three L2 penalties ($`10^{-4}`$, $`10^{-3}`$ and $`10^{-2}`$).
+
+| constant | value | | constant | value |
+|---|---|---|---|---|
+| $`\eta`$ | 0.1 | | $`\kappa`$ (drift back) | 0.001 |
+| Kenyon cells that pass | 5%, 203 | | width of the cut | 0.01 |
+| $`T`$ | 1 | | lessons per batch $`B`$ | 64 |
+| trace decay | 0.8 | | dopamine per pawn, for a check | 0.1, −0.05 |
+
+### 11. Imagination
+
+From [flychess/play.py](flychess/play.py) (`look_ahead`, `choose`) and [tools/imagine_lab.py](tools/imagine_lab.py). With the switch on, the fly looks at the board after each of its own legal moves, never at the replies, and gives each move a value for itself ([in words](#making-it-stronger-without-cheating)):
+
+```math
+Q(m) =
+\begin{cases}
+1 & m \text{ checkmates}\\
+0 & m \text{ ends the game in a draw by the rules}\\
+-v(\text{board after } m) & \text{otherwise}
+\end{cases}
+```
+
+The draws are stalemate, too little material, a position there for the third time and 50 moves without a capture or a pawn move. The minus is there because after the fly's move the value readout speaks for the opponent. A move that mates gets played (of several, the one with the highest $`P`$). Otherwise every move scores
+
+```math
+\text{score}(m) = \log \max\bigl(P(m),\ 10^{-12}\bigr) + w\, Q(m)
+```
+
+but some moves are out first. If a move that neither draws nor goes back to an earlier position has $`Q > 0`$, only such moves count; if not, but a move that doesn't draw has $`Q > 0`$, the drawing moves are out. Of what's left, the highest score is played. $`w = 0`$ is the fly's own favourite with the mate and draw rules on top, and an infinite $`w`$ is the value readout alone. `imagine_lab.py` tries $`w`$ = 0, 0.25, 0.5, 1, 2, 4, 8, 16 and infinity on the 4,096 HOLD positions and keeps the one with the most good moves (then the best top-1); until it has run, $`w = 1`$.
+
+### 12. Measuring strength
+
+From [flychess/train_dl.py](flychess/train_dl.py) (`judge`), [app/server.py](app/server.py) and [flychess/evaluate.py](flychess/evaluate.py). With $`\hat m`$ the fly's favourite move ([cheat 7](#7-read-your-own-logs-honestly)):
+
+```math
+\text{top-1} = \mathbf{1}\{\hat m = c_1\},\qquad
+\text{good move} = \mathbf{1}\bigl\{\hat m = c_k \text{ for some } k \text{ with } \mathrm{win}_k \ge \mathrm{win}_1 - 1\bigr\}
+```
+
+averaged over the positions. A move outside Stockfish's 8 is never a good one.
+
+**Accuracy in the app.** Stockfish looks at depth 12 and gives each move $`m`$ a score $`\text{cp}_m`$ in centipawns for the player who moves (a mate counts as 10,000 less its length, so the clip below catches it). Lichess's curve turns that into a chance to win, and how much of it a move gives away into an accuracy ([in the app](#playing-against-it)):
+
+```math
+\mathrm{win}(\text{cp}) = 50 + 50 \Bigl(\frac{2}{1 + e^{-0.00368208\, \mathrm{clip}(\text{cp},\, -1000,\, 1000)}} - 1\Bigr)
+```
+
+```math
+\Delta = \mathrm{win}(\text{cp}_{\text{best}}) - \mathrm{win}(\text{cp}_m),\qquad
+\text{accuracy} =
+\begin{cases}
+100 & \Delta \le 0\\
+\mathrm{clip}\bigl(103.1668\, e^{-0.04354\, \Delta} - 3.1669 + 1,\ 0,\ 100\bigr) & \Delta > 0
+\end{cases}
+```
+
+The constants are rounded here; the code has Lichess's in full. The verdict is "best" for Stockfish's own move, and otherwise good, inaccuracy, mistake or blunder for $`\Delta`$ under 5, under 10, under 15, and the rest. A player's accuracy for the game is the plain average of their moves' ([app/static/js/panel.js](app/static/js/panel.js)).
+
+**A performance rating** ([flychess/evaluate.py](flychess/evaluate.py)). From the score $`s`$ in $`G`$ games against Stockfish set to $`R_{\text{opp}}`$:
+
+```math
+R = R_{\text{opp}} + 400 \log_{10} \frac{\hat s}{1 - \hat s},\qquad
+\hat s = \mathrm{clip}\Bigl(s,\ \frac{1}{2G},\ 1 - \frac{1}{2G}\Bigr)
+```
+
+and the mean of that over the Stockfish levels played. The clip keeps the log finite, which is also why 0 points in 20 games comes out at $`1320 + 400 \log_{10}(1/39) = 684`$ ([measuring strength](#measuring-strength)): that's only the formula's floor.
+
+### 13. The Elo ladder
+
+From [flychess/rating.py](flychess/rating.py) ([in words](#an-elo-after-all)). The expected score of $`i`$ against $`j`$, a draw counting as half a win:
+
+```math
+E_{ij} = \frac{1}{1 + 10^{(R_j - R_i)/400}}
+```
+
+Every pairing that played has $`G_{ij}`$ games and $`S_{ij}`$ points for $`i`$, plus one virtual draw ($`G_{ij} + 1`$ games and $`S_{ij} + \tfrac12`$ points), the trick BayesElo uses so a 20-0 doesn't run off to infinity. One fit places everybody at once by maximum likelihood,
+
+```math
+\ell(\mathbf{R}) = \sum_{\text{pairings } i < j} \Bigl[S_{ij} \log E_{ij} + \bigl(G_{ij} - S_{ij}\bigr) \log\bigl(1 - E_{ij}\bigr)\Bigr]
+```
+
+with Newton's method. With $`c = \log 10 / 400`$, the gradient $`\mathbf{g}`$ and the Hessian $`H`$ of $`\ell`$ are
+
+```math
+g_i = c \sum_{j} \bigl(S_{ij} - G_{ij} E_{ij}\bigr),\qquad
+H_{ij} = c^2 G_{ij} E_{ij} (1 - E_{ij}),\qquad
+H_{ii} = -\sum_{j} H_{ij}
+```
+
+summing over the players $`j`$ that $`i`$ met, with $`S_{ji} = G_{ij} - S_{ij}`$. Starting from 0, every rating but the anchor's takes the step $`\mathbf{R} \leftarrow \mathbf{R} - H^{-1} \mathbf{g}`$, up to 100 times or until no step is bigger than $`10^{-6}`$, and then everybody shifts so that Stockfish 1320 sits at exactly 1320. The 95% intervals come from 300 refits, each on every pairing's games drawn again with replacement, as the 2.5th and 97.5th percentiles.
+
+The rungs are Stockfish at `UCI_Elo` 1320 with 0.05 s a move, which plays a uniformly random legal move instead with a chance of 0.25, 0.5 or 0.75; the greedy mover, which plays the move that captures the most (1, 3, 3, 5, 9, plus 0.5 for a check, ties at random); and the random mover. A game ends at checkmate, stalemate, too little material, a position that really happened three times, 50 moves without a capture or a pawn move, or after move 200.
+
+| constant | value | | constant | value |
+|---|---|---|---|---|
+| anchor | Stockfish 1320 | | games per pairing | 20, colours alternating |
+| virtual draws per pairing | 1 | | bootstrap refits | 300 |
+| Stockfish's time per move | 0.05 s | | move limit | 200 |
 
 ## Measuring strength
 
